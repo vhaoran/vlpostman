@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "d182daa7-a407-40c0-b396-559511187429",
+		"name": "yi-msg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "通知消息",
+			"item": [
+				{
+					"name": "发送系统通知消息--测试用--暂不接入前端",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"to\":1,\n\"code\":\"xxxxx\",\n\"comment\":\"this is a test\",\n\"data\":\"this is data and type is string\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/SendNotifyMsg",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"SendNotifyMsg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "发送系统通知消息--ack",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5f6c5dab01a5732f9f3206fc\",\n\"comment_1\":\"其中，id为接收到的消息的id ,已经确认过的，再次确认后失败\"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/NotifyMsgAck",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"NotifyMsgAck"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "大师订单消息",
+			"item": [
+				{
+					"name": "大师订单--发消息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id_of_order\":\"5f5748fac2839cc6504d4d83\",\n\"msg_type\":0,\n\"msg\":\"hello,world!!!!!!\",\n\"comment_1\":\" msg_type: 0:文本1：语音  id_of_order:大师订单的id\"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/YiOrderMsgSend",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"YiOrderMsgSend"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师订单--ACK接收确认",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5f6c4d128721bb518acdc345\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/YiOrderMsgAck",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"YiOrderMsgAck"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
