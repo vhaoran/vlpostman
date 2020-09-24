@@ -182,6 +182,84 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "支付接口--用于客户付款（wechat & alipay）",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/yi/trade/PayReq?Jwt=test|1&b_type=recharge&acc_type=0&trade_no=456nb&amt=0.01",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"PayReq"
+							],
+							"query": [
+								{
+									"key": "Jwt",
+									"value": "test|1"
+								},
+								{
+									"key": "b_type",
+									"value": "recharge"
+								},
+								{
+									"key": "acc_type",
+									"value": "0"
+								},
+								{
+									"key": "trade_no",
+									"value": "456nb"
+								},
+								{
+									"key": "amt",
+									"value": "0.01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "paytest--只作测试用",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/yi/trade/payTest?Jwt=test|111",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"payTest"
+							],
+							"query": [
+								{
+									"key": "Jwt",
+									"value": "test|111"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
