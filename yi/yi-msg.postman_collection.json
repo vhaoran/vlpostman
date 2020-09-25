@@ -9,7 +9,7 @@
 			"name": "通知消息",
 			"item": [
 				{
-					"name": "发送系统通知消息--测试用--暂不接入前端",
+					"name": "SendNotifyMsg--暂不接入前端",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -21,7 +21,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"to\":1,\n\"code\":\"xxxxx\",\n\"comment\":\"this is a test\",\n\"data\":\"this is data and type is string\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n\n}\n"
+							"raw": "{\n\"to\":154,\n\"code\":\"xxxxx\",\n\"comment\":\"this is a test\",\n\"body\":\"this is data and type is string\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n\n}\n"
 						},
 						"url": {
 							"raw": "{{host}}/yi/msg/SendNotifyMsg",
@@ -38,7 +38,7 @@
 					"response": []
 				},
 				{
-					"name": "发送系统通知消息--ack",
+					"name": "系统通知消息--ack",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -50,7 +50,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f6c5dab01a5732f9f3206fc\",\n\"comment_1\":\"其中，id为接收到的消息的id ,已经确认过的，再次确认后失败\"\n\n}\n"
+							"raw": "{\n\"id_list\":[\"5f6d481493d8b0166c39f2f5\"],\n\"comment_1\":\"其中，id_list为接收到的消息的id ,可以传入多个，已经确认过的，再次确认后失败\"\n\n}\n"
 						},
 						"url": {
 							"raw": "{{host}}/yi/msg/NotifyMsgAck",
@@ -61,6 +61,64 @@
 								"yi",
 								"msg",
 								"NotifyMsgAck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "上线通知",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"comment_1\":\"不需要参数\"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/OnLineNotify",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"OnLineNotify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "系统通知消息--分页查询",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"page_no\":1,\n\n\"comment_1\":\" 消息会在服务器上保存7天，7天后删除  \"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/NotifyMsgPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"NotifyMsgPage"
 							]
 						}
 					},
@@ -80,12 +138,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/300"
+								"value": "test/4"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id_of_order\":\"5f5748fac2839cc6504d4d83\",\n\"msg_type\":0,\n\"msg\":\"hello,world!!!!!!\",\n\"comment_1\":\" msg_type: 0:文本1：语音  id_of_order:大师订单的id\"\n\n}\n"
+							"raw": "{\n\"id_of_order\":\"5f6d60c850f5f3dbed628d37\",\n\"msg_type\":0,\n\"msg\":\"hello,world!!!!!!\",\n\"comment_1\":\" msg_type: 0:文本1：语音  id_of_order:大师订单的id\",\n\"comment_2\":\"该消息只在订单中设置的大师和客刻之间传递。\"\n\n}\n"
 						},
 						"url": {
 							"raw": "{{host}}/yi/msg/YiOrderMsgSend",
@@ -109,12 +167,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/300"
+								"value": "test/4"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f6c4d128721bb518acdc345\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n}\n"
+							"raw": "{\n\"id_list\":[\"5f6d8c08182509f85b33c09b\"],\n\"comment_1\":\"其中，id_list为接收到的消息的id,可以传入多个 \"\n}\n"
 						},
 						"url": {
 							"raw": "{{host}}/yi/msg/YiOrderMsgAck",
@@ -125,6 +183,35 @@
 								"yi",
 								"msg",
 								"YiOrderMsgAck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师订单--消息分页查询",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id_of_order\":\"5f5748fac2839cc6504d4d83\",\n\"comment_1\":\"其中，id_list为接收到的消息的id,可以传入多个 \"\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/YiOrderMsgHisPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"YiOrderMsgHisPage"
 							]
 						}
 					},
