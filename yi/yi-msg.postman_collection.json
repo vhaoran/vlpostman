@@ -21,7 +21,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"to\":154,\n\"code\":\"xxxxx\",\n\"comment\":\"this is a test\",\n\"body\":\"this is data and type is string\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n\n}\n"
+							"raw": "{\n\"to\":1,\n\"code\":\"xxxxx\",\n\"comment\":\"----test rebbit------working ok ?\",\n\"body\":\"#########  today ###########\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n\n}\n"
 						},
 						"url": {
 							"raw": "{{host}}/yi/msg/SendNotifyMsg",
@@ -74,7 +74,7 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/300"
+								"value": "test/168"
 							}
 						],
 						"body": {
@@ -123,6 +123,35 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "ws-test",
+					"request": {
+						"method": "LINK",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"page_no\":1,\n\n\"comment_1\":\" 消息会在服务器上保存7天，7天后删除  \"\n\n}\n"
+						},
+						"url": {
+							"raw": "ws://0755yicai.com/ws",
+							"protocol": "ws",
+							"host": [
+								"0755yicai",
+								"com"
+							],
+							"path": [
+								"ws"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -143,7 +172,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id_of_order\":\"5f6d60c850f5f3dbed628d37\",\n\"msg_type\":0,\n\"msg\":\"hello,world!!!!!!\",\n\"comment_1\":\" msg_type: 0:文本1：语音  id_of_order:大师订单的id\",\n\"comment_2\":\"该消息只在订单中设置的大师和客刻之间传递。\"\n\n}\n"
+							"raw": "{\n\"id_of_order\":\"5f6eb2739bff5aeafc25ee9e\",\n\"msg_type\":0,\n\"msg\":\"hello,world!!!!!!\",\n\"comment_1\":\" msg_type: 0:文本1：语音  id_of_order:大师订单的id\",\n\"comment_2\":\"该消息只在订单中设置的大师和客刻之间传递。\"\n\n}\n"
 						},
 						"url": {
 							"raw": "{{host}}/yi/msg/YiOrderMsgSend",
