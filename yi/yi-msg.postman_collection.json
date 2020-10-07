@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "d182daa7-a407-40c0-b396-559511187429",
+		"name": "yi-msg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "通知消息",
+			"item": [
+				{
+					"name": "SendNotifyMsg--暂不接入前端",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"to\":1,\n\"code\":\"xxxxx\",\n\"comment\":\"----test rebbit------working ok ?\",\n\"body\":\"#########  today ###########\",\n\"comment_1\":\"其中，id为接收到的消息的id \"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/SendNotifyMsg",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"SendNotifyMsg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "系统通知消息--ack",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id_list\":[\"5f6d481493d8b0166c39f2f5\"],\n\"comment_1\":\"其中，id_list为接收到的消息的id ,可以传入多个，已经确认过的，再次确认后失败\"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/NotifyMsgAck",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"NotifyMsgAck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "上线通知",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/168"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"comment_1\":\"不需要参数\"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/OnLineNotify",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"OnLineNotify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "系统通知消息--分页查询",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"page_no\":1,\n\n\"comment_1\":\" 消息会在服务器上保存7天，7天后删除  \"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/NotifyMsgPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"NotifyMsgPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ws-test",
+					"request": {
+						"method": "LINK",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"page_no\":1,\n\n\"comment_1\":\" 消息会在服务器上保存7天，7天后删除  \"\n\n}\n"
+						},
+						"url": {
+							"raw": "ws://0755yicai.com/ws",
+							"protocol": "ws",
+							"host": [
+								"0755yicai",
+								"com"
+							],
+							"path": [
+								"ws"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "大师订单消息",
+			"item": [
+				{
+					"name": "大师订单--发消息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id_of_order\":\"5f6eb2739bff5aeafc25ee9e\",\n\"msg_type\":0,\n\"msg\":\"hello,world!!!!!!\",\n\"comment_1\":\" msg_type: 0:文本1：语音  id_of_order:大师订单的id\",\n\"comment_2\":\"该消息只在订单中设置的大师和客刻之间传递。\"\n\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/YiOrderMsgSend",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"YiOrderMsgSend"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师订单--ACK接收确认",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id_list\":[\"5f6d8c08182509f85b33c09b\"],\n\"comment_1\":\"其中，id_list为接收到的消息的id,可以传入多个 \"\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/YiOrderMsgAck",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"YiOrderMsgAck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师订单--消息分页查询",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id_of_order\":\"5f5748fac2839cc6504d4d83\",\n\"comment_1\":\"其中，id_list为接收到的消息的id,可以传入多个 \"\n}\n"
+						},
+						"url": {
+							"raw": "{{host}}/yi/msg/YiOrderMsgHisPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"msg",
+								"YiOrderMsgHisPage"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
