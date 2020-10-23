@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4a750893-990f-4bd6-a8b5-8b03d47628a7",
+		"_postman_id": "5374ac6e-b2c1-4690-ae23-a87a783c43bd",
 		"name": "yicms",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -55,7 +55,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 1,\n    \"key_words\": \"人体器官信息定位表\",\n    \"size\": 100,\n    \n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
+							"raw": "{\n    \"cate_id\": 1,\n    \"key_words\": \"四柱\",\n    \"size\": 10,\n    \n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -111,7 +111,7 @@
 					"response": []
 				},
 				{
-					"name": "分页",
+					"name": "T分页",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -130,7 +130,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\": 10000,\n    \n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
+							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\": 100,\n    \n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -152,7 +152,7 @@
 					"response": []
 				},
 				{
-					"name": "增加文章",
+					"name": "T增加文章",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {}
 					},
@@ -283,7 +283,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"num\": 4,\n    \n    \"comment\": \"大仙灵签传入的数字不能大于100\",\n    \"comment1\": \"jie_qian是解签,jie_yun_shii是解运势 qian_shi是签诗, name是签名\",\n    \"comment2\":\"jwt必须存在,大于0即可\"\n}",
+							"raw": "{\n    \"num\": 3,\n    \n    \"comment\": \"大仙灵签传入的数字不能大于100\",\n    \"comment1\": \"jie_qian是解签,jie_yun_shii是解运势 qian_shi是签诗, name是签名\",\n    \"comment2\":\"jwt必须存在,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -427,7 +427,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"num\": 43,\n    \n    \"comment\": \"妈祖灵签传入的数字不能大于60\",\n    \"comment1\": \"返回数据中:dian_gu是典故, yun_cheng是运程, qian_wen是签文, qian_ti是签题\",\n    \"comment3\": \"返回数据中:jie_yue是解曰, name是签名\",\n     \"comment2\":\"jwt必须存在,大于0即可\"\n}",
+							"raw": "{\n    \"num\": 16,\n    \n    \"comment\": \"妈祖灵签传入的数字不能大于60\",\n    \"comment1\": \"返回数据中:dian_gu是典故, yun_cheng是运程, qian_wen是签文, qian_ti是签题\",\n    \"comment3\": \"返回数据中:jie_yue是解曰, name是签名\",\n     \"comment2\":\"jwt必须存在,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -673,7 +673,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"male_con\": 12,\n    \"female_con\": 12,\n    \n    \"comment1\": \"返回数据中:con_day是最佳表白日,parse是解析,oath是爱情宣言\",\n    \"comment2\": \"stars是配对指数, gem是定情宝石, feel是爱情情缘\",\n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
+							"raw": "{\n    \"male_con\": 12,\n    \"female_con\": 5,\n    \n    \"comment1\": \"返回数据中:con_day是最佳表白日,parse是解析,oath是爱情宣言\",\n    \"comment2\": \"stars是配对指数, gem是定情宝石, feel是爱情情缘\",\n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -721,7 +721,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"male_ShengXiao\": 12,\n    \"female_ShengXiao\": 12,\n    \n    \"comment1\": \"返回数据中:biao_bai是最佳表白日, flower是定情花, gem是定情宝石,name是配对名,oath是宣言, qing_yuan是情缘\",\n    \"comment2\": \"result是配对结果\",\n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
+							"raw": "{\n    \"male_ShengXiao\": 5,\n    \"female_ShengXiao\": 12,\n    \n    \"comment1\": \"返回数据中:biao_bai是最佳表白日, flower是定情花, gem是定情宝石,name是配对名,oath是宣言, qing_yuan是情缘\",\n    \"comment2\": \"result是配对结果\",\n    \"comment\":\"jwt必须存在,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
