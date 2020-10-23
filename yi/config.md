@@ -12,7 +12,9 @@ websocket:  0755yicai.com:8083/ws
    测试：head["Jwt"] = test/<jwtStr>
    真实：ead["Jwt"] = <jwtStr> 
    
-   
+----登录-------------------------------   
+系统中只有一个登录方法，适用于所有的角色。
+
    
   
             
