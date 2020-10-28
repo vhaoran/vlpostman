@@ -352,7 +352,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/135",
+									"value": "test/108",
 									"type": "string"
 								},
 								{
@@ -544,7 +544,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/17",
+									"value": "test/136",
 									"type": "string"
 								},
 								{
@@ -563,7 +563,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"service_code\": \"123\",\n    \"comment\":\"用途：根据服务代码，编写当前登录用户到broker_id\",\n    \"comment2\":\"只有没有编写broker_id的用户,既broker_id=0时才可以执行此操作\",\n    \"comment3\":\"根据传入的serviceCode,绑定brokerID到用户\",\n    \"comment4\":\"如果 用户已经有brokerID,则绑定失败\"\n}",
+							"raw": "{\n    \"service_code\": \"888\",\n    \"comment\":\"用途：根据服务代码，编写当前登录用户到broker_id\",\n    \"comment2\":\"只有没有编写broker_id的用户,既broker_id=0时才可以执行此操作\",\n    \"comment3\":\"根据传入的serviceCode,绑定brokerID到用户\",\n    \"comment4\":\"如果 用户已经有brokerID,则绑定失败\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -597,7 +597,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237044990011\",\n    \"nick\": \"张三\",\n    \"pwd\": \"123456\"\n}",
+							"raw": "{\n    \"user_code\": \"15927846331\",\n    \"nick\": \"测试\",\n    \"pwd\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -645,7 +645,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"guest_name_1600657931732327000\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
+							"raw": "{\n    \"user_code\": \"15927846331\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1227,7 +1227,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/5",
+									"value": "test/24",
 									"type": "string"
 								},
 								{
@@ -1323,7 +1323,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/5",
+									"value": "test/24",
 									"type": "string"
 								},
 								{
@@ -1371,7 +1371,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/5",
+									"value": "test/24",
 									"type": "string"
 								},
 								{
@@ -1390,7 +1390,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 18,\n    \"M\": {\n        \"name\": \"香蜡纸马\",\n        \"icon\": \"3\",\n        \"sort_no\": \"3\"\n    },\n    \"comment\": \"M中的内容可以根据分类的项选填\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"id\": 36,\n    \"M\": {\n        \"name\": \"五台山大师开过光\",\n        \"icon\": \"3\",\n        \"sort_no\": \"3\"\n    },\n    \"comment\": \"M中的内容可以根据分类的项选填\",\n    \"comment2\": \"Jwt必须要有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1486,7 +1486,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 16,\n    \"key_word\": \"大荒\",\n    \"page_no\": 1,\n    \"rows_per_page\": 11,\n    \"comment\": \"pagebeanmap中的信息选填,但是必须有rows_per_page\",\n    \"comment2\": \"Jwt必须要有, 大于0即可\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和Key_world, 不输入是默认为查询所有\"\n}",
+							"raw": "{\n\n    \"page_no\": 1,\n    \"rows_per_page\": 100,\n    \"comment\": \"pagebeanmap中的信息选填,但是必须有rows_per_page\",\n    \"comment2\": \"Jwt必须要有, 大于0即可\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和Key_world, 不输入是默认为查询所有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1515,7 +1515,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/5",
+									"value": "test/24",
 									"type": "string"
 								},
 								{
@@ -1534,7 +1534,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"WnQCdnQBUEDNcUc8q4SC\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"id_of_es\": \"BnT7aHUBUEDNcUc8y4Ue\",\n    \"comment2\": \"Jwt必须要有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1563,7 +1563,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/5",
+									"value": "test/6",
 									"type": "string"
 								},
 								{
@@ -1582,7 +1582,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 16,\n    \"cate_name\":\"周易\",\n    \"name\": \"周易\",\n    \"remark\": \"周易\",\n    \"key_word\": \"玄学 周易\",\n    \"enabled\": true,\n    \"images\": [\n        {\n            \"path\": \"pic1\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"灰色\",\n            \"price\": 100\n        },\n         {\n            \"code\": \"黄色\",\n            \"price\": 1000\n        },\n         {\n            \"code\": \"金色\",\n            \"price\": 10000\n        }\n    ],\n    \"image_main\": \"pic-main\",\n    \"comment\": \"首次添加商品属性可以选填, 但是Jwt必须要有\",\n    \"comment2\": \"colors是颜色代码,分别代表不同颜色的不同价格,\",\n    \"comment3\":\"cate_id必须是已经存在的id, cate_name可以写任意值或者不传, cate_id的值后台会查询并添加\"\n}",
+							"raw": "{\n    \"cate_id\": 16,\n    \"cate_name\":\"周易\",\n    \"name\": \"周易\",\n    \"remark\": \"周易\",\n    \"key_word\": \"周易, 大荒\",\n    \"enabled\": true,\n    \"images\": [\n        {\n            \"path\": \"pic1\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"灰色\",\n            \"price\": 100\n        },\n         {\n            \"code\": \"黄色\",\n            \"price\": 1000\n        },\n         {\n            \"code\": \"金色\",\n            \"price\": 10000\n        }\n    ],\n    \"image_main\": \"pic-main\",\n    \"comment\": \"首次添加商品属性可以选填, 但是Jwt必须要有\",\n    \"comment2\": \"colors是颜色代码,分别代表不同颜色的不同价格,\",\n    \"comment3\":\"cate_id必须是已经存在的id, cate_name可以写任意值或者不传, cate_id的值后台会查询并添加\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1611,7 +1611,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/5",
+									"value": "test/6",
 									"type": "string"
 								},
 								{
@@ -1630,7 +1630,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"UHQDcXQBUEDNcUc8k4Sk\",\n    \"M\": {\n        \"cate_name\": \"财神\",\n        \"name\": \"文财神赵公明\",\n        \"remark\": \"招财进宝\",\n        \"key_word\": \"文财神 招财进宝 日进斗金\",\n        \"images\": [\n        {\n            \"path\": \"pic14\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"淡黄\",\n            \"price\": 100\n        },\n         {\n            \"code\": \"黄色\",\n            \"price\": 1000\n        },\n         {\n            \"code\": \"金色\",\n            \"price\": 10000\n        }\n    ]\n    },\n    \n    \"comment\": \"修改商品属性可以选填, 但是必须存在,大于0即可\"\n}",
+							"raw": "{\n    \"id_of_es\": \"BXT5aHUBUEDNcUc8voXi\",\n    \"M\": {\n        \"cate_name\": \"财神\",\n        \"name\": \"文财神赵公明\",\n        \"remark\": \"招财进宝\",\n        \"key_word\": \"文财神 招财进宝 日进斗金\",\n        \"images\": [\n        {\n            \"path\": \"pic14\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"淡黄\",\n            \"price\": 100\n        },\n         {\n            \"code\": \"黄色\",\n            \"price\": 1000\n        },\n         {\n            \"code\": \"金色\",\n            \"price\": 10000\n        }\n    ]\n    },\n    \n    \"comment\": \"修改商品属性可以选填, 但是必须存在,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1659,7 +1659,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/5",
+									"value": "test/6",
 									"type": "string"
 								},
 								{
@@ -1678,7 +1678,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"T3QAcXQBUEDNcUc8goQi\",\n    \"comment\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"id_of_es\": \"A3T5aHUBUEDNcUc8m4Xh\",\n    \"comment\": \"Jwt必须要有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1732,7 +1732,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 20,\n    \"comment\": \"对于Jwt中的数据,大于0即可\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 20,\n    \"comment\": \"对于Jwt中的是管理员的UID\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1828,7 +1828,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 108,\n    \"comment\": \"对于Jwt中的数据,大于0即可\",\n    \"comment2\": \"用户登录后获取大师的信息\",\n    \"comment3\":\"输入的master_id对应的是uid\"\n}",
+							"raw": "{\n    \"master_id\": 300,\n    \"comment\": \"对于Jwt中的数据,大于0即可\",\n    \"comment2\": \"用户登录后获取大师的信息\",\n    \"comment3\":\"输入的master_id对应的是uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1972,7 +1972,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"5f5f33c8b211d0e620dafbb4\",\n    \"stat\": 1,\n    \"comment\": \"输入的id是返回的申请信息返回的id\",\n    \"comment2\": \"stat 为1 代表通过申请,其他的数值为驳回申请\",\n    \"comment3\": \"若某用户已经成为大师,再次通过申请时会提示大师已经存在\",\n    \"comment4\":\"jwt中的数据大于0即可\"\n}",
+							"raw": "{\n    \"id\": \"5f5f33c8b211d0e620dafbb4\",\n    \"stat\": 1,\n    \"comment\": \"输入的id是返回的申请信息返回的id\",\n    \"comment2\": \"stat 为1 代表通过申请,其他的数值为驳回申请\",\n    \"comment3\": \"若某用户已经成为大师,再次通过申请时会提示大师已经存在\",\n    \"comment4\":\"jwt中的数据是管理员的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2001,7 +2001,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/12",
+									"value": "test/24",
 									"type": "string"
 								},
 								{
@@ -2020,7 +2020,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \n    \"master_id\": 11,\n    \"enabled\": 1,\n    \"comment\": \"JWT必须存在, 大于0即可\",\n    \"comment2\":\"Enable为0 代表停用,1代表激活, 不允许输入其他值\"\n}",
+							"raw": "{\n    \n    \"master_id\": 300,\n    \"enabled\": 0,\n    \"comment\": \"JWT中的数据是管理员的UID\",\n    \"comment2\":\"Enable为0 代表停用,1代表激活, 不允许输入其他值\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2308,7 +2308,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 105,\n    \"comment\": \"此时的JWT大于0即可\"\n}",
+							"raw": "{\n    \"uid\": 102,\n    \"comment\": \"此时的JWT大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2642,7 +2642,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 6,\n    \"rows_per_page\":3\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\":30\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2850,6 +2850,1735 @@
 								"yi",
 								"user",
 								"SysAdminGet"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "bo",
+			"item": [
+				{
+					"name": "平台闪断贴标准增加",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"套餐f\",\n    \"price\":699,\n    \"sort_no\":6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelVieAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelVieAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台闪断贴标准列表",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelVieList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelVieList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台闪断贴标准根据id获取",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelVieGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelVieGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台闪断贴标准修改",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 5,\n    \"m\":{\n    \"title\": \"套餐a\",\n    \"price\": 198,\n    \"sort_no\": 11\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelVieCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelVieCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台闪断贴标准根据id删除",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelVieRm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelVieRm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台悬赏贴标准添加",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"标准6\",\n    \"price\": 166,\n    \"sort_no\": 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelPrizeAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelPrizeAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台悬赏贴标准列表",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelPrizeList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelPrizeList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台悬贴标准根据id获取",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":5,\n    \n    \"comment\":\"执行此操作的权限最低是运营商(代理、代理管理员、管理员)\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelPrizeGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelPrizeGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台悬赏贴标准修改",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"id\": 5,\n    \"m\":{\n    \"title\": \"标准a\",\n    \"price\": 11,\n    \"sort_no\": 10\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelPrizeCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelPrizeCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台悬赏贴标准根据id删除",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/PriceLevelPrizeRm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"PriceLevelPrizeRm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取运营商模块",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"broker_id\": 0,\n    \"comment\": \"获取运营商的模块选择情况,0代表未选中,1代表已选中\",\n    \"comment2\": \"依照权限,系统管理员可以获取所有的运营商的模块选项\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的模块选项\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取模块选项\",\n    \"comment5\": \"运营商不可获取其他运营商的模块选项\",\n    \"comment6\":\"若要查询自己运营商所属的模块选项此处的broker_id必须是0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerModuleList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerModuleList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改运营商模块",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"m\": {\n        \"enable_mall\": 1,\n        \"enable_master\": 0,\n        \"enable_prize\": 0,\n        \"enable_vie\": 0\n    },\n    \"comment\": \"修改运营商的模块选项,mall代表商城,master代表大师,price代表悬赏贴,vie代表闪断贴\",\n    \"comemnt2\": \" 0是未选中,1是选中\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerModuleCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerModuleCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商商品类别增加",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"list_cate_id\": [43, 41, 42],\n    \"comment\": \"已经自己已经选择过商品类别不可重复添加\",\n    \"comment2\": \"添加的商品类别必须是系统提供的已存在的商品类别\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerCateAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerCateAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商商品类别列表",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"broker_id\": 0,\n    \"comment\": \"获取某个运营商的商品类别列表\",\n    \"comment2\": \"依照权限,系统管理员可以获取所有的运营商的商品类别\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的商品类别\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取类别列表\",\n    \"comment5\": \"运营商不可获取其他运营商的类别列表\",\n    \"comment6\": \"若要查询自己运营商所属的模块选项此处的broker_id必须是0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerCateList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerCateList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商商品类别删除",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"list_cate_id\":[16],\n\n    \"coment\":\"此处的数组是商品类别的cate_id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerCateRm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerCateRm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商商品添加",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"sjn1dXQBgZ4HPoMnnn7O\",\n            \"price_offset\": 0.4\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerProductAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerProductAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商商品分页查询",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"key_word\":\"周易\",\n    \"page_no\": 1,\n    \"rows_per_page\": 100,\n    \"comment\":\"关键字可以输入,也可以不输入,不输入是查询所有\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerProductPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerProductPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商商品价格修改",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"list\": [\n        {\n            \"product_id\": \"sDnudXQBgZ4HPoMnt35N\",\n            \"price_offset\": 3.3\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerProductPriceCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerProductPriceCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商商品删除",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/107",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"list_product_id\":[\"sDnudXQBgZ4HPoMnt35N\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerProductRm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerProductRm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商悬赏贴收费标准新增",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"offset_price\":6,\n    \"price_level_id\":9\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelPrizeAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商悬赏贴标准根据id获取",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 8,\n    \n    \"comment\": \"此处的id是运营商的悬赏贴标准id,而不是平台的悬赏贴标准id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelPrizeGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商悬赏贴收费标准列表",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelPrizeList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商悬赏贴标准修改",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":8,\n    \"offset_price\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelPrizeCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商悬赏贴标准根据id删除",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeRm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelPrizeRm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴收费标准新增",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"offset_price\": 7,\n    \"price_level_id\": 7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelVieAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴标准根据id获取",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelVieGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴收费标准列表",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelVieList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴标准修改",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":9,\n    \"offset_price\":9\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelVieCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴标准根据id 删除",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":9,\n\n    \"comment\":\"此处的id不是平台闪断贴的id,而是运营商该闪断贴对应的id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieRm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelVieRm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商大师添加单个",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"master_id\": 103,\n    \"items\": {\n        \"1\": 4,\n        \"2\": 3,\n        \"99\":99\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMasterAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMasterAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商大师批量添加",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/109",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"l\":[\n        {\n            \"master_id\":102,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        },{\n            \"master_id\":103,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMasterAddBatch",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMasterAddBatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商获取单个大师信息",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"broker_id\":45,\n    \"master_id\":103\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMasterInfoFullGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMasterInfoFullGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商大师获取价格列表",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/109",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":103\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMIPriceList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMIPriceList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商大师信息分页查询",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/109",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMasterPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMasterPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商大师项目价格批量修改",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"master_id\":103,\n    \"items\":{\n        \"1\":1000,\n        \"2\":2000\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMIPriceChBatch",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMIPriceChBatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商大师删除",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"master_id\":103\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMasterRm",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMasterRm"
 							]
 						}
 					},
