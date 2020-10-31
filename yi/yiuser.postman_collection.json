@@ -496,7 +496,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/135",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -1534,7 +1534,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"BnT7aHUBUEDNcUc8y4Ue\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"id_of_es\": \"sjn1dXQBgZ4HPoMnnn7O\",\n    \"comment2\": \"Jwt必须要有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1732,7 +1732,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 20,\n    \"comment\": \"对于Jwt中的是管理员的UID\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 40,\n    \"comment\": \"对于Jwt中的是管理员的UID\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2308,7 +2308,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 102,\n    \"comment\": \"此时的JWT大于0即可\"\n}",
+							"raw": "{\n    \"uid\": 105,\n    \"comment\": \"此时的JWT大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2337,7 +2337,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/102",
 									"type": "string"
 								},
 								{
@@ -2356,7 +2356,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 11,\n    \"yi_cate_id\": 1,\n    \"yi_cate_name\": \"测字\",\n    \"comment\": \"看字解人生\",\n    \"price\": 999.99,\n    \n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment3\": \"传入参数中的uid大于0即可,真正的uid需要通过jwt传入\"\n}",
+							"raw": "{\n    \"uid\": 102,\n    \"yi_cate_id\": 8,\n    \"yi_cate_name\": \"测字\",\n    \"comment\": \"看字解人生\",\n    \"price\": 999.99,\n    \n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment3\": \"传入参数中的uid大于0即可,真正的uid需要通过jwt传入\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2481,7 +2481,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/11",
+									"value": "test/105",
 									"type": "string"
 								},
 								{
@@ -2500,7 +2500,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 22,\n    \"comment\": \"必须是本人对营业范围进行操作,即id对应的uid是JWT中的数据\"\n}",
+							"raw": "{\n    \"id\": 58,\n    \"comment\": \"必须是本人对营业范围进行操作,即id对应的uid是JWT中的数据\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2888,7 +2888,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\":\"套餐f\",\n    \"price\":699,\n    \"sort_no\":6\n}",
+							"raw": "{\n    \"title\":\"套餐f\",\n    \"price\":99,\n    \"sort_no\":6,\n    \"comemnt\":\"要求管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2917,7 +2917,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -2936,7 +2936,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \n}",
+							"raw": "{\n    \"comment\":\"必须是系统管理员或是运营商\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2984,7 +2984,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":7\n}",
+							"raw": "{\n    \"id\":6,\n    \"comment\":\"必须是系统管理员或是运营商\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3032,7 +3032,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 5,\n    \"m\":{\n    \"title\": \"套餐a\",\n    \"price\": 198,\n    \"sort_no\": 11\n    }\n}",
+							"raw": "{\n    \"id\": 5,\n    \"m\":{\n    \"title\": \"套餐a\",\n    \"price\": 198,\n    \"sort_no\": 11\n    },\n    \"comment\":\"必须是管理员\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3080,7 +3080,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":6\n}",
+							"raw": "{\n    \"id\":6,\n    \"comment\":\"必须是管理员\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3128,7 +3128,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"标准6\",\n    \"price\": 166,\n    \"sort_no\": 6\n}",
+							"raw": "{\n    \"title\": \"标准6\",\n    \"price\": 500,\n    \"sort_no\": 6,\n    \"comment\":\"必须是管理员\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3176,7 +3176,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \n}",
+							"raw": "{\n    \n    \"comment\":\"必须是管理员或运营商\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3224,7 +3224,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":5,\n    \n    \"comment\":\"执行此操作的权限最低是运营商(代理、代理管理员、管理员)\"\n}",
+							"raw": "{\n    \"id\":6,\n    \n    \"comment\":\"执行此操作的权限最低是运营商(代理、代理管理员、管理员)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3272,7 +3272,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n     \"id\": 5,\n    \"m\":{\n    \"title\": \"标准a\",\n    \"price\": 11,\n    \"sort_no\": 10\n    }\n}",
+							"raw": "{\n     \"id\": 6,\n    \"m\":{\n    \"title\": \"标准6\",\n    \"price\": 200,\n    \"sort_no\": 10\n    },\n    \"comment\":\"必须是管理员\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3320,7 +3320,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":6\n}",
+							"raw": "{\n    \"id\":6,\n    \"comment\":\"必须是管理员\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3349,7 +3349,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/107",
+									"value": "test/108",
 									"type": "string"
 								},
 								{
@@ -3368,7 +3368,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 0,\n    \"comment\": \"获取运营商的模块选择情况,0代表未选中,1代表已选中\",\n    \"comment2\": \"依照权限,系统管理员可以获取所有的运营商的模块选项\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的模块选项\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取模块选项\",\n    \"comment5\": \"运营商不可获取其他运营商的模块选项\",\n    \"comment6\":\"若要查询自己运营商所属的模块选项此处的broker_id必须是0\"\n}",
+							"raw": "{\n    \"broker_id\": 0,\n    \"comment\": \"获取运营商的模块选择情况,0代表未选中,1代表已选中\",\n    \"comment2\": \"依照权限,系统管理员可以指定运营商的模块选项\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的模块选项\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取模块选项\",\n    \"comment5\": \"运营商不可获取其他运营商的模块选项\",\n    \"comment6\":\"若要查询自己运营商所属的模块选项此处的broker_id必须是0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3397,7 +3397,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/107",
+									"value": "test/108",
 									"type": "string"
 								},
 								{
@@ -3416,7 +3416,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"m\": {\n        \"enable_mall\": 1,\n        \"enable_master\": 0,\n        \"enable_prize\": 0,\n        \"enable_vie\": 0\n    },\n    \"comment\": \"修改运营商的模块选项,mall代表商城,master代表大师,price代表悬赏贴,vie代表闪断贴\",\n    \"comemnt2\": \" 0是未选中,1是选中\"\n}",
+							"raw": "{\n    \"m\": {\n        \"enable_mall\": 1,\n        \"enable_master\": 1,\n        \"enable_prize\": 1,\n        \"enable_vie\": 1\n    },\n    \"comment\": \"修改运营商的模块选项,mall代表商城,master代表大师,price代表悬赏贴,vie代表闪断贴\",\n    \"comemnt2\": \"0是未选中,1是选中\",\n    \"comment3\":\"必须是运营商权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3438,7 +3438,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品类别增加",
+					"name": "运营商商品类别批量增加",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3464,7 +3464,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list_cate_id\": [43, 41, 42],\n    \"comment\": \"已经自己已经选择过商品类别不可重复添加\",\n    \"comment2\": \"添加的商品类别必须是系统提供的已存在的商品类别\"\n}",
+							"raw": "{\n    \"list_cate_id\": [16],\n    \"comment\": \"已经自己已经选择过商品类别不可重复添加\",\n    \"comment2\": \"添加的商品类别必须是系统提供的已存在的商品类别\",\n    \"comment3\":\"必须是运营商权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3512,7 +3512,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 0,\n    \"comment\": \"获取某个运营商的商品类别列表\",\n    \"comment2\": \"依照权限,系统管理员可以获取所有的运营商的商品类别\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的商品类别\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取类别列表\",\n    \"comment5\": \"运营商不可获取其他运营商的类别列表\",\n    \"comment6\": \"若要查询自己运营商所属的模块选项此处的broker_id必须是0\"\n}",
+							"raw": "{\n    \"broker_id\": 0,\n    \"comment\": \"获取某个运营商的商品类别列表\",\n    \"comment2\": \"依照权限,系统管理员可以指定运营商的商品类别\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的商品类别\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取类别列表\",\n    \"comment5\": \"运营商不可获取其他运营商的类别列表\",\n    \"comment6\": \"若要查询自己运营商所属的模块选项此处的broker_id必须是0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3534,7 +3534,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品类别删除",
+					"name": "运营商商品类别批量删除",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3560,7 +3560,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list_cate_id\":[16],\n\n    \"coment\":\"此处的数组是商品类别的cate_id\"\n}",
+							"raw": "{\n    \"list_cate_id\":[4, 6, 7, 16],\n\n    \"coment\":\"此处的数组是商品类别的cate_id\",\n    \"comment\":\"必须是运营商权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3582,7 +3582,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品添加",
+					"name": "运营商商品批量添加",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3608,7 +3608,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"sjn1dXQBgZ4HPoMnnn7O\",\n            \"price_offset\": 0.4\n        }\n    ]\n}",
+							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"sTltC3UBgZ4HPoMnRcqR\",\n            \"price_offset\": 0.4\n        },\n        {\n            \"product_id\": \"sTltC3UBgZ4HPoMnRcqR\",\n            \"price_offset\": 0.4\n        }\n    ],\n    \"comment\":\"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\":\"必须是运营商权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3637,7 +3637,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -3656,7 +3656,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"key_word\":\"周易\",\n    \"page_no\": 1,\n    \"rows_per_page\": 100,\n    \"comment\":\"关键字可以输入,也可以不输入,不输入是查询所有\"\n}",
+							"raw": "{\n    \"cate_id\": 16,\n    \"broker_id\": 0,\n    \"page_no\": 1,\n    \"rows_per_page\": 100,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3678,7 +3678,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品价格修改",
+					"name": "运营商商品批量价格修改",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3704,7 +3704,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n     \"list\": [\n        {\n            \"product_id\": \"sDnudXQBgZ4HPoMnt35N\",\n            \"price_offset\": 3.3\n        }\n    ]\n}",
+							"raw": "{\n     \"list\": [\n        {\n            \"product_id\": \"sDnudXQBgZ4HPoMnt35N\",\n            \"price_offset\": 3.3\n        },\n        {\n            \"product_id\": \"sTltC3UBgZ4HPoMnRcqR\",\n            \"price_offset\": 0.4\n        }\n    ],\n    \"comment\":\"必须是运营商权限, 可以对多件商品的价格进行修改\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3726,7 +3726,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品删除",
+					"name": "运营商商品批量删除",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3752,7 +3752,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list_product_id\":[\"sDnudXQBgZ4HPoMnt35N\"]\n}",
+							"raw": "{\n    \"list_product_id\":[\"sDnudXQBgZ4HPoMnt35N\", \"sDnudXQBgZ4HPoMnt35N\"],\n    \"comment\":\"必须是运营商权限,可以同时删除多件商品\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3800,7 +3800,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"offset_price\":6,\n    \"price_level_id\":9\n}",
+							"raw": "{\n    \"offset_price\":20,\n    \"price_level_id\":4\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3829,7 +3829,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -3848,7 +3848,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 8,\n    \n    \"comment\": \"此处的id是运营商的悬赏贴标准id,而不是平台的悬赏贴标准id\"\n}",
+							"raw": "{\n    \"id\": 1,\n    \n    \"comment\": \"此处的id是运营商的悬赏贴标准id,而不是平台的悬赏贴标准id\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3939,7 +3939,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":8,\n    \"offset_price\":3\n}",
+							"raw": "{\n    \"id\":13,\n    \"offset_price\":33,\n    \"comment\":\"此处的id是列表中的id\",\n    \"comemnt2\":\"不可修改其他运营商的标准\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3961,7 +3961,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商悬赏贴标准根据id删除",
+					"name": "运营商悬赏贴标准根据id禁止或启用",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3987,7 +3987,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":10\n}",
+							"raw": "{\n    \"id\": 10,\n    \"enabled\": 7,\n    \"comment\": \"此处的id不是平台悬赏贴的id,而是运营商该悬赏贴对应的id\",\n    \"comment2\": \"1为启用此标准,0位禁止此标准\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3995,14 +3995,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeRm",
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeSetEnabled",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"yi",
 								"user",
-								"BrokerPriceLevelPrizeRm"
+								"BrokerPriceLevelPrizeSetEnabled"
 							]
 						}
 					},
@@ -4016,7 +4016,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -4035,7 +4035,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"offset_price\": 7,\n    \"price_level_id\": 7\n}",
+							"raw": "{\n    \"offset_price\": 5,\n    \"price_level_id\": 5\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4064,7 +4064,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -4083,7 +4083,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":7\n}",
+							"raw": "{\n    \"id\":2\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4112,7 +4112,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -4160,7 +4160,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -4179,7 +4179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":9,\n    \"offset_price\":9\n}",
+							"raw": "{\n    \"id\":1,\n    \"offset_price\":11,\n    \"comment\":\"此处的id不是平台闪断贴id,运营商闪断贴标准列表的id\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4201,14 +4201,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商闪断贴标准根据id 删除",
+					"name": "运营商闪断贴标准根据id禁止或启用",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/107",
 									"type": "string"
 								},
 								{
@@ -4227,7 +4227,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":9,\n\n    \"comment\":\"此处的id不是平台闪断贴的id,而是运营商该闪断贴对应的id\"\n}",
+							"raw": "{\n    \"id\":6,\n    \"enabled\":1,\n    \"comment\":\"此处的id不是平台闪断贴的id,而是运营商该闪断贴对应的id\",\n    \"comment2\":\"1为启用此标准,0位禁止此标准\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4235,14 +4235,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/yi/user/BrokerPriceLevelVieRm",
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieSetEnabled",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"yi",
 								"user",
-								"BrokerPriceLevelVieRm"
+								"BrokerPriceLevelVieSetEnabled"
 							]
 						}
 					},
@@ -4275,7 +4275,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 103,\n    \"items\": {\n        \"1\": 4,\n        \"2\": 3,\n        \"99\":99\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\"\n}",
+							"raw": "{\n    \"master_id\": 105,\n    \"items\": {\n        \"2\": -20,\n        \"8\":-80\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4304,7 +4304,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/109",
+									"value": "test/108",
 									"type": "string"
 								},
 								{
@@ -4323,7 +4323,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"l\":[\n        {\n            \"master_id\":102,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        },{\n            \"master_id\":103,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        }\n    ]\n}",
+							"raw": "{\n    \"l\":[\n        {\n            \"master_id\":105,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        },{\n            \"master_id\":103,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4371,7 +4371,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":45,\n    \"master_id\":103\n}",
+							"raw": "{\n    \"broker_id\":17,\n    \"master_id\":105\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4400,7 +4400,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/109",
+									"value": "test/108",
 									"type": "string"
 								},
 								{
@@ -4419,7 +4419,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":103\n}",
+							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":105\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4448,7 +4448,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/109",
+									"value": "test/108",
 									"type": "string"
 								},
 								{
@@ -4515,7 +4515,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":103,\n    \"items\":{\n        \"1\":1000,\n        \"2\":2000\n    }\n}",
+							"raw": "{\n    \"master_id\":105,\n    \"items\":{\n        \"2\":-1000,\n        \"8\":2000\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4563,7 +4563,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":103\n}",
+							"raw": "{\n    \"master_id\":105\n}",
 							"options": {
 								"raw": {
 									"language": "json"
