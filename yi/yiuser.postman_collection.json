@@ -160,7 +160,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/107",
+									"value": "test/103",
 									"type": "string"
 								},
 								{
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"东北三省总代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"123\",\n    \"Brief\": \"东北三省总代理\",\n    \"comment2\": \"Jwt必须要有, jwt传入的数据是用户表中的uid, 即代理表中的owner_id,并且传入uid所对用的broker_id必须是0或者不存在\",\n    \"comment3\": \"service_code, name都不能重复\"\n}",
+							"raw": "{\n    \"name\": \"海南省代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"7771\",\n    \"Brief\": \"海南省总代理\",\n    \"comment2\": \"Jwt必须要有, jwt传入的数据是用户表中的uid, 即代理表中的owner_id,并且传入uid所对用的broker_id必须是0或者不存在\",\n    \"comment3\": \"service_code, name都不能重复\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -419,7 +419,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"service_code\": \"325\",\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
+							"raw": "{\n    \"service_code\": \"12321\",\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -467,7 +467,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 111,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
+							"raw": "{\n    \"broker_id\": 9,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -622,30 +622,13 @@
 					"name": "w登录",
 					"request": {
 						"auth": {
-							"type": "apikey",
-							"apikey": [
-								{
-									"key": "value",
-									"value": "test/15",
-									"type": "string"
-								},
-								{
-									"key": "in",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "key",
-									"value": "Jwt",
-									"type": "string"
-								}
-							]
+							"type": "noauth"
 						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15927846331\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
+							"raw": "{\n    \"user_code\": \"12343211\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -749,7 +732,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 179,\n    \"comment\":\"id, nick, icon, user_code, user_name这几项是准确的数据,其他的都是默认值,既除了以上五项数据之外其他的不可用\",\n    \"comment2\":\"如果想使用其他数据,可以在获取用户信息的路由中找到\"\n}",
+							"raw": "{\n    \"uid\": 1,\n    \"comment\":\"id, nick, icon, user_code, user_name这几项是准确的数据,其他的都是默认值,既除了以上五项数据之外其他的不可用\",\n    \"comment2\":\"如果想使用其他数据,可以在获取用户信息的路由中找到\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1857,7 +1840,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/18",
 									"type": "string"
 								},
 								{
@@ -1876,7 +1859,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"info\": {\n        \"uid\": 300,\n        \"user_code\": \"14\",\n        \"icon\": \"icon14\",\n        \"nick\":\"大师\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master13\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"文王八卦\"\n        }\n    ],\n    \"comment\": \"对于Jwt中的数据,大于0即可\",\n    \"comment1\": \"item和images是一个类型列表,而不是一个类型\",\n    \"comment2\": \"item和images的内容可以不填, info也可以不填, 只需将jwt代表的uid填入即可\"\n}",
+							"raw": "{\n    \"info\": {\n        \"uid\": 18,\n        \"user_code\": \"14\",\n        \"icon\": \"icon14\",\n        \"nick\":\"大师\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master13\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"文王八卦\"\n        }\n    ],\n    \"comment\": \"info 中传入的UID无效,主要是jwt起作用\",\n    \"comment1\": \"item和images是一个类型列表,而不是一个类型\",\n    \"comment2\": \"item和images的内容可以不填, info也可以不填, 只需将jwt代表的uid填入即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2690,7 +2673,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":8,\n    \"comment\":\"此操作只有管理员能够进行,而且已经存在的管理员不能被重复添加\"\n}",
+							"raw": "{\n    \"uid\":18,\n    \"comment\":\"此操作只有管理员能够进行,而且已经存在的管理员不能被重复添加\",\n    \"comment2\":\"大师,管理员和运营商三者身份互斥\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2712,7 +2695,7 @@
 					"response": []
 				},
 				{
-					"name": "删除代理管理员",
+					"name": "删除管理员",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -2738,7 +2721,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":14,\n    \"comment\":\"操作者必须是管理员而且被删除的uid必须是已存在的uid\"\n}",
+							"raw": "{\n    \"uid\":18,\n    \"comment\":\"操作者必须是管理员而且被删除的uid必须是已存在的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4515,7 +4498,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":105,\n    \"items\":{\n        \"2\":-1000,\n        \"8\":2000\n    }\n}",
+							"raw": "{\n    \"master_id\":105,\n    \"items\":{\n        \"12\":1000,\n        \"8\":2000\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4579,6 +4562,198 @@
 								"yi",
 								"user",
 								"BMasterRm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "管理员直接添加大师",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"info\": {\n        \"uid\": 18,\n        \"user_code\": \"14\",\n        \"icon\": \"icon14\",\n        \"nick\":\"大师\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master13\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"文王八卦\"\n        }\n    ],\n    \"user_code\":\"master004\",\n    \"pwd\":\"123456\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/MasterAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"MasterAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "管理员直接添加运营商",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"海南总代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"1232111\",\n    \"brief\": \"海南总代理\",\n    \"user_code\":\"12343211\",\n    \"pwd\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "统计用户注册数据",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/83",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-11-01 00:00:00\",\n    \"calc_by\":\"year\",\n    \"broker_id\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/RegUserStats",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"RegUserStats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "统计大师注册数据",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/108",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"start_date\":\"2020-08-24 00:00:00\",\n    \"end_date\":\"2020-11-25 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/RegMasterStats",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"RegMasterStats"
 							]
 						}
 					},
