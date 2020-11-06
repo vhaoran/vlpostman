@@ -83,7 +83,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 17,\n    \"user_code_ref\": \"bb6\",\n    \"nick\": \"broker6\",\n    \"icon\": \"p4\",\n    \"enabled\": 1,\n    \"comment2\": \"此处的uid必须是user_info中存在的uid\",\n    \"comment3\": \"Jwt必须要有, 是推荐者的uid,根据推荐者的broker_id与新增管理员的broker_id相同\",\n    \"comment4\":\"enabled数字为1代表激活,2代表停止\"\n}",
+							"raw": "{\n    \"uid\": 83,\n    \"user_code_ref\": \"bb6\",\n    \"nick\": \"broker6\",\n    \"icon\": \"p4\",\n    \"enabled\": 1,\n    \"comment2\": \"此处的uid必须是user_info中存在的uid\",\n    \"comment3\": \"Jwt必须要有, 是推荐者的uid,根据推荐者的broker_id与新增管理员的broker_id相同\",\n    \"comment4\":\"enabled数字为1代表激活,2代表停止\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -160,7 +160,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/103",
+									"value": "test/4",
 									"type": "string"
 								},
 								{
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"海南省代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"7771\",\n    \"Brief\": \"海南省总代理\",\n    \"comment2\": \"Jwt必须要有, jwt传入的数据是用户表中的uid, 即代理表中的owner_id,并且传入uid所对用的broker_id必须是0或者不存在\",\n    \"comment3\": \"service_code, name都不能重复\"\n}",
+							"raw": "{\n    \"name\": \"云南代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"3787\",\n    \"Brief\": \"云南代理\",\n    \"comment2\": \"Jwt必须要有, jwt传入的数据是用户表中的uid, 即代理表中的owner_id,并且传入uid所对用的broker_id必须是0或者不存在\",\n    \"comment3\": \"service_code, name都不能重复\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -227,7 +227,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 10,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 20,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -275,7 +275,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 28,\n    \"stat\": 1,\n    \"comment2\": \"Jwt必须要有, 大于0 即可\",\n    \"comment3\": \"stat为1代表是通过申请, 2是驳回申请\",\n    \"comment4\":\"审核通过后该用户成为代理,uid即owner_id, 拥有添加管理员的权限\"\n}",
+							"raw": "{\n    \"id\": 51,\n    \"stat\": 1,\n    \"comment2\": \"Jwt必须要有, 大于0 即可\",\n    \"comment3\": \"stat为1代表是通过申请, 2是驳回申请\",\n    \"comment4\":\"审核通过后该用户成为代理,uid即owner_id, 拥有添加管理员的权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -323,7 +323,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\":10\n}",
+							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\":30\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -467,7 +467,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 9,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
+							"raw": "{\n    \"broker_id\": 22,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -544,7 +544,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/136",
+									"value": "test/83",
 									"type": "string"
 								},
 								{
@@ -563,7 +563,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"service_code\": \"888\",\n    \"comment\":\"用途：根据服务代码，编写当前登录用户到broker_id\",\n    \"comment2\":\"只有没有编写broker_id的用户,既broker_id=0时才可以执行此操作\",\n    \"comment3\":\"根据传入的serviceCode,绑定brokerID到用户\",\n    \"comment4\":\"如果 用户已经有brokerID,则绑定失败\"\n}",
+							"raw": "{\n    \"service_code\": \"123\",\n    \"comment\":\"用途：根据服务代码，编写当前登录用户到broker_id\",\n    \"comment2\":\"只有没有编写broker_id的用户,既broker_id=0时才可以执行此操作\",\n    \"comment3\":\"根据传入的serviceCode,绑定brokerID到用户\",\n    \"comment4\":\"如果 用户已经有brokerID,则绑定失败\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -628,7 +628,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"12343211\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
+							"raw": "{\n    \"user_code\": \"123432111\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4258,7 +4258,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 105,\n    \"items\": {\n        \"2\": -20,\n        \"8\":-80\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\"\n}",
+							"raw": "{\n    \"master_id\": 235,\n    \"items\": {\n        \"2\": 20,\n        \"1\": 10\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4594,7 +4594,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n     \"info\": {\n        \"uid\": 18,\n        \"user_code\": \"14\",\n        \"icon\": \"icon14\",\n        \"nick\":\"大师\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master13\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"文王八卦\"\n        }\n    ],\n    \"user_code\":\"master004\",\n    \"pwd\":\"123456\"\n\n}",
+							"raw": "{\n     \"info\": {\n        \"uid\": 18,\n        \"user_code\": \"14\",\n        \"icon\": \"icon14\",\n        \"nick\":\"大师\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"文王八卦\"\n        }\n    ],\n    \"user_code\":\"master005\",\n    \"pwd\":\"123456\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4642,7 +4642,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"海南总代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"1232111\",\n    \"brief\": \"海南总代理\",\n    \"user_code\":\"12343211\",\n    \"pwd\":\"123456\"\n}",
+							"raw": "{\n    \"name\": \"湖南省周边市县总代理1111111111111111123454321181232111123451\",\n    \"icon\": \"p1\",\n    \"service_code\": \"12343211111111111111111111123454321181232111123451\",\n    \"brief\": \"海南省总代理\",\n    \"user_code\":\"12343211111111111111111111111123454321181232111123451\",\n    \"pwd\":\"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4671,7 +4671,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/83",
+									"value": "test/18",
 									"type": "string"
 								},
 								{
@@ -4690,7 +4690,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-11-01 00:00:00\",\n    \"calc_by\":\"year\",\n    \"broker_id\":0\n}",
+							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-10-25 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":10\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4719,7 +4719,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/18",
 									"type": "string"
 								},
 								{
@@ -4738,7 +4738,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n     \"start_date\":\"2020-08-24 00:00:00\",\n    \"end_date\":\"2020-11-25 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":0\n}",
+							"raw": "{\n    \"start_date\":\"2020-10-28 00:00:00\",\n    \"end_date\":\"2020-11-30 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":22\n}",
 							"options": {
 								"raw": {
 									"language": "json"
