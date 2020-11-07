@@ -160,7 +160,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/4",
+									"value": "test/205",
 									"type": "string"
 								},
 								{
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"云南代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"3787\",\n    \"Brief\": \"云南代理\",\n    \"comment2\": \"Jwt必须要有, jwt传入的数据是用户表中的uid, 即代理表中的owner_id,并且传入uid所对用的broker_id必须是0或者不存在\",\n    \"comment3\": \"service_code, name都不能重复\"\n}",
+							"raw": "{\n    \"name\": \"中1总代理\",\n    \"icon\": \"p1\",\n    \"service_code\": \"select * from broker_info where owner_id=103\",\n    \"Brief\": \"大中华总代理\",\n    \"comment2\": \"Jwt必须要有, jwt传入的数据是用户表中的uid, 即代理表中的owner_id,并且传入uid所对用的broker_id必须是0或者不存在\",\n    \"comment3\": \"service_code, name都不能重复\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -227,7 +227,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 20,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
+							"raw": "{\n    \"page_no\": 2,\n    \"rows_per_page\": 20,\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -275,7 +275,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 51,\n    \"stat\": 1,\n    \"comment2\": \"Jwt必须要有, 大于0 即可\",\n    \"comment3\": \"stat为1代表是通过申请, 2是驳回申请\",\n    \"comment4\":\"审核通过后该用户成为代理,uid即owner_id, 拥有添加管理员的权限\"\n}",
+							"raw": "{\n    \"id\": 29,\n    \"stat\": 1,\n    \"comment2\": \"Jwt必须要有, 大于0 即可\",\n    \"comment3\": \"stat为1代表是通过申请, 2是驳回申请\",\n    \"comment4\":\"审核通过后该用户成为代理,uid即owner_id, 拥有添加管理员的权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -323,7 +323,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\":30\n}",
+							"raw": "{\n    \"page_no\":2,\n    \"rows_per_page\":30\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1715,7 +1715,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 40,\n    \"comment\": \"对于Jwt中的是管理员的UID\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 40,\n    \"where\":{\n        \"uid\":{\n            \"$in\":[148, 155, 156]\n            }\n    },\n  \n    \"comment\": \"对于Jwt中的是管理员的UID\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4690,7 +4690,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-10-25 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":10\n}",
+							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-10-25 00:00:00\",\n    \"calc_by\":\"year\",\n    \"broker_id\":10\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4738,7 +4738,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_date\":\"2020-10-28 00:00:00\",\n    \"end_date\":\"2020-11-30 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":22\n}",
+							"raw": "{\n    \"start_date\":\"2020-10-28 00:00:00\",\n    \"end_date\":\"2020-11-30 00:00:00\",\n    \"calc_by\":\"year\",\n    \"broker_id\":22\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4754,6 +4754,102 @@
 								"yi",
 								"user",
 								"RegMasterStats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "普通用户转为大师",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\":15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/SwitchToMaster",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"SwitchToMaster"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "普通用户转换为运营商",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/6",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\":135  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/SwitchToBroker",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"SwitchToBroker"
 							]
 						}
 					},
