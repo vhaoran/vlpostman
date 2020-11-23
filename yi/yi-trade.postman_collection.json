@@ -1976,7 +1976,7 @@
 					"response": []
 				},
 				{
-					"name": "平台 月度泯总 收入 对帐单-page",
+					"name": "平台 月度总 收入 对帐单-page",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -2666,12 +2666,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/349"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"master_id\":10,\n\"brief\":\"搓要-简单说明\",\n\"detail\":\"详情\",\n\"images\":[\"http://abc.a/a.jpeg\",\"b.jpeg\"],\n\"draw_back\":true,\n\"b_type\":\"mall\",\n\"order_id\":\"5fb4caad4067695383928af2\",\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"master_id\":10,\n\"brief\":\"搓要-简单说明\",\n\"detail\":\"详情\",\n\"images\":[\"http://abc.a/a.jpeg\",\"b.jpeg\"],\n\"draw_back\":false,\n\"b_type\":\"mall\",\n\"order_id\":\"5fb4caad4067695383928af2\",\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderAdd",
