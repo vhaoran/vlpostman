@@ -167,7 +167,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"uid\":3,\n\"amt\":50000,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
+							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"uid\":100,\n\"amt\":500,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RechargeOnlyForTest",
@@ -1591,7 +1591,7 @@
 			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "对帐单及汇总查询 ",
+			"name": "B对帐单及汇总查询",
 			"item": [
 				{
 					"name": "代理 对帐单-get",
@@ -1650,14 +1650,1216 @@
 							"raw": "{\n\"id\":\"5f5b1e0849c09d3ee3e45220\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
-							"raw": "{{host}}/yi/trade/",
+							"raw": "{{host}}/yi/trade/BusinessBrokerPage",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"yi",
 								"trade",
-								""
+								"BusinessBrokerPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "代理 对帐单-月度汇总-分页查询",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5f5b1e0849c09d3ee3e45220\",\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BusinessBrokerMonthPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BusinessBrokerMonthPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师 对帐单-get",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":3,\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BusinessMasterGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BusinessMasterGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师 对帐单-page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":10\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BusinessMasterPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BusinessMasterPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师 月度 对帐单-page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":10\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BusinessMasterMonthPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BusinessMasterMonthPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台 对帐单-get",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":3,\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BusinessPlatGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BusinessPlatGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台 对帐单-page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":3,\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BusinessPlatPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BusinessPlatPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台收入 对帐单-get",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":3,\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/IncomePlatGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"IncomePlatGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台 收入 对帐单-page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":3,\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/IncomePlatPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"IncomePlatPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "平台 月度泯总 收入 对帐单-page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":3,\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/IncomePlatMonthPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"IncomePlatMonthPage"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "大师及运营商提现",
+			"item": [
+				{
+					"name": "x提现帐号设置（适用于运营商及大师）add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/10"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"acc_type\":\"master\",\n\"m_or_b_id\":10,\n\"full_name\":\"weihaoran\",\n\"bank_name\":\"中国工商银行\",\n\"card_code\":\"1234423244445668\",\n\"branch_bank_addr\":\"差旅市金水区凤城二路294号\",\n\"branch_bank_id\":\"aaabc0744-3582\",\n\n\"c_1\":\"acc_type: master大师、broker运营商\",\n\"c_2\":\"m_or_b_id: 大师或运营商id\",\n\"c_3\":\"full_name:姓名\",\n\"c_4\":\"bank_name:银行名称\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\"\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BankCardInfoAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BankCardInfoAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "x修改提现帐号，适用于管理员或平台、大师ch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"acc_type\":\"master\",\n\"m_or_b_id\":10,\n\"m\":{\n  \"full_name\":\"weihaoran\",\n  \"bank_name\":\"中国工商银行\",\n  \"card_code\":\"1234423244445668\",\n  \"branch_bank_addr\":\"差旅市金水区凤城二路294号\",\n  \"branch_bank_id\":\"aaabc0744-3582\"\n},\n\n\"c_1\":\"acc_type: master大师、broker运营商\",\n\"c_2\":\"m_or_b_id: 大师或运营商id\",\n\"c_3\":\"full_name:姓名\",\n\"c_4\":\"bank_name:银行名称\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BankCardInfoCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BankCardInfoCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "x获取提现帐号get",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"acc_type\":\"master\",\n\"m_or_b_id\":10,\n\n\"c_1\":\"acc_type: master大师、broker运营商\",\n\"c_2\":\"m_or_b_id: 大师或运营商id\",\n\"c_3\":\"full_name:姓名\",\n\"c_4\":\"bank_name:银行名称\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BankCardInfoGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BankCardInfoGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "x提现帐号分页查询，本人或管理员可查 page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":50,\n\"c_1\":\"acc_type: master大师、broker运营商\",\n\"c_2\":\"m_or_b_id: 大师或运营商id\",\n\"c_3\":\"full_name:姓名\",\n\"c_4\":\"bank_name:银行名称\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BankCardInfoPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BankCardInfoPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "b运营商提现申请add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"broker_id\":20,\n\"amt\":50,\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BrokerDrawMoneyAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BrokerDrawMoneyAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "b运营商提现审批",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"ok\":true,\n\"lst_id\":[\"5fb4caad4067695383928af2\",\"5fb4caad4067695383928afc\"],\n\n\"c_0\":\"ok : 通过：true 取消：false\",\n\"c_01\":\"lst_id:需要审批的单据的id\",\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BrokerDrawMoneyAudit",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BrokerDrawMoneyAudit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "b提现申请取消，适用于运营商自己取消提现申请",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":\"5fb4caad4067695383928af2\",\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BrokerDrawMoneyCancel",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BrokerDrawMoneyCancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "b单个提现审请的内容get--适用于状态为0的单据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":\"5fb4caad4067695383928af2\",\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BrokerDrawMoneyGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BrokerDrawMoneyGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "b单个提现审请的内容page--适用于状态为0的单据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"rows_per_page\":10,\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BrokerDrawMoneyPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BrokerDrawMoneyPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商提现历史get--状态为取消或完成",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":\"5fb4caad4067695383928af2\",\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BrokerDrawMoneyHisGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BrokerDrawMoneyHisGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "x运营商提现历史page--状态为取消或完成",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"rows_per_page\":20,\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BrokerDrawMoneyPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BrokerDrawMoneyPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师提现单-add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"amt\":50,\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/MasterDrawMoneyAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"MasterDrawMoneyAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "提现单据审核",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"ok\":true,\n\"lst_id\":[\"5fb4caad4067695383928af2\",\"5fb4caad4067695383928af2\"],\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/MasterDrawMoneyAudit",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"MasterDrawMoneyAudit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "提现单据取消或驳回-只有本人或管理员可以处理",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":\"5fb4caad4067695383928af2\",\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/MasterDrawMoneyCancel",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"MasterDrawMoneyCancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "某一提现单据get--状态为0",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":\"5fb4caad4067695383928af2\",\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/MasterDrawMoneyGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"MasterDrawMoneyGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "提现分页查询--只查询 待处理单据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":\"5fb4caad4067695383928af2\",\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/MasterDrawMoneyPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"MasterDrawMoneyPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "提现历史 get查询--只查看处理过的单据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"id\":\"5fb4caad4067695383928af2\",\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/MasterDrawMoneyHisPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"MasterDrawMoneyHisPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "提现历史 分页查询--只查看处理过的单据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n\"rows_per_page\":10,\n\"page_no\":1,\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/MasterDrawMoneyHisPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"MasterDrawMoneyHisPage"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "投诉 单",
+			"item": [
+				{
+					"name": "投诉单-新增add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"master_id\":10,\n\"brief\":\"搓要-简单说明\",\n\"detail\":\"详情\",\n\"images\":[\"http://abc.a/a.jpeg\",\"b.jpeg\"],\n\"draw_back\":true,\n\"b_type\":\"mall\",\n\"order_id\":\"5fb4caad4067695383928af2\",\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RefundOrderAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RefundOrderAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "投诉单-平台审批audit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5fb4caad4067695383928af2\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RefundOrderAudit",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RefundOrderAudit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "投诉单-支营商 审批audit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5fb4caad4067695383928af2\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RefundOrderBAudit",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RefundOrderBAudit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "投訢单get-适用于新动态为0数据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5fb4caad4067695383928af2\",\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RefundOrderGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RefundOrderGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "投訢单page-适用于新动态为0数据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RefundOrderPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RefundOrderPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "投訢单历史 page-适用于已完成数据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RefundOrderHisPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RefundOrderHisPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "投訢单历史  get-适用于已完成数据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5fb4caad4067695383928af2\",\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RefundOrderHisGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RefundOrderHisGet"
 							]
 						}
 					},
