@@ -292,6 +292,38 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "查询 余额--适用于个人和管理员",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/10"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\":10,\n \"comment_1\":\"b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RemainderGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RemainderGet"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
