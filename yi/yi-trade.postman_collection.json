@@ -167,7 +167,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"uid\":100,\n\"amt\":500,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
+							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"uid\":22,\n\"amt\":500000,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RechargeOnlyForTest",
@@ -178,6 +178,64 @@
 								"yi",
 								"trade",
 								"RechargeOnlyForTest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w大师充值---仅用于测试-加余额",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"master_id\":10,\n\"amt\":5000000,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RechargeMasterOnlyForTest",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RechargeMasterOnlyForTest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wbroker充值---仅用于测试-加余额",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"broker_id\":1,\n\"amt\":50000000,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RechargeBrokerOnlyForTest",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RechargeBrokerOnlyForTest"
 							]
 						}
 					},
@@ -263,11 +321,8 @@
 				},
 				{
 					"name": "订单付款",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Jwt",
@@ -277,7 +332,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"amt\":50,\n \"b_type\":\"yi-order\",\n \"id\":\"33333\",\n \"comment_1\":\"b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
+							"raw": "{\n \"amt\":50,\n \"b_type\":\"yi-order\",\n \"id\":\"0000\",\n \"comment_1\":\"b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/OrderPay",
@@ -1167,12 +1222,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/154"
+								"value": "test/349"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"score\":50,\n\"title\":\"什么时间买 车\",\n\"brief\":\"我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\"content\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"level_id\":2,\n\"title\":\"什么时间买 车\",\n\"brief\":\"我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\"content\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeAdd",
@@ -1749,7 +1804,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":3,\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":1,\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessMasterGet",
@@ -1924,7 +1979,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":3,\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":1,\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/IncomePlatGet",
@@ -2035,7 +2090,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"acc_type\":\"master\",\n\"m_or_b_id\":10,\n\"full_name\":\"weihaoran\",\n\"bank_name\":\"中国工商银行\",\n\"card_code\":\"1234423244445668\",\n\"branch_bank_addr\":\"差旅市金水区凤城二路294号\",\n\"branch_bank_id\":\"aaabc0744-3582\",\n\n\"c_1\":\"acc_type: master大师、broker运营商\",\n\"c_2\":\"m_or_b_id: 大师或运营商id\",\n\"c_3\":\"full_name:姓名\",\n\"c_4\":\"bank_name:银行名称\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\"\n\n\n\n}"
+							"raw": "{\n\"acc_type\":\"broker\",\n\"m_or_b_id\":1,\n\"full_name\":\"weihaoran\",\n\"bank_name\":\"中国工商银行\",\n\"card_code\":\"1234423244445668\",\n\"branch_bank_addr\":\"差旅市金水区凤城二路294号\",\n\"branch_bank_id\":\"aaabc0744-3582\",\n\n\"c_1\":\"acc_type: master大师、broker运营商\",\n\"c_2\":\"m_or_b_id: 大师或运营商id\",\n\"c_3\":\"full_name:姓名\",\n\"c_4\":\"bank_name:银行名称\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\"\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BankCardInfoAdd",
@@ -2175,7 +2230,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"broker_id\":20,\n\"amt\":50,\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+							"raw": "{\n\"broker_id\":1,\n\"amt\":50,\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BrokerDrawMoneyAdd",
@@ -2706,7 +2761,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fb4caad4067695383928af2\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"id\":\"5fbb8f12c8d94669a496e440\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderAudit",
@@ -2776,7 +2831,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fb4caad4067695383928af2\",\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"id\":\"000000000000000000000000\",\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderGet",
@@ -2881,7 +2936,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fb4caad4067695383928af2\",\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"id\":\"5fbb7dcbe80b8e13392efe9f\",\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderHisGet",
