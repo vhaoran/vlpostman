@@ -30,10 +30,9 @@ broker-product
 
 运营商商品类别  为每个运营商选择已有的所有商品类别16, 17, 22, 30, 40, 41, 42, 43, 44, 45, 48, 50
   
-运营商商品  为每个运营商添加三件商品,分别是:
-        1:id_of_es="BnT7aHUBUEDNcUc8y4Ue0"---cate_id=16 
-        2:id_of_es="DHRGu3UBUEDNcUc8aIWj"---cate_id=48 
-        1:id_of_es="D3RJu3UBUEDNcUc8oYVv"---cate_id=45 
+运营商商品  为每个运营商添加2件商品,分别是:
+        1:id_of_es="DHRGu3UBUEDNcUc8aIWj"---cate_id=48 
+        2:d_of_es="D3RJu3UBUEDNcUc8oYVv"---cate_id=45 
 
 
 
