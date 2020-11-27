@@ -8,8 +8,6 @@ user_info-->broker_info   3*3 broker的用户
 broker_prize/vie_leveli --->   
 broker-product
 
-
-
 添加测试用户60个,id范围1-60, 密码默认为123456, 运营商, 大师,系统管理员分别10个,每个运营商添加3个运营商管理员(30个)
 
 其中管理员UID范围为1-10 ------user_code(admin1~admin10)
@@ -22,6 +20,7 @@ broker-product
 	其中每个运营商下面有三个运营商管理员, 例如:
 	owner_id为21的运营商,broker_id=1,其运营商管理员对应的UID分别为31, 41, 51 			  
 	owner_id为22的运营商,broker_id=2,其运营商管理员对应的UID分别为32, 42, 52
+	
 运营商正式会员UID范围是61-80 ----user_code(test_user1~test_user20),
     其中为每个运营商添加两个非管理员的正式用户, 例如:
         owner_id=21的运营商,broker_id=1,其有两个非管理员的正式会员
