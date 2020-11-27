@@ -27,6 +27,7 @@ broker-product
         owner_id=21的运营商,broker_id=1,其有两个非管理员的正式会员
             正式会员1:user_code=test_user1, uid=61 , broker_id=1
             正式会员2:user_code=test_user2, uid=62 , broker_id=1
+            
 运营商大师 为每一个运营商添加三个大师,大师的UID分别是11, 12, 13, 并为大师的项目添加价格,cate_id=1时 offset=100,cate_id=2时offset=200
 
 运营商悬赏贴收费标准列表  为每个运营商添加三个平台悬赏贴收费标准 分别是1, 2, 3
