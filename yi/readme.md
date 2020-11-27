@@ -12,13 +12,13 @@ broker-product
 
 添加测试用户60个,id范围1-60, 密码默认为123456, 运营商, 大师,系统管理员分别10个,每个运营商添加3个运营商管理员(30个)
 
-其中管理员UID范围为1-10 ------user_code(admin1~admin10)
+其中管理员UID范围为1-10 ------user_code(admin1-admin10)
 
-大师uid范围为11-20  ------user_code(test_master1~test_master10), 每个大师开通两项业务,cate_id分别是1和2
+大师uid范围为11-20  ------user_code(test_master1-test_master10), 每个大师开通两项业务,cate_id分别是1和2
 
-运营商owner_id范围是21-30  -----user_code(test_broker1~test_broker10), 并且开启所有模块
+运营商owner_id范围是21-30  -----user_code(test_broker1-test_broker10), 并且开启所有模块
 
-运营商管理员UID范围是31-60  ----user_code(test_broker-admin1~test_broker-admin30),
+运营商管理员UID范围是31-60  ----user_code(test_broker-admin1-test_broker-admin30),
 	其中每个运营商下面有三个运营商管理员, 例如:
 	owner_id为21的运营商,broker_id=1,其运营商管理员对应的UID分别为31, 41, 51 			  
 	owner_id为22的运营商,broker_id=2,其运营商管理员对应的UID分别为32, 42, 52
