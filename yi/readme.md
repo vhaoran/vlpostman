@@ -22,7 +22,12 @@ broker-product
 	其中每个运营商下面有三个运营商管理员, 例如:
 	owner_id为21的运营商,broker_id=1,其运营商管理员对应的UID分别为31, 41, 51 			  
 	owner_id为22的运营商,broker_id=2,其运营商管理员对应的UID分别为32, 42, 52
-运营商大师 为每一个运营商添加三个大师,大师的UID分别是11, 12, 13, 并为大师的项目添加价格,cate_id=1时offset=100,cate_id=2时offset=200
+运营商正式会员UID范围是61~80 ----user_code(test_user1~test_user80),
+    其中为每个运营商添加两个非管理员的正式用户, 例如:
+        owner_id=21的运营商,broker_id=1,其有两个非管理员的正式会员
+            正式会员1:user_code=test_user1, uid=61 , broker_id=1
+            正式会员2:user_code=test_user2, uid=62 , broker_id=1
+运营商大师 为每一个运营商添加三个大师,大师的UID分别是11, 12, 13, 并为大师的项目添加价格,cate_id=1时 offset=100,cate_id=2时offset=200
 
 运营商悬赏贴收费标准列表  为每个运营商添加三个平台悬赏贴收费标准 分别是1, 2, 3
 
@@ -39,7 +44,7 @@ broker-product
         运营商管理员:uid=31, user_code=test_broker-admin1, broker_id=1,
                    uid=41, user_code=test_broker-admin11, broker_id=1,
                    uid=51, user_code=test_broker-admin21, broker_id=1,
-        用户(已经被代理的非运营商管理员):
+       正式会员(已经被代理的非运营商管理员用户):
                     uid=61, user_code=test_user1,broker_id=1,
                     uid=62, user_code=test_user2,broker_id=1,
         运营商大师: 
