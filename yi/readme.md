@@ -40,18 +40,18 @@ broker-product
         2:d_of_es="D3RJu3UBUEDNcUc8oYVv"---cate_id=45 
 
 测试数据示例:
-        运营商: owner_id=21, user_code=test_broker1, id(broker_id)=1,
-        运营商管理员:uid=31, user_code=test_broker-admin1, broker_id=1,
+       运营商: owner_id=21, user_code=test_broker1, id(broker_id)=1,
+       运营商管理员:uid=31, user_code=test_broker-admin1, broker_id=1,
                    uid=41, user_code=test_broker-admin11, broker_id=1,
                    uid=51, user_code=test_broker-admin21, broker_id=1,
        正式会员(已经被代理的非运营商管理员用户):
                     uid=61, user_code=test_user1,broker_id=1,
                     uid=62, user_code=test_user2,broker_id=1,
-        运营商大师: 
+       运营商大师: 
             大师1: broker_id=1,master_id=11,  
             大师2: broker_id=1,master_id=12, 
             大师3: broker_id=1,master_id=13, 
-        运营商大师项目:
+       运营商大师项目:
             项目1:broker_id=1, master_id=11,yi_cate_id=1, price_offset=200,
             项目2:broker_id=1, master_id=11,yi_cate_id=2, price_offset=200,
             项目3:broker_id=1, master_id=12,yi_cate_id=1, price_offset=200,
