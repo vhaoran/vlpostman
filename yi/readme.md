@@ -63,16 +63,16 @@ broker-product
             大师2: broker_id=1,master_id=12,  
             大师3: broker_id=1,master_id=13,  
        运营商大师项目:  
-            项目1:broker_id=1, master_id=11,yi_cate_id=1, price_offset=200,
-            项目2:broker_id=1, master_id=11,yi_cate_id=2, price_offset=200,
-            项目3:broker_id=1, master_id=12,yi_cate_id=1, price_offset=200,
-            项目4:broker_id=1, master_id=12,yi_cate_id=2, price_offset=200,
-            项目5:broker_id=1, master_id=13,yi_cate_id=1, price_offset=200,
-            项目6:broker_id=1, master_id=13,yi_cate_id=2, price_offset=200,
-        运营商商品(默认已添加所有的商品种类)
-        系统管理员: 
-            user_code=admin1, uid=1
-        大师: 
-            user_code=test_master1, uid=11
+            项目1:broker_id=1, master_id=11,yi_cate_id=1, price_offset=200,  
+            项目2:broker_id=1, master_id=11,yi_cate_id=2, price_offset=200,  
+            项目3:broker_id=1, master_id=12,yi_cate_id=1, price_offset=200,  
+            项目4:broker_id=1, master_id=12,yi_cate_id=2, price_offset=200,  
+            项目5:broker_id=1, master_id=13,yi_cate_id=1, price_offset=200,  
+            项目6:broker_id=1, master_id=13,yi_cate_id=2, price_offset=200,  
+        运营商商品(默认已添加所有的商品种类)  
+        系统管理员:   
+            user_code=admin1, uid=1  
+        大师:   
+            user_code=test_master1, uid=11  
          
 
