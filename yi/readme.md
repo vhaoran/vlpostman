@@ -49,7 +49,7 @@
                     uid=61, user_code=test_user1,broker_id=1,  
                     uid=62, user_code=test_user2,broker_id=1,  
        运营商大师:   
-            大师1: broker_id=1,master_id=11,    
+            大师1: broker_id=1,master_id=11,      
             大师2: broker_id=1,master_id=12,  
             大师3: broker_id=1,master_id=13,  
        运营商大师项目:  
