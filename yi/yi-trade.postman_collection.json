@@ -359,12 +359,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/10"
+								"value": "test/61"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":10,\n \"comment_1\":\"b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
+							"raw": "{\n    \"uid\":61,\n  \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RemainderGet",
@@ -375,6 +375,198 @@
 								"yi",
 								"trade",
 								"RemainderGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询 用户余额page--适用管理员",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"rows_per_page\":10,\n \"page_no\":1\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RemainderPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RemainderPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询 大师余额分页--适用管理员",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"rows_per_page\":10,\n \"page_no\":1\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RemainderMasterPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RemainderMasterPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询 运营商余额分页--适用管理员",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"rows_per_page\":10,\n \"page_no\":1\n \"c_1\":\"\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RemainderBrokerPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RemainderBrokerPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询 大师余额--适用于个人和管理员",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"master_id\":11,\n \"c_1\":\"\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RemainderMasterGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RemainderMasterGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询 运营商余额--适用于个人和管理员",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/31"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"broker_id\":21,\n \"c_1\":\"\"\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/RemainderBrokerGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"RemainderBrokerGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "帐务调整--管理员使用0--大师大师、运营商、个人的余额",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"acc_type\":\"master\",\n\"multi_id\":11,\n\"amt\":5,\n\"summary\":\"用户余额高速\",\n\"c_1\":\"acc_type业务类型: user/master/broker/\",\n\"c_2\":\"multi_id:根据不同的类型为uid/master_id/broker_id\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/AccountAdjust",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"AccountAdjust"
 							]
 						}
 					},
