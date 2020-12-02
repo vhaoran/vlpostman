@@ -3,6 +3,7 @@
 1. pay model
    新增了 master/broker查询余额的get方法
    新增了 master/broker/user查询余额的page方法
+   新增了『余额调整』，可以高速个人、大师、运营商的余额。
 
 
 
