@@ -327,12 +327,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/21"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"amt\":50,\n \"b_type\":\"yi-order\",\n \"id\":\"0000\",\n \"comment_1\":\"b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
+							"raw": "{\n \"amt\":50,\n \"b_type\":\"bbs-vie\",\n \"id\":\"5fd71fb4b400f6e7145b888b\",\n \"comment_1\":\"b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/OrderPay",
@@ -1071,7 +1071,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"where\":{\"master_id\":134},\n\"comment_1\":\"aa\"\n}",
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"comment_1\":\"aa\"\n}",
 							"options": {
 								"raw": {}
 							}
@@ -1159,12 +1159,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/168"
+								"value": "test/21"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":10,\n    \"comment\":\"需要测一下婚姻\",\n    \"master_cate_id\":1,\n    \"liu_yao\":{\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n    \"a_si_zhu\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },\n    \"a_he_hun\":{\n      \"name_male\":\"江择民\",\n      \"is_solar_male\":true,\n      \"year_male\":1980,\n      \"month_male\":12,\n      \"day_male\":12,\n      \"hour_male\":12,\n      \"minute_male\":45,\n\n      \"name_female\":\"饭冰冰\",\n      \"is_solar_female\":true,\n      \"year_female\":1982,\n      \"month_female\":11,\n      \"day_female\":11,\n      \"hour_female\":11,\n      \"minute_female\":44\n    },\n\n    \"comment_1\":\"is_solar: 传入日期是否是太阳历，yao_date：摇卦 的日期为阳历 \",\n    \"comment_2\":\" is_male:true:男性false:女性  \",\n    \"comment_3\":\"is_solar_male: 男性的生日是阳历，is_solar_female  女性的生日是阳历 \",\n    \"comment_4\":\" si_zhu/he_hu/liu_yao三个标签只需要传入一个即可 \"\n}"
+							"raw": "{\n    \"master_id\":11,\n    \"comment\":\"需要测一下婚姻\",\n    \"master_cate_id\":2,\n    \"yi_cate_id\":1,\n    \"liu_yao\":{\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n    \"a_si_zhu\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },\n    \"a_he_hun\":{\n      \"name_male\":\"江择民\",\n      \"is_solar_male\":true,\n      \"year_male\":1980,\n      \"month_male\":12,\n      \"day_male\":12,\n      \"hour_male\":12,\n      \"minute_male\":45,\n\n      \"name_female\":\"饭冰冰\",\n      \"is_solar_female\":true,\n      \"year_female\":1982,\n      \"month_female\":11,\n      \"day_female\":11,\n      \"hour_female\":11,\n      \"minute_female\":44\n    },\n\n    \"comment_1\":\"is_solar: 传入日期是否是太阳历，yao_date：摇卦 的日期为阳历 \",\n    \"comment_2\":\" is_male:true:男性false:女性  \",\n    \"comment_3\":\"is_solar_male: 男性的生日是阳历，is_solar_female  女性的生日是阳历 \",\n    \"comment_4\":\" si_zhu/he_hu/liu_yao三个标签只需要传入一个即可 \"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/YiOrderAdd",
@@ -1237,6 +1237,64 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "订单点评",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/21"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"order_id\":\"5fd6bb8f699780a97dbbdc87\",\n\"text\":\"aaaaa\",\n\"exp_result\":1,\n\"comment_1\":\"exp_result: 1:好 2：中 3 差\",\n\"c_2\":\"text: 文字描述\",\n\"c_3\":\"order_id:订单id\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/YiOrderExpAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"YiOrderExpAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "订单点评 page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/21"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"comment_1\":\"\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/YiOrderExpPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"YiOrderExpPage"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -1257,7 +1315,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"where\":{\"stat\":0,\n      \"uid\":1\n       },\n\"sort\":{\"create_data_int\":1},\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"sort\":{\"create_data_int\":1},\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizePage",
@@ -1321,7 +1379,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f59cf88506a5a960749eb77\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fd72a540dcc3b5e898a4f5d\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeGet",
@@ -1390,7 +1448,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f59cf88506a5a960749eb77\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fd72f859f76f1e018d6a97c\",\n\"master_id\":13,\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeReplyList",
@@ -1414,7 +1472,7 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/349"
+								"value": "test/21"
 							}
 						],
 						"body": {
@@ -1519,12 +1577,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/15"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f59cf88506a5a960749eb77\",\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fd72f859f76f1e018d6a97c\",\n\"to_master\":11,\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeReply",
@@ -1559,7 +1617,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n\"where\":{\n  \"stat\": {\"$in\":[1,2,0]},\n  \"uid\":1\n},\n\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\n\"where\":{\n  \"stat\": {\"$in\":[1,2,0]},\n  \"uid\":21\n},\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSViePage",
@@ -1705,12 +1763,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/3"
+								"value": "test/21"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"score\":50,\n\"title\":\"什么时间买 车\",\n\"brief\":\"我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\"content\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"score\":50,\n\"level_id\":1,\n\"title\":\"---------------什么时间买 车\",\n\"brief\":\"我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\"content\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSVieAdd",
@@ -1740,12 +1798,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/7"
+								"value": "test/11"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f719fbc7126000aeeb6ba25\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fd71fb4b400f6e7145b888b\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSVieAim",
