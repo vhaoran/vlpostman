@@ -1582,7 +1582,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fd72f859f76f1e018d6a97c\",\n\"to_master\":11,\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fd87d32021beb0fc41b6d07\",\n\"to_master\":11,\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeReply",
@@ -1593,6 +1593,76 @@
 								"yi",
 								"trade",
 								"BBSPrizeReply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "大师抢单-悬赏贴---适用于大师操作",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/11"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"order_id\":\"5fd87d32021beb0fc41b6d07\",\n\"comment_1\":\"sort\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BBSPrizeMasterAim",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BBSPrizeMasterAim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "返回 处理中 的悬赏贴---适用于大师",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/11"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"sort\":{\"last_update\":1},\n\"comment_1\":\"sort\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BBSPrizeMasterList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BBSPrizeMasterList"
 							]
 						}
 					},
