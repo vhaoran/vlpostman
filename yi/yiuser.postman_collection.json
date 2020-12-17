@@ -83,7 +83,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 375,\n    \"user_code_ref\": \"bb6\",\n    \"nick\": \"broker6\",\n    \"icon\": \"p4\",\n    \"enabled\": 1,\n    \"comment2\": \"此处的uid必须是user_info中存在的uid\",\n    \"comment3\": \"Jwt必须要有, 是添加者的uid,根据推荐者的broker_id与新增管理员的broker_id相同\",\n    \"comment4\":\"enabled数字为1代表激活,2代表停止\",\n    \"comment5\":\"只有运营商本人具有此权限,运营商管理员不可添加或者删除运营商管理员\"\n}",
+							"raw": "{\n    \"uid\": 441,\n    \"user_code_ref\": \"bb6\",\n    \"nick\": \"broker6\",\n    \"icon\": \"p4\",\n    \"enabled\": 1,\n    \"comment2\": \"此处的uid必须是user_info中存在的uid\",\n    \"comment3\": \"Jwt必须要有, 是添加者的uid,根据推荐者的broker_id与新增管理员的broker_id相同\",\n    \"comment4\":\"enabled数字为1代表激活,2代表停止\",\n    \"comment5\":\"只有运营商本人具有此权限,运营商管理员不可添加或者删除运营商管理员\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -160,7 +160,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/408",
+									"value": "test/461",
 									"type": "string"
 								},
 								{
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"test-broker-113\",\n    \"icon\":\"p1\",\n    \"service_code\": \"000113\",\n    \"Brief\": \"运营商管理员申请成为运营商\",\n\n    \"comment2\": \"已绑定和未绑定运营商的申请人均可以使用此路由\",\n    \"comment3\": \"service_code, name都不能重复\",\n    \"comment4\":\"运营商的服务码必须是六位的数字组成的字符串\",\n    \"comment5\":\"未绑定手机号的游客账户不可以申请成为运营商\"\n}",
+							"raw": "{\n    \"name\": \"test-broker-135\",\n    \"icon\":\"p1\",\n    \"service_code\": \"000135\",\n    \"Brief\": \"运营商管理员申请成为运营商\",\n\n    \"comment2\": \"已绑定和未绑定运营商的申请人均可以使用此路由\",\n    \"comment3\": \"service_code, name都不能重复\",\n    \"comment4\":\"运营商的服务码必须是六位的数字组成的字符串\",\n    \"comment5\":\"未绑定手机号的游客账户不可以申请成为运营商\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -208,7 +208,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -227,7 +227,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 20,\n    \"sort\":{\n        \"created_at\":0\n    },\n\n    \"comment\":\"系统管理员权限\",\n    \"comment2\": \"Jwt必须要有,是系统管理员的UID\",\n    \"comment3\":\"sort是可选字段,指定存在的字段,0位降序,1为升序\"\n    \n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 5,\n    \"sort\":{\n        \"created_at\":0\n    },\n\n    \"comment\":\"系统管理员权限\",\n    \"comment2\": \"Jwt必须要有,是系统管理员的UID\",\n    \"comment3\":\"sort是可选字段,指定存在的字段,0位降序,1为升序\"\n    \n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -275,7 +275,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 48,\n    \"stat\": 1,\n    \"comment2\": \"Jwt必须要有,是系统管理员的UID\",\n    \"comment3\": \"stat为1代表是通过申请, 2是驳回申请\",\n    \"comment4\":\"审核通过后该用户成为代理,uid即owner_id, 拥有添加代理管理员的权限\"\n}",
+							"raw": "{\n    \"id\": 66,\n    \"stat\": 1,\n    \"comment2\": \"Jwt必须要有,是系统管理员的UID\",\n    \"comment3\": \"stat为1代表是通过申请, 2是驳回申请\",\n    \"comment4\":\"审核通过后该用户成为代理,uid即owner_id, 拥有添加代理管理员的权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -304,7 +304,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/443",
 									"type": "string"
 								},
 								{
@@ -345,14 +345,14 @@
 					"response": []
 				},
 				{
-					"name": "w按代理id分页查询用户信息------B+S",
+					"name": "w按代理id分页查询用户信息------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/29",
+									"value": "test/61",
 									"type": "string"
 								},
 								{
@@ -371,7 +371,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 1,\n    \"comment\":\"jwt所传入的数据是某一用户的uid, 查询结果是该uid对应的broker_id下所有的用户信息\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 2,\n    \"comment\":\"jwt所传入的数据是某一用户的uid, 查询结果是该uid对应的broker_id下所有的用户信息\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -400,7 +400,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/999",
+									"value": "test/31",
 									"type": "string"
 								},
 								{
@@ -419,7 +419,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"service_code\": \"729906\",\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
+							"raw": "{\n    \"service_code\": \"000134\",\n    \"comment2\": \"Jwt必须要有, 大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -448,7 +448,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/999",
+									"value": "test/22",
 									"type": "string"
 								},
 								{
@@ -467,7 +467,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 1,\n    \"comment2\": \"Jwt必须要有, 大于0即可\",\n    \"comment\":\"根据brokerID获取某个运营商的信息\"\n}",
+							"raw": "{\n    \"broker_id\": 87,\n    \"comment2\": \"Jwt必须要有, 大于0即可\",\n    \"comment\":\"根据brokerID获取某个运营商的信息\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -496,7 +496,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/21",
+									"value": "test/63",
 									"type": "string"
 								},
 								{
@@ -515,7 +515,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"keyword\":\"t\",\n    \"comment\":\"keyword可以使user_code即手机号,也可以是nick的一部分\",\n    \"comment2\":\"这个搜索可以理解为对user_code的精准匹配或对nick的模糊查询\",\n    \"comment3\":\"jwt所传入的数据是某一用户的uid, 查询结果是该uid对应的broker_id下所有的用户信息\"\n}",
+							"raw": "{\n    \"keyword\":\"user\",\n    \"comment\":\"keyword可以使user_code即手机号,也可以是nick的一部分\",\n    \"comment2\":\"这个搜索可以理解为对user_code的精准匹配或对nick的模糊查询\",\n    \"comment3\":\"jwt所传入的数据是某一用户的uid, 查询结果是该uid对应的broker_id下所有的用户信息\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -544,7 +544,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/414",
+									"value": "test/426",
 									"type": "string"
 								},
 								{
@@ -563,7 +563,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"service_code\": \"729906\",\n    \"comment\":\"用途：根据服务代码，编写当前登录用户到broker_id\",\n    \"comment2\":\"只有没有编写broker_id的用户,既broker_id=0时才可以执行此操作\",\n    \"comment3\":\"根据传入的serviceCode,绑定brokerID到用户\",\n    \"comment4\":\"如果 用户已经有brokerID,则绑定失败\"\n}",
+							"raw": "{\n    \"service_code\": \"280258\",\n    \"comment\":\"用途：根据服务代码，编写当前登录用户到broker_id\",\n    \"comment2\":\"只有没有编写broker_id的用户,既broker_id=0时才可以执行此操作\",\n    \"comment3\":\"根据传入的serviceCode,绑定brokerID到用户\",\n    \"comment4\":\"如果 用户已经有brokerID,则绑定失败\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -583,6 +583,54 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "启用停用代理-----S",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/1",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"broker_id\":88,\n    \"enabled\":1,\n\n    \"comment\":\"enabled 1是启用, 0是停用\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerSetEnable",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerSetEnable"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -597,7 +645,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237088898\",\n    \"nick\": \"test_user_pzy\",\n    \"pwd\": \"123456\"\n}",
+							"raw": "{\n    \"user_code\": \"15237088951\",\n    \"nick\": \"启用停用账号\",\n    \"pwd\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -628,7 +676,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237088898\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
+							"raw": "{\n    \"user_code\": \"15237088951\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment\": \"执行成功的返回结果为用户信息\",\n    \"comement2\":\"返回数据中user_info的id即时以后的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -685,7 +733,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/64",
+									"value": "test/451",
 									"type": "string"
 								},
 								{
@@ -809,7 +857,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/64",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -828,7 +876,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"old_pwd\": \"1234\",\n    \"new_pwd\": \"123456\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment1\": \"旧密码必须正确才能正确执行\",\n    \"comemnt2\":\"此操作对于游客登录的用户来说没有意义\"\n}",
+							"raw": "{\n    \"old_pwd\": \"123\",\n    \"new_pwd\": \"123456\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment1\": \"旧密码必须正确才能正确执行\",\n    \"comemnt2\":\"此操作对于游客登录的用户来说没有意义\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1175,7 +1223,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"test_user4\"\n}",
+							"raw": "{\n    \"user_code\": \"17333333333\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1239,6 +1287,54 @@
 								"yi",
 								"user",
 								"BindUserCodeAndPwd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "启用或停用用户",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/21",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\":464, \n    \"enabled\":1,\n\n   \"comment\":\"enabled 1是启用, 0是停用\",\n   \"comment1\":\"系统管理员和运营商可以操作此路由\",\n   \"comment2\":\"系统管理员可以停用所有的用户(正式用户和游客), 运营商管理员只能管理自己的用户\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/SetUserEnabled",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"SetUserEnabled"
 							]
 						}
 					},
@@ -1498,7 +1594,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -1546,7 +1642,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -1565,7 +1661,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"WallXXQBWYJcLnnxyvRo\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment3\": \"管理员或运营商权限\"\n}",
+							"raw": "{\n    \"id_of_es\": \"ECoQ83UB4Gj8VxFop4XA\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment3\": \"管理员或运营商权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1683,14 +1779,14 @@
 					"response": []
 				},
 				{
-					"name": "通过id删除商品------S",
+					"name": "通过id启用或停用商品------S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -1709,7 +1805,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"sjn1dXQBgZ4HPoMnnn7O\",\n    \"comment\": \"Jwt必须要有\",\n    \"comment2\":\"测试此理由时最好是新增商品之后再根据id删除,不要删除原有的商品\"\n}",
+							"raw": "{\n    \"id_of_es\": \"EioR83UB4Gj8VxFo7IUE\",\n    \"enabled\":1,\n    \"comment\": \"系统管理员权限\",\n    \"comment1\":\"enabled 1是启用, 0是停用\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1717,14 +1813,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/yi/user/ProductRm",
+							"raw": "{{host}}/yi/user/ProductSetEnabled",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
 								"yi",
 								"user",
-								"ProductRm"
+								"ProductSetEnabled"
 							]
 						}
 					},
@@ -1737,14 +1833,14 @@
 			"name": "master",
 			"item": [
 				{
-					"name": "w大师信息分页查询------S",
+					"name": "w大师信息分页查询------S+B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/103111",
+									"value": "test/11",
 									"type": "string"
 								},
 								{
@@ -1763,7 +1859,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 40,\n\n    \"comment\": \"对于Jwt中的是管理员的UID\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 5,\n    \"where\":{\n        \"enabled\":1\n    },\n\n   \n    \"comment\": \"对于Jwt中的是管理员的UID\",\n    \"comment1\":\"enable代表大师的启用状态\",\n    \"comment2\":\"如果查询已经启用的大师信息,加上where字段,查询所有大师信息,不加where\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1785,14 +1881,14 @@
 					"response": []
 				},
 				{
-					"name": "w获取大师全部信息------S",
+					"name": "w获取大师全部信息------S+B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/102",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -1833,14 +1929,14 @@
 					"response": []
 				},
 				{
-					"name": "w获取大师信息------S",
+					"name": "w获取大师信息------all",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/458",
 									"type": "string"
 								},
 								{
@@ -1888,7 +1984,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/418",
+									"value": "test/462",
 									"type": "string"
 								},
 								{
@@ -1907,7 +2003,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"info\": {\n       \"brief\":\"是否存在未完成订单\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master_pzy_003\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\",\n            \"price\": 999.8,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"###############\"\n        }\n    ],\n    \"comment\": \"info 中传入的UID无效,主要是jwt起作用\",\n    \"comment1\": \"item和images是一个类型列表,而不是一个类型\",\n    \"comment2\": \"item和images的内容可以不填, info也可以不填, 只需将jwt代表的uid填入即可\"\n}",
+							"raw": "{\n    \"info\": {\n       \"brief\":\"申请大师enabled测试\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master_pzy_003\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"祖传项目\",\n            \"price\": 999.8,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"###############\"\n        }\n    ],\n    \"comment\": \"info 中传入的UID无效,主要是jwt起作用\",\n    \"comment1\": \"item和images是一个类型列表,而不是一个类型\",\n    \"comment2\": \"item和images的内容可以不填, info也可以不填, 只需将jwt代表的uid填入即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1936,7 +2032,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/11",
 									"type": "string"
 								},
 								{
@@ -1955,7 +2051,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 100,\n    \n    \"comment\": \"对于Jwt中的数据,不为空即可\",\n    \"comment2\": \"必须是admin:完善后\",\n    \"comment3\": \"stat 0:待审核 1：已审批 2：已驳回\"\n}",
+							"raw": "{\n    \"page_no\": 18,\n    \"rows_per_page\": 5,\n    \n    \"comment\": \"对于Jwt中的数据,不为空即可\",\n    \"comment2\": \"必须是admin:完善后\",\n    \"comment3\": \"stat 0:待审核 1：已审批 2：已驳回\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1984,7 +2080,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -2003,7 +2099,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"5fc9ab5cdb361bc74121a12f\",\n    \"stat\": 1,\n    \"comment\": \"输入的id是返回的申请信息返回的id\",\n    \"comment2\": \"stat 为1 代表通过申请,其他的数值为驳回申请\",\n    \"comment3\": \"若某用户已经成为大师,再次通过申请时会提示大师已经存在\",\n    \"comment4\":\"jwt中的数据是管理员的uid\"\n}",
+							"raw": "{\n    \"id\": \"5fd9a65cbce6c8a7f2610f2c\",\n    \"stat\": 1,\n    \"comment\": \"输入的id是返回的申请信息返回的id\",\n    \"comment2\": \"stat 为1 代表通过申请,其他的数值为驳回申请\",\n    \"comment3\": \"若某用户已经成为大师,再次通过申请时会提示大师已经存在\",\n    \"comment4\":\"jwt中的数据是管理员的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2032,7 +2128,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/24",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -2051,7 +2147,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \n    \"master_id\": 300,\n    \"enabled\": 0,\n    \"comment\": \"JWT中的数据是管理员的UID\",\n    \"comment2\":\"Enable为0 代表停用,1代表激活, 不允许输入其他值\"\n}",
+							"raw": "{\n    \n    \"master_id\": 462,\n    \"enabled\": 1,\n    \"comment\": \"JWT中的数据是管理员的UID\",\n    \"comment2\":\"enable为0 代表停用,1代表激活, 不允许输入其他值\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2073,14 +2169,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师信息更改------M",
+					"name": "w大师信息更改------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/102",
+									"value": "test/11 ",
 									"type": "string"
 								},
 								{
@@ -2099,7 +2195,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 4,\n    \"M\": {\n        \"icon\": \"无尘居士照片\",\n        \"nick\": \"无尘居士\",\n        \"brief\":\"祖传,包灵, 不灵退钱\"\n    },\n    \"coment\": \"修改大师信息时需要保持传入的id和jwt中的一致\",\n    \"coment2\": \"大师信息修改可以在以上选项中选择某一项或者某几项进行修该\"\n}",
+							"raw": "{\n    \"id\": 11,\n    \"M\": {\n        \"icon\": \"测试修改大师信息\",\n        \"nick\": \"测试修改大师信息\",\n        \"brief\":\"祖传,包灵, 不灵退钱\"\n    },\n    \"comment\": \"修改大师信息时需要保持传入的id和jwt中的一致\",\n    \"comment1\":\"只能是大师修改自己的个人信息\",\n    \"comment2\": \"大师信息修改可以在以上选项中选择某一项或者某几项进行修改\",\n    \"comment3\":\"此处传入的id是master_id即大师的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2121,14 +2217,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师图片列表------M+B+U",
+					"name": "w大师图片列表------M+B+U+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/451",
 									"type": "string"
 								},
 								{
@@ -2147,7 +2243,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 105,\n    \"comment\": \"对于Jwt中的数据,大于0即可\"\n}",
+							"raw": "{\n    \"uid\": 11,\n    \"comment\": \"对于Jwt中的数据,大于0即可\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2169,14 +2265,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师图片添加------M",
+					"name": "w大师图片添加------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -2195,7 +2291,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"image_path\": \"master105-2\",\n    \"sort_no\": 3\n}",
+							"raw": "{\n    \"master_id\":11,\n    \"image_path\": \"master11-3\",\n    \"sort_no\": 3,\n\n    \"comment\":\"管理员和大师本人都可以使用此路由\",\n    \"comment1\":\"大师使用此路由时, 必须是对本人添加照片(master_id=Jwt)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2217,14 +2313,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师图片修改------M",
+					"name": "w大师图片修改------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/61",
 									"type": "string"
 								},
 								{
@@ -2243,7 +2339,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 124,\n    \"M\": {\n        \"image_path\": \"master105-1\",\n        \"sort_no\": 2\n    },\n    \"comment\": \"必须本人修改自己的图片\"\n}",
+							"raw": "{\n    \"id\": 59,\n    \"M\": {\n        \"image_path\": \"master11-1-1\",\n        \"sort_no\": 2\n    },\n    \"comment\": \"必须本人修改自己的图片\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2265,14 +2361,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师图片删除------M",
+					"name": "w大师图片删除------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -2291,7 +2387,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 124,\n    \"comment\": \"必须是大师本人才能进行操作:id所对应的uid与jwt一致\",\n    \"comment2\":\"此时出入的id是图片的id\"\n}",
+							"raw": "{\n    \"id\": 59,\n    \"comment\": \"必须是大师本人才能进行操作:id所对应的uid与jwt一致\",\n    \"comment2\":\"此时出入的id是图片的id\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2320,7 +2416,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/11",
 									"type": "string"
 								},
 								{
@@ -2339,7 +2435,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 105,\n    \"comment\": \"此时的JWT大于0即可\",\n    \"comment2\":\"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\":\"根据大师的UID来获取大师的项目列表(不适用于普通用户)\"\n}",
+							"raw": "{\n    \"uid\": 11,\n    \"comment\": \"此时的JWT大于0即可\",\n    \"comment2\":\"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\":\"根据大师的UID来获取大师的项目列表(不适用于普通用户)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2361,14 +2457,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师项目增加------M",
+					"name": "w大师项目增加------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -2387,7 +2483,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 102,\n    \"yi_cate_id\": 8,\n    \"yi_cate_name\": \"测字\",\n    \"comment\": \"看字解人生\",\n    \"price\": 999.99,\n    \n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment3\": \"传入参数中的uid大于0即可,真正的uid需要通过jwt传入\"\n}",
+							"raw": "{\n    \"uid\": 11,\n    \"yi_cate_id\": 3,\n    \"sort_no\":1,\n    \"comment\": \"转测婚姻\",\n    \"price\": 999.99,\n    \n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\":\"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n    \"comment4\":\"此处的yi_cate_name不起作用\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2409,14 +2505,14 @@
 					"response": []
 				},
 				{
-					"name": "大师项目批量增加------M",
+					"name": "大师项目批量增加------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -2435,7 +2531,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 11,\n            \"yi_cate_id\": 3,\n            \"yi_cate_name\": \"测字\",\n            \"comment\": \"看字解人生\",\n            \"price\": 999.99\n        },\n         {\n            \"uid\": 11,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"看手相\",\n            \"comment\": \"看字解人生\",\n            \"price\": 999.99\n        }\n        \n    ]\n}",
+							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 12,\n            \"yi_cate_id\": 5,\n            \"comment\": \"看字解人生5\",\n            \"price\": 999.99\n        },\n         {\n            \"uid\": 12,\n            \"yi_cate_id\": 6,\n            \"comment\": \"看字解人生6\",\n            \"price\": 999.99\n        }\n    ],\n    \"comment1\":\"此处的yi_cate_name可以不填\",\n    \"comment2\":\"uid, yi_cate_id, price是必填项目\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2457,14 +2553,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师项目修改------M",
+					"name": "w大师项目修改------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/451",
 									"type": "string"
 								},
 								{
@@ -2483,7 +2579,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 30,\n    \"M\": {\n        \"yi_cate_id\": 8,\n        \"yi_cate_name\": \"摸骨识人\",\n        \"comment\": \"先天瞎子,辩骨识人\",\n        \"price\": 998.99\n    },\n    \"comment1\": \"必须是本人修改\",\n    \"comment2\": \"id对应的uid必须和JWT的id相同\"\n}",
+							"raw": "{\n    \"id\": 27,\n    \"M\": {\n        \"yi_cate_id\": 8,\n        \"yi_cate_name\": \"摸骨识人\",\n        \"comment\": \"先天瞎子,辩骨识人\",\n        \"price\": 998.99,\n        \"sort_no\":1\n    },\n    \"comment1\": \"必须是本人修改\",\n    \"comment2\": \"id对应的uid必须和JWT的id相同\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2505,14 +2601,14 @@
 					"response": []
 				},
 				{
-					"name": "w大师项目删除------M",
+					"name": "w大师项目删除------M+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/105",
+									"value": "test/451",
 									"type": "string"
 								},
 								{
@@ -2531,7 +2627,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 58,\n    \"comment\": \"必须是本人对营业范围进行操作,即id对应的uid是JWT中的数据\"\n}",
+							"raw": "{\n    \"id\": 25,\n    \"comment\": \"必须是本人对营业范围进行操作,即id对应的uid是JWT中的数据\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2561,6 +2657,26 @@
 				{
 					"name": "w六爻起卦------U",
 					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/451",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -2600,7 +2716,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/100",
+									"value": "test/11",
 									"type": "string"
 								},
 								{
@@ -3489,7 +3605,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 48,\n    \"page_no\": 1,\n    \"rows_per_page\": 2,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
+							"raw": "{\n    \"cate_id\": 48,\n    \"page_no\": 1,\n    \"rows_per_page\": 2,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment1\":\"查询结果是运营商选择的且未被管理员下架的商品\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3518,7 +3634,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/61",
+									"value": "test/420",
 									"type": "string"
 								},
 								{
@@ -3537,7 +3653,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"EioR83UB4Gj8VxFo7IUE\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment3\": \"普通用户权限\"\n}",
+							"raw": "{\n    \"id_of_es\": \"D3RJu3UBUEDNcUc8oYVv\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment3\": \"普通用户权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4082,7 +4198,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商闪断贴收费列表标准------U",
+					"name": "运营商闪断贴收费标准列表------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4233,7 +4349,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/108",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -4252,7 +4368,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 105,\n    \"items\": {\n        \"2\": 20,\n        \"1\": 10\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\"\n}",
+							"raw": "{\n    \"master_id\": 14,\n    \"items\": {\n        \"2\": 20,\n        \"1\": 10\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4322,14 +4438,14 @@
 					"response": []
 				},
 				{
-					"name": "w运营商获取单个大师信息------B",
+					"name": "w运营商获取单个大师信息------B+S+U",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/22",
+									"value": "test/61",
 									"type": "string"
 								},
 								{
@@ -4348,7 +4464,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":13\n}",
+							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":13,\n\n    \"comment\":\"三个角色可以使用此路由\",\n    \"comment1\":\"管理员使用此路由时需要输入对应的broker_id\",\n    \"comment2\":\"运营商或者正式用户使用时需要将broker_id设置为0\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4473,7 +4589,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/136",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -4492,7 +4608,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\": 100,\n\n    \"comment\":\"操作角色是管理员 运营商或者是正式用户(已绑定邀请码)\",\n    \"comment2\":\"如果操作角色是系统管理员,则查看结果是所有运营商的大师\"\n}",
+							"raw": "{\n    \"page_no\":1,\n    \"rows_per_page\": 100,\n    \"where\":{\n        \"enabled\":1\n    },\n\n    \"comment\":\"操作角色是管理员 运营商或者是正式用户(已绑定邀请码)\",\n    \"comment2\":\"如果操作角色是系统管理员,则查看结果是所有运营商的大师\",\n    \"comment3\":\"正式用户只能查看未被管理员禁用的大师, 而运营商不应该有过滤条件\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4636,7 +4752,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n     \"info\": {\n        \"user_code\": \"14\",\n        \"icon\": \"icon14\",\n        \"nick\":\"测试-pzy-006\",\n        \"brief\":\"后台直接添加的大师(没有与用户的情况下)\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"文王八卦\"\n        }\n    ],\n    \"user_code\":\"15237088835\",\n    \"pwd\":\"123456\"\n\n}",
+							"raw": "{\n     \"info\": {\n        \"icon\": \"icon14\",\n        \"nick\":\"测试-pzy-006\",\n        \"brief\":\"后台直接添加的大师(没有与用户的情况下)\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"文王八卦\"\n        }\n    ],\n    \"user_code\":\"15237088938\",\n    \"pwd\":\"123456\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4911,7 +5027,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/451",
 									"type": "string"
 								},
 								{
@@ -4930,7 +5046,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\":30\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\":5,\n    \"where\":{\n        \"enabled\":\"\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4978,7 +5094,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":361,\n    \"comment\":\"此操作只有管理员能够进行,而且已经存在的管理员不能被重复添加\",\n    \"comment2\":\"大师,管理员和运营商三者身份互斥\"\n}",
+							"raw": "{\n    \"uid\":465,\n    \"comment\":\"此操作只有管理员能够进行,而且已经存在的管理员不能被重复添加\",\n    \"comment2\":\"大师,管理员和运营商三者身份互斥\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5007,7 +5123,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -5026,7 +5142,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":18,\n    \"comment\":\"操作者必须是管理员而且被删除的uid必须是已存在的uid\"\n}",
+							"raw": "{\n    \"uid\":457,\n    \"comment\":\"操作者必须是管理员而且被删除的uid必须是已存在的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5055,7 +5171,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/6",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -5074,7 +5190,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":8,\n    \"enabled\":1\n}",
+							"raw": "{\n    \"uid\":465,\n    \"enabled\":1,\n\n    \"comment\":\"enabled 1是启用, 0是停用\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5103,7 +5219,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/8",
+									"value": "test/11",
 									"type": "string"
 								},
 								{
@@ -5122,7 +5238,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":6\n}",
+							"raw": "{\n    \"uid\":2\n}",
 							"options": {
 								"raw": {
 									"language": "json"
