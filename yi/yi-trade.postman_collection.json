@@ -1339,12 +1339,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/300"
+								"value": "test/11"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n\n\"where\":{\n    \"uid\":1\n},\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"where\":{\"$or\":[{\n    \"master_reply.master_id\":{\"$gte\":0},\n    \"rewards.master_id\":336\n},{\n    \"stat\":5\n   }]\n},\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeHisPage",
@@ -1542,12 +1542,47 @@
 							{
 								"key": "Jwt",
 								"type": "text",
+								"value": "test/349"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\":\"5fd9b4b0909c0a24426647f1\",\n\"master_id\":1,\n\"amt\":100,\n\"comment_1\":\"aa\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/BBSPrizeSetMasterReward",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"BBSPrizeSetMasterReward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w悬赏贴结帐",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
 								"value": "test/1"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f59ce83506a5a960749eb76\",\n\"score\":50,\n\"master_id\":1,\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5f59ce83506a5a960749eb76\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeDue",
