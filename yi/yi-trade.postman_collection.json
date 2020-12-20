@@ -1379,7 +1379,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fd72a540dcc3b5e898a4f5d\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdac9c828c6b43ec45c9ce1\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeGet",
@@ -1413,7 +1413,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f59c8a5511262fcafd65009\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdac9c828c6b43ec45c9ce1\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeHisGet",
@@ -1547,7 +1547,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fd9b4b0909c0a24426647f1\",\n\"master_id\":1,\n\"amt\":100,\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdac9c828c6b43ec45c9ce1\",\n\"master_id\":11,\n\"amt\":15,\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeSetMasterReward",
@@ -1577,12 +1577,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/349"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f59ce83506a5a960749eb76\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdac9c828c6b43ec45c9ce1\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeDue",
@@ -1612,12 +1612,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/15"
+								"value": "test/11"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fd87d32021beb0fc41b6d07\",\n\"to_master\":11,\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdac9c828c6b43ec45c9ce1\",\n\"to_master\":11,\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeReply",
@@ -1908,7 +1908,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5fd71fb4b400f6e7145b888b\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdafe8c267c33183f2962d6\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSVieAim",
@@ -1973,12 +1973,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/7"
+								"value": "test/11"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f719fbc7126000aeeb6ba25\",\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdafe8c267c33183f2962d6\",\n\"text\":[\"aaa\",\"bbb\",\"cc\"],\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSVieReply",
@@ -2054,7 +2054,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":3,\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":3,\n\"c_1\":\"本注释选用于所有的本节下的路由，常用的简称： amt:金额 qty:数量一般是指订单的数量\",\n\"c_2\":\"yi_order:大蚰订单   mall:商城  bbs_vie:闪断  bbs_prize:悬赏\",\n\"c_3\":\"b_type:业务类型(business_type)\",\n\"c_4\":\"bill_no:对应的业务单号\",\n\"c_5\":\"broker_id:代理 id broker_name:代理 名称\",\n\"c_5\":\"remark:备注 summary:业务摘要\",\n\"c_y\":\"update_at，last_updated:最后更新时间 last_update_int:最后更新时间的时间戳，是一个整型值unixNano纳秒数量，一般作为排序或筛选的依据\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessBrokerGet",
