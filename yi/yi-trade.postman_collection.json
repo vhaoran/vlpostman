@@ -109,7 +109,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n\n\n}"
+							"raw": "{\n\n \"c_1\":\"不需要任何参数，需要有jwt\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/AccountList",
@@ -138,7 +138,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n\n\n}"
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"c_1\":\"传统分而查询，可以加where条件及sort\",\n\"c_2\":\"查询结果部分字段说明\",\n\"c_3\":\"action:业务类型0：1：充值 2：分润 3：退款 4：订单取消或退款  -1：大师单消费 -2：商城消费 -3: 预付款 \",\n\"c_4\":\"amt:发生额，amtStart:期初,summary:摘要 tradeNo:单号 \"\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessPage",
@@ -149,93 +149,6 @@
 								"yi",
 								"trade",
 								"BusinessPage"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "w充值---仅用于测试-加余额",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Jwt",
-								"type": "text",
-								"value": "test/1"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"uid\":22,\n\"amt\":500000,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
-						},
-						"url": {
-							"raw": "{{host}}/yi/trade/RechargeOnlyForTest",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"trade",
-								"RechargeOnlyForTest"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "w大师充值---仅用于测试-加余额",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Jwt",
-								"type": "text",
-								"value": "test/1"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"master_id\":10,\n\"amt\":5000000,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
-						},
-						"url": {
-							"raw": "{{host}}/yi/trade/RechargeMasterOnlyForTest",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"trade",
-								"RechargeMasterOnlyForTest"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "wbroker充值---仅用于测试-加余额",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Jwt",
-								"type": "text",
-								"value": "test/1"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\"comment_3\":\"---------------------------------\",\n\"broker_id\":1,\n\"amt\":50000000,\n\"comment_2\":\"---------------------------------\",\n\"comment_1\":\"本方法仅用于测试，在上线后会删除\",\n\"comment_4\":\"---------------------------------\"\n}"
-						},
-						"url": {
-							"raw": "{{host}}/yi/trade/RechargeBrokerOnlyForTest",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"trade",
-								"RechargeBrokerOnlyForTest"
 							]
 						}
 					},
@@ -332,7 +245,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"amt\":50,\n \"b_type\":\"bbs-vie\",\n \"id\":\"5fd71fb4b400f6e7145b888b\",\n \"comment_1\":\"b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
+							"raw": "{\n \"amt\":50,\n \"b_type\":\"bbs-vie\",\n \"id\":\"5fd71fb4b400f6e7145b888b\",\n \"comment_1\":\"业务类型b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/OrderPay",
@@ -349,7 +262,7 @@
 					"response": []
 				},
 				{
-					"name": "查询 余额--适用于个人和管理员",
+					"name": "B 查询 余额get--适用于个人和管理员",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -364,7 +277,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":61,\n  \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
+							"raw": "{\n    \"uid\":61,\n  \"comment_3\":\"根据用户的uid查询其余额\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RemainderGet",
@@ -381,7 +294,7 @@
 					"response": []
 				},
 				{
-					"name": "查询 用户余额page--适用管理员",
+					"name": "B 查询 用户余额page--适用管理员",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -396,7 +309,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"rows_per_page\":10,\n \"page_no\":1\n}"
+							"raw": "{\n \"rows_per_page\":10,\n \"page_no\":1,\n \"c_1\":\"传统分面功能，可以加where及sort\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RemainderPage",
@@ -413,7 +326,7 @@
 					"response": []
 				},
 				{
-					"name": "查询 大师余额分页--适用管理员",
+					"name": "B 查询 大师余额分页--适用管理员",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -477,7 +390,7 @@
 					"response": []
 				},
 				{
-					"name": "查询 大师余额--适用于个人和管理员",
+					"name": "查询 大师余额get--适用于个人和管理员",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -509,7 +422,7 @@
 					"response": []
 				},
 				{
-					"name": "查询 运营商余额--适用于个人和管理员",
+					"name": "查询 运营商余额get--适用于个人和管理员",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -541,7 +454,7 @@
 					"response": []
 				},
 				{
-					"name": "帐务调整--管理员使用0--大师大师、运营商、个人的余额",
+					"name": "帐务调整--管理员使用--大师大师、运营商、个人的余额",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -556,7 +469,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"acc_type\":\"master\",\n\"multi_id\":11,\n\"amt\":5,\n\"summary\":\"用户余额高速\",\n\"c_1\":\"acc_type业务类型: user/master/broker/\",\n\"c_2\":\"multi_id:根据不同的类型为uid/master_id/broker_id\"\n}"
+							"raw": "{\n\"acc_type\":\"master\",\n\"multi_id\":12,\n\"amt\":5,\n\"summary\":\"用户余额调整\",\n\"c_1\":\"acc_type业务类型: user/master/broker/\",\n\"c_2\":\"multi_id:根据不同的类型为uid/master_id/broker_id\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/AccountAdjust",
@@ -972,7 +885,7 @@
 			"name": "大师订单",
 			"item": [
 				{
-					"name": "w大师未完成订单--分页查询--适用于前台下单人查询",
+					"name": "大师未完成订单--分页查询--适用于前台下单人查询",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1001,7 +914,7 @@
 					"response": []
 				},
 				{
-					"name": "w大师未完成订单--分页查询--适用于大师使用",
+					"name": "大师未完成订单--分页查询--适用于大师使用",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1030,7 +943,7 @@
 					"response": []
 				},
 				{
-					"name": "w大师未完成订单--分页查询--适用于后台管理员客服使用",
+					"name": "b 大师未完成订单--分页查询--适用于后台管理员客服使用",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1059,7 +972,7 @@
 					"response": []
 				},
 				{
-					"name": "w大师已完成订单--分页查询--适用于所有角色",
+					"name": "b 大师已完成订单--分页查询--适用于所有角色",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1091,7 +1004,7 @@
 					"response": []
 				},
 				{
-					"name": "w大师订单历史 --获取单条信息get",
+					"name": "大师订单历史 --获取单条信息get",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1120,7 +1033,7 @@
 					"response": []
 				},
 				{
-					"name": "w大师订单 --获取单条信息get",
+					"name": "大师t处理中订单 --获取单条信息get",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1152,7 +1065,7 @@
 					"response": []
 				},
 				{
-					"name": "w大师订单-下单",
+					"name": "大师订单-下单",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1181,7 +1094,7 @@
 					"response": []
 				},
 				{
-					"name": "w完成订单--用于大师操作",
+					"name": "完成订单结贴--用于大师操作",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1280,7 +1193,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"comment_1\":\"\"\n}"
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"comment_1\":\"主要适用于查询针对某个订半日的评价信息，传入不同的where条件可以实现不同的效果\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/YiOrderExpPage",
@@ -2008,12 +1921,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/349"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f5b1e0849c09d3ee3e45220\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5fdafe8c267c33183f2962d6\",\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSVieDue",
@@ -2089,7 +2002,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f5b1e0849c09d3ee3e45220\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5f5b1e0849c09d3ee3e45220\",\n\"c_1\":\"amt_start:期初余额\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessBrokerPage",
@@ -2224,12 +2137,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/11"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"rows_per_page\":10\n\n}"
+							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\"c_1\":\"\",\n\"c_2\":\"\",\n\"c_3\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessMasterMonthPage",
@@ -2404,7 +2317,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"rows_per_page\":3,\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"rows_per_page\":3,\n\"comment_1\":\"qty_yi_order_r:退款金额 qty_mall_r:商城退单金额\",\n\"c_2\":\"qty_draw_moneY_MASTER:大现提现单数 amt_draw_moneY_MASTER大理由提现金额\",\n\"c_3\":\"profit_*  利润*\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/IncomePlatMonthPage",
@@ -2602,7 +2515,7 @@
 					"response": []
 				},
 				{
-					"name": "b运营商提现审批",
+					"name": "b运营商提现审批---适用于管理员",
 					"request": {
 						"method": "POST",
 						"header": [
