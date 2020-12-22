@@ -9,7 +9,7 @@
 			"name": "brokers",
 			"item": [
 				{
-					"name": "w根据uid获取代理管理员列表------B+S",
+					"name": "w代理管理员列表------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -35,7 +35,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \n    \"comment1\": \"Jwt是使用者的UID\",\n    \"comment2\": \"系统管理员和运营商权限\",\n    \"comment3\": \"系统管理员需要指定相应的broker_id\",\n    \"comment4\": \"运营商获取时需要broker_id=0\",\n    \"comment5\": \"返回值: user_code_ref:对应的user_code, 即该brokerAdmin对应的user_info中的user_code\",\n    \"comment6\": \"返回值: nick和icon也是该brokerAdmin对应的user_infoh中的nick和icon\"\n}",
+							"raw": "{\n    \n    \"comment1\": \"Jwt是使用者的UID\",\n    \"comment2\": \"系统管理员和运营商权限\",\n    \"comment3\": \"系统管理员需要指定相应的broker_id\",\n    \"comment4\": \"运营商获取时需要broker_id=0\",\n    \"comment5\": \"返回值: user_code_ref:对应的user_code, 即该brokerAdmin对应的user_info中的user_code\",\n    \"comment6\": \"返回值: nick和icon也是该brokerAdmin对应的user_infoh中的nick和icon\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -57,14 +57,14 @@
 					"response": []
 				},
 				{
-					"name": "w新增代理管理员-------B+S",
+					"name": "w新增代理管理员-------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -83,7 +83,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":1,\n    \"uid\": 490,\n\n   \"comment1\":\"运营商本人和系统管理员权限\",\n   \"comment2\":\"运营商本人新增brokerAdamin时broker_id必须是0\",\n   \"comment3\":\"系统管理员新增brokerAdmin时需要给出明确的broker_id\",\n   \"comnent4\":\"返回值: user_code_ref, nick, icon是后台从uid对应的user_info中获取的\"\n}",
+							"raw": "{\n    \"uid\": 434,\n\n   \"comment1\":\"运营商本人\",\n   \"comnent2\":\"返回值: user_code_ref, nick, icon是后台从uid对应的user_info中获取的\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -105,14 +105,14 @@
 					"response": []
 				},
 				{
-					"name": "w根据uid删除代理管理员------B+S",
+					"name": "w根据uid删除代理管理员------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -131,7 +131,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 1,\n    \"uid\": 485,\n    \n    \"comment1\": \"运营商本人和系统管理员权限\",\n    \"comment2\": \"运营商本人删除brokerAdamin时broker_id必须是0\",\n    \"comment3\": \"系统管理员删除brokerAdmin时需要给出明确的broker_id\"\n}",
+							"raw": "{\n    \"uid\": 434,\n    \n    \"comment1\": \"运营商本人权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -448,7 +448,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/31",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -467,7 +467,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 0,\n    \n    \"comment1\": \"管理员和运营商权限\",\n    \"comment2\": \"运营商本人或运营商管理员获取brokerInfo时broker_id必须是0\",\n    \"comment3\": \"系统管员获取时需要给出明确的broker_id\",\n    \"comment4\": \"返回值  ver:版本\",\n    \"comment5\": \"返回值  service_code:运营商邀请码\",\n    \"comment6\": \"返回值  brief:简介, enable_mall:商城开启状态, enable_master:大师开启状态\",\n    \"comment7\": \"返回值  enable_prize:悬赏贴开启状态, enable_vie:闪断贴开启状态\"\n}",
+							"raw": "{\n    \"broker_id\": 1,\n    \n    \"comment1\": \"管理员和运营商权限\",\n    \"comment2\": \"运营商本人或运营商管理员获取brokerInfo时broker_id必须是0\",\n    \"comment3\": \"系统管员获取时需要给出明确的broker_id\",\n    \"comment4\": \"返回值  ver:版本\",\n    \"comment5\": \"返回值  service_code:运营商邀请码\",\n    \"comment6\": \"返回值  brief:简介, enable_mall:商城开启状态, enable_master:大师开启状态\",\n    \"comment7\": \"返回值  enable_prize:悬赏贴开启状态, enable_vie:闪断贴开启状态\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -544,7 +544,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/431",
+									"value": "test/434",
 									"type": "string"
 								},
 								{
@@ -645,7 +645,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237089001\",\n    \"nick\": \"注册新用户以测试启用停用代理\",\n    \"pwd\": \"123456\",\n\n    \"comment1\":\"注册新用户,需要输入正确格式的手机号:service_code\",\n    \"comemnt2\":\"pwd:password 密码, nick:昵称\"\n}",
+							"raw": "{\n    \"user_code\": \"15237089005\",\n    \"nick\": \"注册新用户以测试启用停用代理\",\n    \"pwd\": \"123456\",\n\n    \"comment1\":\"注册新用户,需要输入正确格式的手机号:service_code\",\n    \"comemnt2\":\"pwd:password 密码, nick:昵称\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -676,7 +676,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237089000\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
+							"raw": "{\n    \"user_code\": \"15237089005\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -828,7 +828,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"data\": {\n        \"country\": \"中国\",\n        \"birth_year\": 1996,\n        \"birth_month\": 7,\n        \"birth_day\": 21,\n        \"province\": \"河南\",\n        \"city\": \"郑州\",\n        \"sex\": 1,\n        \"user_name\": \"小五\",\n        \"area\":\"高新区\",\n        \"id_card\":\"4114211**********\",\n        \"nick\":\"测试修改用户信息\",\n        \"icon\":\"test_icon\"\n    },\n    \n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"data\": {\n        \"country\": \"中国\",\n        \"birth_year\": 1996,\n        \"birth_month\": 7,\n        \"birth_day\": 21,\n        \"province\": \"河南\",\n        \"city\": \"郑州\",\n        \"sex\": 1,\n        \"user_name\": \"小五\",\n        \"area\":\"高新区\",\n        \"id_card\":\"4114211**********\",\n        \"nick\":\"测试修改用户信息\",\n        \"icon\":\"test_icon\"\n    },\n    \n    \"comment1\":\"以上是此路由用户信息中可修改的全部字段\",\n    \"comment2\": \"sex: 0->女, 1->男, 2->保密\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -876,7 +876,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"old_pwd\": \"123\",\n    \"new_pwd\": \"123456\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment1\": \"旧密码必须正确才能正确执行\",\n    \"comemnt2\":\"此操作对于游客登录的用户来说没有意义\"\n}",
+							"raw": "{\n    \"old_pwd\": \"123\",\n    \"new_pwd\": \"123456\",\n\n    \"comment1\": \"old_pwd:当前密码, new_pwd:新密码\",\n    \"comment2\": \"对于当前用户输入正确的当前密码才能修改密码\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -955,7 +955,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 111,\n    \"commen\": \"uid无效,可以不填\",\n    \"comment2\": \"必须要有Jwt\"\n}",
+							"raw": "{\n    \"uid\": 111,\n\n    \"comment1\": \"uid无效,可以不填\",\n    \"comment2\": \"获取当前用户的收货地址列表\",\n    \"comment3\": \"is_default:是否是默认收货地址, 如果是为1, 反之为0\",\n    \"comment4\": \"zipcode:邮政编码\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1003,7 +1003,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"contact\": \"无名氏\",\n    \"mobile\": \"12345654321\",\n    \"address\": \"河南郑州中原区翰林国际\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"contact\": \"无名氏\",\n    \"mobile\": \"12345654321\",\n    \"address\": \"河南郑州中原区翰林国际\",\n\n    \"comment1\": \"contact:联系人, mobile:联系电话 address:地址\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1051,7 +1051,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 77,\n    \"M\": {\n        \"contact_person\": \"洪峰1\",\n        \"mobile\": \"11111101\",\n        \"detail\": \"河南郑州中原区翰林国际城孟园北门1\",\n        \"province\": \"河南1\",\n        \"city\": \"郑州1\",\n        \"area\": \"高新区1\",\n        \"zip_code\": \"476000\"\n    },\n    \"comment\": \"修改的项可以根据实际情况增减\",\n    \"comment1\":\"用户只能修改自己的地址\"\n}",
+							"raw": "{\n    \"id\": 77,\n    \"M\": {\n        \"contact_person\": \"洪峰1\",\n        \"mobile\": \"11111101\",\n        \"detail\": \"河南郑州中原区翰林国际城孟园北门1\",\n        \"province\": \"河南1\",\n        \"city\": \"郑州1\",\n        \"area\": \"高新区1\",\n        \"zip_code\": \"476000\"\n    },\n    \n    \"comment1\": \"以上是所有的可修改字段,可以选择修改\",\n    \"comment2\":\"用户只能修改自己的地址\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1099,7 +1099,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"comment1\": \"不需要填写其他信息\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"comment1\": \"获取当前用户的默认收货地址\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1147,7 +1147,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 66,\n    \"comment2\": \"必须要有Jwt\",\n    \"comment\": \"必须是本人对其自身的收件地址进行设置\"\n}",
+							"raw": "{\n    \"id\": 66,\n\n    \"comment1\": \"必须是本人对其自身的收件地址进行设置\",\n    \"comment2\": \"设置输入id对应的收货地址为默认收货地址,如果之前有默认收货地址则将其覆盖(默认收货发地址只能有一个)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1195,7 +1195,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 22,\n    \"content\": \"此处的id是收件地址的id\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"id\": 22,\n    \"content1\": \"此处的id是收件地址的id\",\n    \"comment2\": \"删除当前用户收货地址中此id对应的收货地址\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1223,7 +1223,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"17333333333\"\n}",
+							"raw": "{\n    \"user_code\": \"1733333364444\",\n\n    \"comment1\":\"输入指定的user_code(手机号, 用户码), 判断系统中是否存在此用户码\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1271,7 +1271,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\":\"17333333333\",\n    \"pwd\":\"123\"\n}",
+							"raw": "{\n    \"user_code\":\"17333333333\",\n    \"pwd\":\"123\",\n\n    \"comment1\":\"游客用户为自己绑定手机号并设置密码\",    \n    \"comment2\":\"为当前用户(游客), 绑定手机号并且设置其密码\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1319,7 +1319,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":466, \n    \"enabled\":1,\n\n   \"comment\":\"enabled 1是启用, 0是停用\",\n   \"comment1\":\"系统管理员和运营商可以操作此路由\",\n   \"comment2\":\"系统管理员可以停用所有的用户(正式用户和游客), 运营商管理员只能管理自己的用户\"\n}",
+							"raw": "{\n    \"uid\": 466,\n    \"enabled\": 1,\n    \n    \"comment1\": \"enabled 1是启用, 0是停用\",\n    \"comment2\": \"系统管理员和运营商管理员可以操作此路由\",\n    \"comment3\": \"系统管理员可以停用所有的用户(正式用户和游客), 运营商管理员只能管理自己的用户\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1373,7 +1373,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"comment1\": \"此处不需要输入任何信息\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"comment1\": \"管理员和运营商权限,获取商城所有的商品分类\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1421,7 +1421,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 16,\n    \"comment1\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"id\": 16,\n\n    \"comment1\": \"获取输入id对应的商品分类\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1469,7 +1469,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"泰山石敢当\",\n    \"icon\": \"5\",\n    \"sort_no\": 5,\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"name\": \"泰山石敢当\",\n    \"icon\": \"5\",\n    \"sort_no\": 5,\n\n    \"comment1\":\"管理员或运营商新增商品分类\",\n    \"comment2\": \"sort_no是此商品分类的排序号\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1517,7 +1517,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 56,\n    \"M\": {\n        \"name\": \"五台山大师开过光\",\n        \"icon\": \"3\",\n        \"sort_no\": \"3\"\n    },\n    \"comment\": \"M中的内容可以根据分类的项选填\",\n    \"comment2\": \"Jwt必须要有\"\n}",
+							"raw": "{\n    \"id\": 56,\n    \"M\": {\n        \"name\": \"五台山大师开过光\",\n        \"icon\": \"3\",\n        \"sort_no\": \"3\"\n    },\n\n    \"comment1\": \"M中的内容可以根据分类的项选填\",\n    \"comment2\": \"以上字段是商品分类中所有可以修改的字段\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1565,7 +1565,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 49,\n    \"comment2\": \"Jwt必须要有\",\n    \"comment3\": \"慎用\"\n}",
+							"raw": "{\n    \"id\": 49,\n\n    \"comment1\": \"系统管理员根据id删除已经存在的商品分类\",\n    \"comment2\": \"慎用\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1613,7 +1613,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\":48,\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \"comment\": \"pagebeanmap中的信息选填,但是必须有rows_per_page\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和Key_world, 不输入是默认为查询所有\"\n}",
+							"raw": "{\n    \"cate_id\":17,\n    \"key_world\":\"灵符\",\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \n    \"comment1\": \"page_no, rows_per_page选填,如果不输入, page_no默认值是1, rows_per_page默认值是10\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和key_world, 不输入是默认为查询所有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1661,7 +1661,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"ECoQ83UB4Gj8VxFop4XA\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment3\": \"管理员或运营商权限\"\n}",
+							"raw": "{\n    \"id_of_es\": \"DHRGu3UBUEDNcUc8aIWj\",\n\n    \"comment1\": \"管理员或运营商权限\",\n    \"comment2\": \"根据商品id获取商品所有信息\",\n    \"comment3\": \"返回值中colors对应的是一件商品的不同档次(code)以及其价格(price)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1709,7 +1709,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 48,\n    \"name\": \"灵符\",\n    \"remark\": \"妈祖灵符\",\n    \"key_word\": \"灵验 妈祖 观音\",\n    \"enabled\": true,\n    \"images\": [\n        {\n            \"path\": \"pic1\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"灰色\",\n            \"price\": 99\n        },\n         {\n            \"code\": \"黄色\",\n            \"price\": 199\n        },\n         {\n            \"code\": \"金色\",\n            \"price\": 1999\n        }\n    ],\n    \"image_main\": \"pic-main\",\n    \"comment\": \"首次添加商品属性可以选填, 但是Jwt必须要有\",\n    \"comment2\": \"colors是颜色代码,分别代表不同颜色的不同价格,\",\n    \"comment3\":\"cate_id必须是已经存在的分类id, cate_name的值后台会查询并添加\"\n}",
+							"raw": "{\n    \"cate_id\": 17,\n    \"name\": \"灵符\",\n    \"remark\": \"妈祖灵符\",\n    \"key_word\": \"灵验 妈祖 观音\",\n    \"enabled\": true,\n    \"images\": [\n        {\n            \"path\": \"pic1\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"灰色\",\n            \"price\": 99\n        },\n        {\n            \"code\": \"黄色\",\n            \"price\": 199\n        },\n        {\n            \"code\": \"金色\",\n            \"price\": 1999\n        }\n    ],\n    \"image_main\": \"pic-main\",\n\n    \"comment1\": \"首次添加商品属性可以选填\",\n    \"comment2\": \"colors是颜色代码,分别代表不同颜色的不同价格\",\n    \"comment3\": \"cate_id必须是已经存在的分类id, cate_name的值后台会查询并添加\",\n    \"comment4\": \"返回值中的visit_count是该商品的访问次数\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1757,7 +1757,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"sjn1dXQBgZ4HPoMnnn7O\",\n    \"M\": {\n        \"name\": \"乔巴\",\n        \"remark\": \"乔巴公仔\",\n        \"key_word\": \"海贼王 公仔 乔巴\",\n        \"images\": [\n        {\n            \"path\": \"pic14\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"淡黄\",\n            \"price\": 100\n        },\n         {\n            \"code\": \"黄色\",\n            \"price\": 1000\n        },\n         {\n            \"code\": \"金色\",\n            \"price\": 10000\n        }\n    ],\n    \"image_main\":\"pic001\"\n    },\n    \n    \"comment\": \"修改商品属性可以选填, 但是必须存在,大于0即可\",\n    \"comment2\":\"固定属性不可以修改,例如cate_id, cate_name\"\n}",
+							"raw": "{\n    \"id_of_es\": \"sjn1dXQBgZ4HPoMnnn7O\",\n    \"M\": {\n        \"name\": \"乔巴\",\n        \"remark\": \"乔巴公仔\",\n        \"key_word\": \"海贼王 公仔 乔巴\",\n        \"images\": [\n        {\n            \"path\": \"pic14\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"淡黄\",\n            \"price\": 100\n        },\n         {\n            \"code\": \"黄色\",\n            \"price\": 1000\n        },\n         {\n            \"code\": \"金色\",\n            \"price\": 10000\n        }\n    ],\n    \"image_main\":\"pic001\"\n    },\n    \n    \"comment1\": \"修改商品属性可以选填, 但是必须存在,大于0即可\",\n    \"comment2\":\"固定属性不可以修改,例如cate_id, cate_name\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1805,7 +1805,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"EioR83UB4Gj8VxFo7IUE\",\n    \"enabled\":1,\n    \"comment\": \"系统管理员权限\",\n    \"comment1\":\"enabled 1是启用, 0是停用\"\n}",
+							"raw": "{\n    \"id_of_es\": \"GXQ1iXYBUEDNcUc8aYWP\",\n    \"enabled\":1,\n    \n    \"comment1\": \"系统管理员权限\",\n    \"comment2\": \"enabled 1是启用, 0是停用\",\n    \"comment3\": \"系统管理员根据传入的商品id和enabled值对商品进行启用或者停用\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1859,7 +1859,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 5,\n    \"where\":{\n        \"enabled\":1\n    },\n\n   \n    \"comment\": \"对于Jwt中的是管理员的UID\",\n    \"comment1\":\"enable代表大师的启用状态\",\n    \"comment2\":\"如果查询已经启用的大师信息,加上where字段,查询所有大师信息,不加where\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 5,\n    \"where\":{\n        \"enabled\":1\n    },\n\n    \"comment1\": \"运营商和系统管理员权限\",\n    \"comment2\": \"enabled代表大师的启用状态\",\n    \"comment3\": \"如果查询已经启用的大师信息,加上where字段,查询所有大师信息,不加where\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1888,7 +1888,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/31",
 									"type": "string"
 								},
 								{
@@ -1907,7 +1907,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 11,\n    \"comment\": \"对于Jwt中的数据,大于0即可\"\n}",
+							"raw": "{\n    \"master_id\": 11,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的全部信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1955,7 +1955,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 11,\n    \"comment\": \"对于Jwt中的数据,大于0即可\",\n    \"comment2\": \"用户登录后获取大师的信息\",\n    \"comment3\":\"输入的master_id对应的是uid\"\n}",
+							"raw": "{\n    \"master_id\": 11,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1984,7 +1984,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/462",
+									"value": "test/494",
 									"type": "string"
 								},
 								{
@@ -2003,7 +2003,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"info\": {\n       \"brief\":\"申请大师enabled测试\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master_pzy_003\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"祖传项目\",\n            \"price\": 999.8,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2,\n            \"yi_cate_name\": \"###############\"\n        }\n    ],\n    \"comment\": \"info 中传入的UID无效,主要是jwt起作用\",\n    \"comment1\": \"item和images是一个类型列表,而不是一个类型\",\n    \"comment2\": \"item和images的内容可以不填, info也可以不填, 只需将jwt代表的uid填入即可\"\n}",
+							"raw": "{\n    \"info\": {\n       \"brief\":\"申请大师enabled测试\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master_pzy_003\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"祖传项目\",\n            \"price\": 999.8,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2\n        }\n    ],\n    \"comment1\": \"以上是大师申请所需的所有字段\",\n    \"comment2\": \"item和images是数组\",\n    \"comment3\": \"大师项目值需要填入yi_cate_id即可,yi_cate_name由后台获取填充\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2032,7 +2032,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/11",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -2051,7 +2051,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 18,\n    \"rows_per_page\": 5,\n    \n    \"comment\": \"对于Jwt中的数据,不为空即可\",\n    \"comment2\": \"必须是admin:完善后\",\n    \"comment3\": \"stat 0:待审核 1：已审批 2：已驳回\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 5,\n   \n    \"comment1\": \"系统管理员权限\",\n    \"comment2\": \"返回信息 stat:审核状态\",\n    \"comment3\": \"stat 0:待审核 1：已审批 2：已驳回\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2099,7 +2099,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": \"5fd9a65cbce6c8a7f2610f2c\",\n    \"stat\": 1,\n    \"comment\": \"输入的id是返回的申请信息返回的id\",\n    \"comment2\": \"stat 为1 代表通过申请,其他的数值为驳回申请\",\n    \"comment3\": \"若某用户已经成为大师,再次通过申请时会提示大师已经存在\",\n    \"comment4\":\"jwt中的数据是管理员的uid\"\n}",
+							"raw": "{\n    \"id\": \"5fe19f03422a2a66da65b287\",\n    \"stat\": 1,\n\n    \"comment1\": \"系统管理员全新啊\",\n    \"comment2\": \"stat 为1 代表通过申请,其他的数值为驳回申请\",\n    \"comment3\": \"若某用户已经成为大师,再次通过申请时会提示大师已经存在\",\n    \"comment4\":\"jwt中的数据是管理员的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2147,7 +2147,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 336,\n    \"enabled\": 1,\n    \"comment\": \"JWT中的数据是管理员的UID\",\n    \"comment2\":\"enable为0 代表停用,1代表激活, 不允许输入其他值\"\n}",
+							"raw": "{\n    \"master_id\": 336,\n    \"enabled\": 1,\n\n    \"comment\": \"系统管理员权限\",\n    \"comment2\":\"enabled为0 代表停用,1代表激活, 不允许输入其他值\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2195,7 +2195,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 11,\n    \"M\": {\n        \"icon\": \"测试修改大师信息\",\n        \"nick\": \"测试修改大师信息\",\n        \"brief\":\"祖传,包灵, 不灵退钱\"\n    },\n    \"comment\": \"修改大师信息时需要保持传入的id和jwt中的一致\",\n    \"comment1\":\"只能是大师修改自己的个人信息\",\n    \"comment2\": \"大师信息修改可以在以上选项中选择某一项或者某几项进行修改\",\n    \"comment3\":\"此处传入的id是master_id即大师的uid\"\n}",
+							"raw": "{\n    \"id\": 11,\n    \"M\": {\n        \"icon\": \"测试修改大师信息\",\n        \"nick\": \"测试修改大师信息\",\n        \"brief\":\"祖传,包灵, 不灵退钱\"\n    },\n    \n    \"comment1\": \"大师修改自己的信息时传入的id必须是自己的uid\",\n    \"comment2\": \"只能是大师修改自己的个人信息\",\n    \"comment3\": \"大师信息修改可以在以上选项中选择某一项或者某几项进行修改\",\n    \"comment4\": \"此处传入的id是master_id即大师的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2243,7 +2243,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 11,\n    \"comment\": \"对于Jwt中的数据,大于0即可\"\n}",
+							"raw": "{\n    \"uid\": 11,\n\n    \"comment1\": \"此处的uid也是master_id\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2291,7 +2291,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":11,\n    \"image_path\": \"master11-4\",\n    \"sort_no\": 3,\n\n    \"comment\":\"管理员和大师本人都可以使用此路由\",\n    \"comment1\":\"大师使用此路由时, 必须是对本人添加照片(master_id=Jwt)\"\n}",
+							"raw": "{\n    \"master_id\":11,\n    \"image_path\": \"master11-4\",\n    \"sort_no\": 3,\n\n    \"comment1\":\"管理员和大师本人都可以使用此路由\",\n    \"comment2\":\"大师使用此路由时, 必须是对本人添加照片(master_id=Jwt)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2339,7 +2339,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 59,\n    \"M\": {\n        \"image_path\": \"master11-1-1\",\n        \"sort_no\": 2\n    },\n    \"comment\": \"必须本人修改自己的图片\"\n}",
+							"raw": "{\n    \"id\": 59,\n    \"M\": {\n        \"image_path\": \"master11-1-1\",\n        \"sort_no\": 2\n    },\n\n    \"comment1\": \"系统管理员和大师权限\",\n    \"comment2\": \"此处的id是大师图片对应的id\",\n    \"comment3\": \"系统管理员可以对所有的大师图片进行操作,而大师只能对本人的图片进行操作\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2387,7 +2387,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 59,\n    \"comment\": \"必须是大师本人才能进行操作:id所对应的uid与jwt一致\",\n    \"comment2\":\"此时出入的id是图片的id\"\n}",
+							"raw": "{\n    \"id\": 59,\n\n    \"comment1\": \"系统管理员和大师权限\",\n    \"comment2\": \"此处的id是图片的id\",\n    \"comment3\": \"大师能对本人的图片进行删除,而系统管理员可以对所有的大师图片进行删除\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2416,7 +2416,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/11",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -2435,7 +2435,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 11,\n    \"comment\": \"此时的JWT大于0即可\",\n    \"comment2\":\"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\":\"根据大师的UID来获取大师的项目列表(不适用于普通用户)\"\n}",
+							"raw": "{\n    \"uid\": 11,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2483,7 +2483,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 11,\n    \"yi_cate_id\": 3,\n    \"sort_no\":1,\n    \"comment\": \"转测婚姻\",\n    \"price\": 999.99,\n    \n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\":\"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n    \"comment4\":\"此处的yi_cate_name不起作用\"\n}",
+							"raw": "{\n    \"uid\": 11,\n    \"yi_cate_id\": 3,\n    \"sort_no\":1,\n    \"comment\": \"转测婚姻\",\n    \"price\": 999.99,\n    \n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\":\"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2531,7 +2531,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 12,\n            \"yi_cate_id\": 5,\n            \"comment\": \"看字解人生5\",\n            \"price\": 999.99\n        },\n         {\n            \"uid\": 12,\n            \"yi_cate_id\": 6,\n            \"comment\": \"看字解人生6\",\n            \"price\": 999.99\n        }\n    ],\n    \"comment1\":\"此处的yi_cate_name可以不填\",\n    \"comment2\":\"uid, yi_cate_id, price是必填项目\"\n}",
+							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 12,\n            \"yi_cate_id\": 5,\n            \"comment\": \"看字解人生5\",\n            \"price\": 999.99\n        },\n        {\n            \"uid\": 12,\n            \"yi_cate_id\": 6,\n            \"comment\": \"看字解人生6\",\n            \"price\": 999.99\n        }\n    ],\n\n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\": \"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n    \"comment5\": \"uid, yi_cate_id, price是必填项目\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3291,14 +3291,14 @@
 					"response": []
 				},
 				{
-					"name": "修改运营商模块------B+S",
+					"name": "修改运营商模块------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/468",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -3317,7 +3317,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"m\": {\n        \"enable_mall\": 1,\n        \"enable_master\": 1,\n        \"enable_prize\": 1,\n        \"enable_vie\": 1\n    },\n    \"comment\": \"修改运营商的模块选项,mall代表商城,master代表大师,price代表悬赏贴,vie代表闪断贴\",\n    \"comemnt2\": \"0是未选中,1是选中\",\n    \"comment3\": \"必须是运营商或者是系统管理员权限\",\n    \"comment4\":\"运营商管理员修改模块时broker_id必须是0\"\n}",
+							"raw": "{\n    \"m\": {\n        \"enable_mall\": 1,\n        \"enable_master\": 1,\n        \"enable_prize\": 1,\n        \"enable_vie\": 1\n    },\n    \"comment\": \"修改运营商的模块选项,mall代表商城,master代表大师,price代表悬赏贴,vie代表闪断贴\",\n    \"comemnt2\": \"0是未选中,1是选中\",\n    \"comment3\": \"必须是运营商\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3339,14 +3339,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品类别批量增加------B+S",
+					"name": "运营商商品类别批量增加------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -3365,7 +3365,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":1,\n    \"list_cate_id\": [16, 17],\n    \"comment\": \"已经自己已经选择过商品类别不可重复添加\",\n    \"comment2\": \"添加的商品类别必须是系统提供的已存在的商品类别\",\n    \"comment3\":\"运营商和系统管理员权限\",\n    \"comment4\":\"运营商添加商品类别时broker_id必须是0\",\n    \"comment5\":\"系统管理员添加商品类别是需要给出指定运营商的broker_id\"\n}",
+							"raw": "{\n    \"list_cate_id\": [16, 17],\n\n    \"comment1\": \"已经选择过商品类别不可重复添加\",\n    \"comment2\": \"添加的商品类别必须是系统提供的已存在的商品类别\",\n    \"comment3\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3413,7 +3413,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 1,\n    \"comment\": \"获取某个运营商的商品类别列表\",\n    \"comment2\": \"依照权限,系统管理员可以指定运营商的商品类别\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的商品类别\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取类别列表\",\n    \"comment5\": \"运营商不可获取其他运营商的类别列表\",\n    \"comment6\": \"若要查询自己运营商所属的模块选项此处的broker_id必须是0\"\n}",
+							"raw": "{\n    \"broker_id\": 1,\n    \"comment\": \"获取某个运营商的商品类别列表\",\n    \"comment2\": \"依照权限,系统管理员可以指定运营商的商品类别\",\n    \"comment3\": \"运营商自己以及所属用户只能获取自己的商品类别\",\n    \"comment4\": \"不是该运营商的客户的普通用户不可获取类别列表\",\n    \"comment5\": \"运营商不可获取其他运营商的类别列表\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3435,14 +3435,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品类别批量删除------B+S",
+					"name": "运营商商品类别批量删除------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -3461,7 +3461,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":1,\n    \"list_cate_id\":[16,17],\n\n    \"comment\":\"此处的数组是商品类别的cate_id\",\n    \"comment3\":\"运营商和系统管理员权限\",\n    \"comment4\":\"运营商添加商品类别时broker_id必须是0\",\n    \"comment5\":\"系统管理员添加商品类别是需要给出指定运营商的broker_id\"\n}",
+							"raw": "{\n    \"list_cate_id\":[16,17],\n\n    \"comment1\":\"此处的数组是商品类别的cate_id\",\n    \"comment2\":\"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3483,14 +3483,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品批量添加-----B+S",
+					"name": "运营商商品批量添加-----B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -3509,7 +3509,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":1,\n    \"list\": [\n        {\n            \"product_id\": \"DXRHu3UBUEDNcUc8XoWl\",\n            \"price_offset\": 66\n        }\n    ],\n    \"comment\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"管理员和运营商管理员权限\",\n    \"comment3\":\"管理员需要新增运营商商品时需要输入对应运营商的broker_id\",\n    \"comment4\":\"运营上管理员添加商品时,必须将broker_id设置认为0\"\n}",
+							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"DXRHu3UBUEDNcUc8XoWl\",\n            \"price_offset\": 66\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3557,7 +3557,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 48,\n    \"broker_id\": 1,\n    \"page_no\": 1,\n    \"rows_per_page\": 4,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
+							"raw": "{\n    \"cate_id\": 48,\n    \"broker_id\": 2,\n    \"page_no\": 1,\n    \"rows_per_page\": 4,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3653,7 +3653,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"DHRGu3UBUEDNcUc8aIWj\",\n    \"comment2\": \"Jwt必须要有\",\n    \"comment3\": \"普通用户权限\"\n}",
+							"raw": "{\n    \"id_of_es\": \"DHRGu3UBUEDNcUc8aIWj\",\n    \n    \"comment1\": \"Jwt必须要有\",\n    \"comment2\": \"普通用户权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3675,14 +3675,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品批量价格修改------B+S",
+					"name": "运营商商品批量价格修改------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/468",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -3701,7 +3701,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 0,\n    \"list\": [\n        {\n            \"product_id\": \"DXRHu3UBUEDNcUc8XoWl\",\n            \"price_offset\": 666\n        },{\n            \"product_id\":\"DHRGu3UBUEDNcUc8aIWj\",\n            \"price_offset\":111\n        }\n    ],\n    \"comment\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"管理员和运营商管理员权限\",\n    \"comment3\": \"管理员需要新增运营商商品时需要输入对应运营商的broker_id\",\n    \"comment4\": \"运营上管理员添加商品时,必须将broker_id设置认为0\"\n}",
+							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"DXRHu3UBUEDNcUc8XoWl\",\n            \"price_offset\": 666\n        },{\n            \"product_id\":\"DHRGu3UBUEDNcUc8aIWj\",\n            \"price_offset\":111\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3723,14 +3723,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商商品批量删除------B+S",
+					"name": "运营商商品批量删除------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/61",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -3749,7 +3749,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 0,\n    \"list_product_id\": [\n        \"DXRHu3UBUEDNcUc8XoWl\"\n    ],\n    \"comment\": \"必须是运营商权限,可以同时删除多件商品\",\n    \"comment2\": \"管理员和运营商管理员权限\",\n    \"comment3\": \"管理员需要新增运营商商品时需要输入对应运营商的broker_id\",\n    \"comment4\": \"运营上管理员添加商品时,必须将broker_id设置认为0\"\n}",
+							"raw": "{\n    \"list_product_id\": [\n        \"DXRHu3UBUEDNcUc8XoWl\"\n    ],\n    \"comment1\": \"必须是运营商权限,可以同时删除多件商品\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3771,7 +3771,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商悬赏贴收费标准新增------B+S",
+					"name": "运营商悬赏贴收费标准新增------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3797,7 +3797,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 0,\n    \"offset_price\": 99,\n    \"price_level_id\": 9,\n    \"comment\": \"管理员和运营山权限\",\n    \"comment1\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment2\": \"运营商使用此路由时必须broker_id=0\"\n}",
+							"raw": "{\n    \"offset_price\": 99,\n    \"price_level_id\": 9,\n\n    \"comment1\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3819,7 +3819,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商悬赏贴标准根据id获取------B+S",
+					"name": "运营商悬赏贴标准根据id获取------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3845,7 +3845,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"id\": 84,\n    \n    \"comment\": \"此处的id是运营商的悬赏贴标准id,而不是平台的悬赏贴标准id\"\n}",
+							"raw": "{\n    \"id\": 84,\n    \n    \"comment\": \"此处的id是运营商的悬赏贴标准id,而不是平台的悬赏贴标准id\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3867,7 +3867,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商悬赏贴收费标准列表------B+S",
+					"name": "运营商悬赏贴收费标准列表------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -3893,7 +3893,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"comment\":\"管理员和运营山权限\",\n    \"comment1\":\"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment2\":\"运营商使用此路由时必须broker_id=0\"\n}",
+							"raw": "{\n    \"comment\":\"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3963,199 +3963,7 @@
 					"response": []
 				},
 				{
-					"name": "运营商悬赏贴标准修改----B+S",
-					"request": {
-						"auth": {
-							"type": "apikey",
-							"apikey": [
-								{
-									"key": "value",
-									"value": "test/468",
-									"type": "string"
-								},
-								{
-									"key": "in",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "key",
-									"value": "Jwt",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"id\":83,\n    \"offset_price\":88,\n    \"comment\":\"此处的id是列表中的id\",\n    \"comemnt2\":\"不可修改其他运营商的标准\",\n    \"comment3\": \"管理员和运营山权限\",\n    \"comment4\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment5\": \"运营商使用此路由时必须broker_id=0\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeCh",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"user",
-								"BrokerPriceLevelPrizeCh"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "运营商悬赏贴标准根据id禁止或启用------B+S",
-					"request": {
-						"auth": {
-							"type": "apikey",
-							"apikey": [
-								{
-									"key": "value",
-									"value": "test/468",
-									"type": "string"
-								},
-								{
-									"key": "in",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "key",
-									"value": "Jwt",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"id\": 83,\n    \"enabled\": 1,\n    \"comment\": \"此处的id不是平台悬赏贴的id,而是运营商该悬赏贴对应的id\",\n    \"comment1\": \"1为启用此标准,0位禁止此标准\",\n    \"comment2\": \"管理员和运营山权限\",\n    \"comment3\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment4\": \"运营商使用此路由时必须broker_id=0\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeSetEnabled",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"user",
-								"BrokerPriceLevelPrizeSetEnabled"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "运营商闪断贴收费标准新增------B+S",
-					"request": {
-						"auth": {
-							"type": "apikey",
-							"apikey": [
-								{
-									"key": "value",
-									"value": "test/31",
-									"type": "string"
-								},
-								{
-									"key": "in",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "key",
-									"value": "Jwt",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"offset_price\": 55,\n    \"price_level_id\": 5,\n    \"comment\": \"管理员和运营员权限\",\n    \"comment1\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment2\": \"运营商使用此路由时必须broker_id=0\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}/yi/user/BrokerPriceLevelVieAdd",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"user",
-								"BrokerPriceLevelVieAdd"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "运营商闪断贴标准根据id获取------B+S",
-					"request": {
-						"auth": {
-							"type": "apikey",
-							"apikey": [
-								{
-									"key": "value",
-									"value": "test/1",
-									"type": "string"
-								},
-								{
-									"key": "in",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "key",
-									"value": "Jwt",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"broker_id\":1,\n    \"id\":36\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}/yi/user/BrokerPriceLevelVieGet",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"user",
-								"BrokerPriceLevelVieGet"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "运营商闪断贴收费标准列表------B+S",
+					"name": "运营商悬赏贴标准修改----B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4181,7 +3989,199 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"comment\": \"管理员和运营山权限\",\n    \"comment1\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment2\": \"运营商使用此路由时必须broker_id=0\"\n}",
+							"raw": "{\n    \"id\":83,\n    \"offset_price\":88,\n    \n    \"comment1\": \"此处的id是列表中的id\",\n    \"comemnt2\": \"不可修改其他运营商的标准\",\n    \"comment3\": \"运营商管理员权限\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeCh",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelPrizeCh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商悬赏贴标准根据id禁止或启用------B",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/21",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 83,\n    \"enabled\": 1,\n    \n    \"comment1\": \"此处的id不是平台悬赏贴的id,而是运营商该悬赏贴对应的id\",\n    \"comment2\": \"1为启用此标准,0位禁止此标准\",\n    \"comment3\": \"运营商管理员权限\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelPrizeSetEnabled",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelPrizeSetEnabled"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴标准根据id获取------B",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/1",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":36,\n\n    \"comment1\":\"运营商管理员权限\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieGet",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelVieGet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴收费标准新增------B",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/21",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"offset_price\": 55,\n    \"price_level_id\": 8,\n    \n    \"comment1\": \"运营商管理员权限\",\n    \"comment2\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment3\": \"运营商使用此路由时必须broker_id=0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BrokerPriceLevelVieAdd",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BrokerPriceLevelVieAdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商闪断贴收费标准列表------B",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/1",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment1\":  \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4229,7 +4229,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \n}",
+							"raw": "{\n    \"comment\":\"此处显示的收费标准的价格是运营商加价后的,若运营商禁用了某标准,则此处不显示该标准\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4251,14 +4251,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商闪断贴标准修改------B+S",
+					"name": "运营商闪断贴标准修改------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/32",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -4277,7 +4277,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"id\":43,\n    \"offset_price\":77,\n    \"comment\":\"此处的id不是平台闪断贴id,运营商闪断贴标准列表的id\",\n    \"comment2\": \"管理员和运营员权限\",\n    \"comment3\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment4\": \"运营商使用此路由时必须broker_id=0\"\n}",
+							"raw": "{\n    \"id\":43,\n    \"offset_price\":77,\n\n    \"comment1\":\"此处的id不是平台闪断贴id,运营商闪断贴标准列表的id\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4299,14 +4299,14 @@
 					"response": []
 				},
 				{
-					"name": "运营商闪断贴标准根据id禁止或启用------B+S",
+					"name": "运营商闪断贴标准根据id禁止或启用------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/32",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -4325,7 +4325,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"id\":43,\n    \"enabled\":0,\n    \"comment\":\"此处的id不是平台闪断贴的id,而是运营商该闪断贴对应的id\",\n    \"comment1\":\"1为启用此标准,0位禁止此标准\",\n    \"comment2\": \"管理员和运营员权限\",\n    \"comment3\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment4\": \"运营商使用此路由时必须broker_id=0\"\n}",
+							"raw": "{\n    \"id\":43,\n    \"enabled\":0,\n    \n    \"comment1\":\"此处的id不是平台闪断贴的id,而是运营商该闪断贴对应的id\",\n    \"comment2\":\"1为启用此标准,0位禁止此标准\",\n    \"comment3\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4347,7 +4347,7 @@
 					"response": []
 				},
 				{
-					"name": "w运营商大师添加单个------B+S",
+					"name": "w运营商大师添加单个------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4373,7 +4373,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"master_id\": 15,\n    \"items\": {\n        \"2\": 2,\n        \"1\": 1\n    },\n    \"comment\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment1\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\",\n    \"comment2\": \"管理员和运营员权限\",\n    \"comment3\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment4\": \"运营商使用此路由时必须broker_id=0\"\n}",
+							"raw": "{\n    \"master_id\": 15,\n    \"items\": {\n        \"2\": 2,\n        \"1\": 1\n    },\n    \"comment1\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\",\n    \"comment3\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4395,7 +4395,7 @@
 					"response": []
 				},
 				{
-					"name": "w运营商大师批量添加------B+S",
+					"name": "w运营商大师批量添加------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4421,7 +4421,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"l\":[\n        {\n            \"master_id\":16,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        },{\n            \"master_id\":17,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        }\n    ],\n    \"coomment\":\"大师信息是个结构体数组\",\n    \"comment2\": \"管理员和运营员权限\",\n    \"comment3\": \"管理员使用此路由时需要给出具体的broker_id\",\n    \"comment4\": \"运营商使用此路由时必须broker_id=0\"    \n}",
+							"raw": "{\n    \"l\":[\n        {\n            \"master_id\":16,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        },{\n            \"master_id\":17,\n            \"items\":{\n                \"1\":1001,\n                \"2\":1002\n            }\n        }\n    ],\n    \"comment1\":\"大师信息是个结构体数组\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4469,7 +4469,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":11,\n\n    \"comment\":\"三个角色可以使用此路由\",\n    \"comment1\":\"管理员使用此路由时需要输入对应的broker_id\",\n    \"comment2\":\"运营商或者正式用户使用时需要将broker_id设置为0\"\n\n}",
+							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":11,\n\n    \"comment1\":\"三个角色可以使用此路由\",\n    \"comment2\":\"管理员使用此路由时需要输入对应的broker_id\",\n    \"comment3\":\"运营商或者正式用户使用时需要将broker_id设置为0\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4635,7 +4635,7 @@
 					"response": []
 				},
 				{
-					"name": "w运营商大师项目价格批量修改------B+S",
+					"name": "w运营商大师项目价格批量修改------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4661,7 +4661,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":11,\n    \"items\":{\n        \"2\":1\n    },\n\n    \"comment\":\"此处修改的必须是已经存在的大师项目价格\",\n    \"comment2\":\"只有运营商拥有此权限\"\n}",
+							"raw": "{\n    \"master_id\":11,\n    \"items\":{\n        \"2\":1\n    },\n\n    \"comment\":\"此处修改的必须是已经存在的大师项目价格\",\n    \"comment2\":\"只有运营商拥有此权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4683,7 +4683,7 @@
 					"response": []
 				},
 				{
-					"name": "w运营商大师删除------B+S",
+					"name": "w运营商大师删除------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4709,7 +4709,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"master_id\":15\n}",
+							"raw": "{\n    \"master_id\":15,\n    \"comment1\":\"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
