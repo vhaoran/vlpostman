@@ -160,7 +160,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/498",
+									"value": "test/441",
 									"type": "string"
 								},
 								{
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"test-broker-142\",\n    \"icon\":\"p1\",\n    \"service_code\": \"000142\",\n    \"brief\": \"运营商管理员申请成为运营商\",\n\n    \"comment1\": \"游客和正式会员均可以使用此路由\",\n    \"comment2\": \"service_code:邀请码, name:代理名称 都不能重复\",\n    \"comment3\": \"运营商的服务码必须是六位的数字组成的字符串\",\n    \"comment4\": \"未绑定手机号的游客账户不可以申请成为运营商\",\n    \"comment5\": \"参数 icon:图标, brief:简介\",\n    \"comment6\": \"返回值: enable_mall:商城状态, enable_master:大师状态, enable_prize:悬赏贴状态, enable_vie:闪断贴状态\"\n}",
+							"raw": "{\n    \"name\": \"test-broker-145\",\n    \"icon\":\"p1\",\n    \"service_code\": \"000145\",\n    \"brief\": \"运营商管理员申请成为运营商\",\n\n    \"comment1\": \"游客和正式会员均可以使用此路由\",\n    \"comment2\": \"service_code:邀请码, name:代理名称 都不能重复\",\n    \"comment3\": \"运营商的服务码必须是六位的数字组成的字符串\",\n    \"comment4\": \"未绑定手机号的游客账户不可以申请成为运营商\",\n    \"comment5\": \"参数 icon:图标, brief:简介\",\n    \"comment6\": \"返回值: enable_mall:商城状态, enable_master:大师状态, enable_prize:悬赏贴状态, enable_vie:闪断贴状态\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -345,7 +345,7 @@
 					"response": []
 				},
 				{
-					"name": "w按代理id分页查询用户信息------B+S",
+					"name": "w按代理id分页查询用户信息------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -371,7 +371,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":0,\n    \"page_no\": 1,\n    \"rows_per_page\":10,\n\n    \"comment1\":\"系统管理员和运营商权限\",\n    \"comment2\":\"当角色是运营商时, broker_id必须是0, 后台根据该brokeAdmin的broker_id返回用户信息\",\n    \"comment3\":\"当角色是系统管理员时, 系统管理员需要制定明确的broker_id, 后台根据制定的broker_id返回用户信息\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\":10,\n\n    \"comment1\":\"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -441,7 +441,7 @@
 					"response": []
 				},
 				{
-					"name": "w通过id获取代理信息------B+S",
+					"name": "w通过id获取代理信息------U",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -467,7 +467,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 1,\n    \n    \"comment1\": \"管理员和运营商权限\",\n    \"comment2\": \"运营商本人或运营商管理员获取brokerInfo时broker_id必须是0\",\n    \"comment3\": \"系统管员获取时需要给出明确的broker_id\",\n    \"comment4\": \"返回值  ver:版本\",\n    \"comment5\": \"返回值  service_code:运营商邀请码\",\n    \"comment6\": \"返回值  brief:简介, enable_mall:商城开启状态, enable_master:大师开启状态\",\n    \"comment7\": \"返回值  enable_prize:悬赏贴开启状态, enable_vie:闪断贴开启状态\"\n}",
+							"raw": "{\n    \"broker_id\": 1,\n    \n    \"comment1\": \"获取之情broker_id的代理信息\",\n    \"comment4\": \"返回值  ver:版本\",\n    \"comment5\": \"返回值  service_code:运营商邀请码\",\n    \"comment6\": \"返回值  brief:简介, enable_mall:商城开启状态, enable_master:大师开启状态\",\n    \"comment7\": \"返回值  enable_prize:悬赏贴开启状态, enable_vie:闪断贴开启状态\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -489,7 +489,7 @@
 					"response": []
 				},
 				{
-					"name": "w按代理id搜索用户信息------B+S",
+					"name": "w按代理id搜索用户信息------B",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -515,7 +515,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 0,\n    \"keyword\": \"user\",\n\n    \"comment1\": \"系统管理员和运营商权限\",\n    \"comment2\": \"系统管理员需要指定相应的broker_id\",\n    \"comment3\": \"运营商获取时需要broker_id=0\",\n    \"comment4\": \"keyword:关键字\",\n    \"comment5\": \"keyword可以是user_code即手机号,也可以是nick的一部分\",\n    \"comment6\": \"这个搜索可以理解为对user_code的精准匹配或对nick的模糊查询\",\n}",
+							"raw": "{\n    \"keyword\": \"user\",\n\n    \"comment1\": \"运营商权限\",\n    \"comment4\": \"keyword:关键字\",\n    \"comment5\": \"keyword可以是user_code即手机号,也可以是nick的一部分\",\n    \"comment6\": \"这个搜索可以理解为对user_code的精准匹配或对nick的模糊查询\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -676,7 +676,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237089009\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
+							"raw": "{\n    \"user_code\": \"15237089012\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1888,7 +1888,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -1907,7 +1907,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 439,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的全部信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
+							"raw": "{\n    \"master_id\": 504,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的全部信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2416,7 +2416,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/504",
 									"type": "string"
 								},
 								{
@@ -2435,7 +2435,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 439,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
+							"raw": "{\n    \"uid\": 504,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2512,7 +2512,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/504",
 									"type": "string"
 								},
 								{
@@ -2531,7 +2531,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 439,\n            \"yi_cate_id\": 5,\n            \"comment\": \"看字解人生5\",\n            \"price\": 999.99\n        },\n        {\n            \"uid\": 439,\n            \"yi_cate_id\": 6,\n            \"comment\": \"看字解人生6\",\n            \"price\": 999.99\n        }\n    ],\n\n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\": \"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n    \"comment5\": \"uid, yi_cate_id, price是必填项目\"\n}",
+							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 504,\n            \"yi_cate_id\": 5,\n            \"comment\": \"看字解人生5\",\n            \"price\": 999.99\n        },\n        {\n            \"uid\": 504,\n            \"yi_cate_id\": 6,\n            \"comment\": \"看字解人生6\",\n            \"price\": 999.99\n        }\n    ],\n\n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\": \"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n    \"comment5\": \"uid, yi_cate_id, price是必填项目\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4757,7 +4757,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n     \"info\": {\n        \"icon\": \"icon14\",\n        \"nick\":\"测试管理员添加大师\",\n        \"brief\":\"后台直接添加的大师(没有与用户的情况下)\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2\n        }\n    ],\n    \"user_code\":\"15237089009\",\n    \"pwd\":\"123456\",\n\n    \"comment1\":\"系统管理员权限\",\n    \"comment2\":\"输入大师项目时只需要输入指定的yi_cate_id, 对应的yi_cate_name由后台填充\",\n    \"comment3\":\"大师项目中的comment是大师对于该大师项目的解释,需要与postman备注区分\"\n\n}",
+							"raw": "{\n     \"info\": {\n        \"icon\": \"icon14\",\n        \"nick\":\"测试管理员添加大师\",\n        \"brief\":\"后台直接添加的大师(没有与用户的情况下)\"\n    },\n    \"images\": [\n        {\n            \"image_path\": \"master\",\n            \"sort_no\": 1\n        }\n    ],\n    \"item\": [\n        {\n            \"comment\": \"周文王所创\",\n            \"price\": 998,\n            \"sort_no\": 0,\n            \"yi_cate_id\": 2\n        }\n    ],\n    \"user_code\":\"15237089012\",\n    \"pwd\":\"123456\",\n\n    \"comment1\":\"系统管理员权限\",\n    \"comment2\":\"输入大师项目时只需要输入指定的yi_cate_id, 对应的yi_cate_name由后台填充\",\n    \"comment3\":\"大师项目中的comment是大师对于该大师项目的解释,需要与postman备注区分\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
