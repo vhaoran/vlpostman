@@ -1904,7 +1904,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 336,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的全部信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
+							"raw": "{\n    \"master_id\": 511,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的全部信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3695,7 +3695,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"DXRHu3UBUEDNcUc8XoWl\",\n            \"price_offset\": 666\n        },{\n            \"product_id\":\"DHRGu3UBUEDNcUc8aIWj\",\n            \"price_offset\":111\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
+							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"DXRHu3UBUEDNcUc8XoWl\",\n            \"price_offset\": 666\n        },{\n            \"product_id\":\"DHRGu3UBUEDNcUc8aIWj\",\n            \"price_offset\":111\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id:商品id和price_offset:加的价格两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3791,7 +3791,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"offset_price\": 99,\n    \"price_level_id\": 9,\n\n    \"comment1\": \"运营商管理员权限\"\n}",
+							"raw": "{\n    \"offset_price\": 99,\n    \"price_level_id\": 9,\n\n    \"comment1\": \"运营商管理员权限\",\n    \"comment2\": \"price_level_id对应的是平台悬赏贴id\",\n    \"comment3\": \"offset_price对应的是此运营商为指定悬赏贴加的价格\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4156,7 +4156,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -4271,7 +4271,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":43,\n    \"offset_price\":77,\n\n    \"comment1\":\"此处的id不是平台闪断贴id,运营商闪断贴标准列表的id\",\n    \"comment2\": \"运营商管理员权限\"\n}",
+							"raw": "{\n    \"id\":43,\n    \"offset_price\":77,\n\n    \"comment1\": \"此处的id不是平台闪断贴id,运营商闪断贴标准列表的id\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4367,7 +4367,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 515,\n    \"items\": {\n        \"3\": 33,\n        \"4\": 44\n    },\n    \"comment1\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\",\n    \"comment3\": \"运营商管理员权限\"\n}",
+							"raw": "{\n    \"master_id\": 515,\n    \"items\": {\n        \"3\": 33,\n        \"4\": 44\n    },\n    \"comment1\":\"此处若添加的大师项目不存在,不会报错,但是不起作用\",\n    \"comment2\":\"该大师已经被添加过, 也可以被添加,会更新该大师信息\",\n    \"comment3\": \"运营商管理员权限\",\n    \"comment4\":\"items是一个map, key对应的是大师的yi_cate_id, value对应的是该运营商给定的price_offset(针对某大师某项目的)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4492,7 +4492,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -4511,7 +4511,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\": 96,\n    \"master_id\": 515\n}",
+							"raw": "{\n    \"broker_id\": 96,\n    \"master_id\": 515,\n\n    \"comment1\":\"系统管理员和运营商权限\",\n    \"comment2\":\"系统管理员使用此路由需要给出指定的broker_id\",\n    \"comment3\":\"运营商使用此路由必须保证broker_id=0,真实的broker_id通过登录用户的uid获取\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4559,7 +4559,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":11\n}",
+							"raw": "{\n    \"master_id\":11,\n    \n    \"comment1\":\"正式会员使用,不需要输入broker_id, 后台会根据当前用户登录的uid进行获取   \"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
