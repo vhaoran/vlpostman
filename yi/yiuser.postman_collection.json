@@ -4847,7 +4847,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-12-25 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":1,\n    \n    \"comment1\":\"返回信息中time:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中count:数量, 对应的是某一年或某一月注册的用户的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\"\n}",
+							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-12-25 00:00:00\",\n    \"calc_by\":\"year\",\n    \"broker_id\":1,\n    \n    \"comment1\":\"返回信息中time:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中count:数量, 对应的是某一年或某一月注册的用户的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\",\n    \"comment4\":\"calc_by:按什么统计, 如果按年的话是year, 如果是按月统计则是month\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4895,7 +4895,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_date\":\"2020-1-28 00:00:00\",\n    \"end_date\":\"2020-12-30 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":0,\n    \n    \"comment1\":\"返回信息中time:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中count:数量, 对应的是某一年或某一月注册的大师的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\"\n}",
+							"raw": "{\n    \"start_date\":\"2020-1-28 00:00:00\",\n    \"end_date\":\"2020-12-30 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":0,\n    \n    \"comment1\":\"返回信息中time:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中count:数量, 对应的是某一年或某一月注册的大师的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\",\n    \"comment4\":\"calc_by:按什么统计, 如果按年的话是year, 如果是按月统计则是month\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
