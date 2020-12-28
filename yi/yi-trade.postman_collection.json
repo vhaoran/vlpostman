@@ -1955,7 +1955,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":3,\n\"c_1\":\"本注释选用于所有的本节下的路由，常用的简称： amt:金额 qty:数量一般是指订单的数量\",\n\"c_2\":\"yi_order:大蚰订单   mall:商城  bbs_vie:闪断  bbs_prize:悬赏\",\n\"c_3\":\"b_type:业务类型(business_type)\",\n\"c_4\":\"bill_no:对应的业务单号\",\n\"c_5\":\"broker_id:代理 id broker_name:代理 名称\",\n\"c_5\":\"remark:备注 summary:业务摘要\",\n\"c_y\":\"update_at，last_updated:最后更新时间 last_update_int:最后更新时间的时间戳，是一个整型值unixNano纳秒数量，一般作为排序或筛选的依据\"\n}"
+							"raw": "{\n\"id\":3,\n\"c_1\":\"本注释选用于所有的本节下的路由，常用的简称： amt:金额 qty:数量一般是指订单的数量\",\n\"c_1_1\":\"*_R 退单或退款 qty:数量 amt 金额 adjust_* 帐务调整 profit利润或收益\",\n\"c_2\":\"yi_order:大蚰订单   mall:商城  bbs_vie:闪断  bbs_prize:悬赏\",\n\"c_3\":\"b_type:业务类型(business_type)\",\n\"c_4\":\"bill_no:对应的业务单号\",\n\"c_5\":\"broker_id:代理 id broker_name:代理 名称\",\n\"c_5\":\"remark:备注 summary:业务摘要\",\n\"c_y\":\"update_at，last_updated:最后更新时间 last_update_int:最后更新时间的时间戳，是一个整型值unixNano纳秒数量，一般作为排序或筛选的依据\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessBrokerGet",
