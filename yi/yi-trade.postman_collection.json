@@ -485,8 +485,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "商城订单及发货",
@@ -533,7 +532,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"where\":{\"stat\":{\"$gte\":1}},\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"where\":{\"stat\":{\"$gte\":1}},\n\"c_1\":\"stat:状态 0:待付款1：已付款 2：待收货 3：已收货 4:已作废\",\n\"c_2\":\"PayType：支付类型 0:余额付款 1：支付宝 2：微信\",\n\"c_3\":\"Contact 联系人\",\n\"c_4\":\"addr:地址  Province省   City城市  Area县区  Detail详细地址,包括街道等 ZipCode 邮编\",\n\"c_5\":\"Deliver 发货人 DeliveryTime发货时间 BillNo 发货单号\" ,\n\"c_6\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/ProductOrderPage",
@@ -562,7 +561,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"where\":{\"stat\":3}\n}"
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"where\":{\"stat\":3},\n\"c_1\":\"stat:状态 0:待付款1：已付款 2：待收货 3：已收货 4:已作废\",\n\"c_2\":\"PayType：支付类型 0:余额付款 1：支付宝 2：微信\",\n\"c_3\":\"Contact 联系人\",\n\"c_4\":\"addr:地址  Province省   City城市  Area县区  Detail详细地址,包括街道等 ZipCode 邮编\",\n\"c_5\":\"Deliver 发货人 DeliveryTime发货时间 BillNo 发货单号\" ,\n\"c_6\":\"\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BOProductOrderPage",
@@ -678,7 +677,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f5729f863ba3428a6cfdd16\",\n\"comment_1\":\"订单id\"\n}"
+							"raw": "{\n\"id\":\"5f5729f863ba3428a6cfdd16\",\n\"c_1\":\"stat:状态 0:待付款1：已付款 2：待收货 3：已收货 4:已作废\",\n\"c_2\":\"PayType：支付类型 0:余额付款 1：支付宝 2：微信\",\n\"c_3\":\"Contact 联系人\",\n\"c_4\":\"addr:地址  Province省   City城市  Area县区  Detail详细地址,包括街道等 ZipCode 邮编\",\n\"c_5\":\"Deliver 发货人 DeliveryTime发货时间 BillNo 发货单号\" ,\n\"c_6\":\"\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/ProductOrderHisGet",
@@ -707,7 +706,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"c_1\":\"stat:状态 0:待付款1：已付款 2：待收货 3：已收货 4:已作废\",\n\"c_2\":\"PayType：支付类型 0:余额付款 1：支付宝 2：微信\",\n\"c_3\":\"Contact 联系人\",\n\"c_4\":\"addr:地址  Province省   City城市  Area县区  Detail详细地址,包括街道等 ZipCode 邮编\",\n\"c_5\":\"Deliver 发货人 DeliveryTime发货时间 BillNo 发货单号\" ,\n\"c_6\":\"\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/ProductOrderHisPage",
@@ -723,8 +722,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "图片验证码及文件上伟",
@@ -878,8 +876,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "大师订单",
@@ -984,10 +981,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"comment_1\":\"aa\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/YiOrderHisPage",
@@ -1045,10 +1039,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f8e632667fbdbbd5e023077\",\n\n\"comment_1\":\"aa\"\n}",
-							"options": {
-								"raw": {}
-							}
+							"raw": "{\n\"id\":\"5f8e632667fbdbbd5e023077\",\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/YiOrderGet",
@@ -1077,7 +1068,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":11,\n    \"comment\":\"需要测一下婚姻\",\n    \"master_cate_id\":2,\n    \"yi_cate_id\":1,\n    \"liu_yao\":{\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n    \"a_si_zhu\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },\n    \"a_he_hun\":{\n      \"name_male\":\"江择民\",\n      \"is_solar_male\":true,\n      \"year_male\":1980,\n      \"month_male\":12,\n      \"day_male\":12,\n      \"hour_male\":12,\n      \"minute_male\":45,\n\n      \"name_female\":\"饭冰冰\",\n      \"is_solar_female\":true,\n      \"year_female\":1982,\n      \"month_female\":11,\n      \"day_female\":11,\n      \"hour_female\":11,\n      \"minute_female\":44\n    },\n\n    \"comment_1\":\"is_solar: 传入日期是否是太阳历，yao_date：摇卦 的日期为阳历 \",\n    \"comment_2\":\" is_male:true:男性false:女性  \",\n    \"comment_3\":\"is_solar_male: 男性的生日是阳历，is_solar_female  女性的生日是阳历 \",\n    \"comment_4\":\" si_zhu/he_hu/liu_yao三个标签只需要传入一个即可 \"\n}"
+							"raw": "{\n    \"master_id\":11,\n    \"comment\":\"需要测一下婚姻\",\n    \n    \"yi_cate_id\":1,\n    \"liu_yao\":{\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n    \"a_si_zhu\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },\n    \"a_he_hun\":{\n      \"name_male\":\"江择民\",\n      \"is_solar_male\":true,\n      \"year_male\":1980,\n      \"month_male\":12,\n      \"day_male\":12,\n      \"hour_male\":12,\n      \"minute_male\":45,\n\n      \"name_female\":\"饭冰冰\",\n      \"is_solar_female\":true,\n      \"year_female\":1982,\n      \"month_female\":11,\n      \"day_female\":11,\n      \"hour_female\":11,\n      \"minute_female\":44\n    },\n\n    \"comment_1\":\"is_solar: 传入日期是否是太阳历，yao_date：摇卦 的日期为阳历 \",\n    \"comment_2\":\" is_male:true:男性false:女性  \",\n    \"comment_3\":\"is_solar_male: 男性的生日是阳历，is_solar_female  女性的生日是阳历 \",\n    \"comment_4\":\" si_zhu/he_hu/liu_yao三个标签只需要传入一个即可 \"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/YiOrderAdd",
@@ -1209,8 +1200,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "悬赏贴",
@@ -1616,8 +1606,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "闪断贴",
@@ -1942,8 +1931,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "B对帐单及汇总查询",
@@ -1967,7 +1955,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":3,\n\"c_1\":\"本注释选用于所有的本节下的路由，常用的简称： amt:金额 qty:数量一般是指订单的数量\",\n\"c_2\":\"yi_order:大蚰订单   mall:商城  bbs_vie:闪断  bbs_prize:悬赏\",\n\"c_3\":\"b_type:业务类型(business_type)\",\n\"c_4\":\"bill_no:对应的业务单号\",\n\"c_5\":\"broker_id:代理 id broker_name:代理 名称\",\n\"c_5\":\"remark:备注 summary:业务摘要\",\n\"c_y\":\"update_at，last_updated:最后更新时间 last_update_int:最后更新时间的时间戳，是一个整型值unixNano纳秒数量，一般作为排序或筛选的依据\"\n}"
+							"raw": "{\n\"id\":3,\n\"c_1\":\"本注释选用于所有的本节下的路由，常用的简称： amt:金额 qty:数量一般是指订单的数量\",\n\"c_1_1\":\"*_R 退单或退款 qty:数量 amt 金额 adjust_* 帐务调整 profit利润或收益\",\n\"c_2\":\"yi_order:大蚰订单   mall:商城  bbs_vie:闪断  bbs_prize:悬赏\",\n\"c_3\":\"b_type:业务类型(business_type)\",\n\"c_4\":\"bill_no:对应的业务单号\",\n\"c_5\":\"broker_id:代理 id broker_name:代理 名称\",\n\"c_5\":\"remark:备注 summary:业务摘要\",\n\"c_y\":\"update_at，last_updated:最后更新时间 last_update_int:最后更新时间的时间戳，是一个整型值unixNano纳秒数量，一般作为排序或筛选的依据\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessBrokerGet",
@@ -2333,8 +2321,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "大师及运营商提现",
@@ -2969,8 +2956,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "投诉 单",
@@ -3220,9 +3206,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
