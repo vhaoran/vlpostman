@@ -544,7 +544,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/499",
+									"value": "test/521",
 									"type": "string"
 								},
 								{
@@ -644,7 +644,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237089009\",\n    \"nick\": \"注册新用户以测试启用停用代理\",\n    \"pwd\": \"123456\",\n\n    \"comment1\":\"注册新用户,需要输入正确格式的手机号:service_code\",\n    \"comemnt2\":\"pwd:password 密码, nick:昵称\"\n}",
+							"raw": "{\n    \"user_code\": \"15237089018\",\n    \"nick\": \"注册新用户以测试启用停用代理\",\n    \"pwd\": \"123456\",\n\n    \"comment1\":\"注册新用户,需要输入正确格式的手机号:service_code\",\n    \"comemnt2\":\"pwd:password 密码, nick:昵称\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -675,7 +675,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237089016\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
+							"raw": "{\n    \"user_code\": \"15237089018\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1611,7 +1611,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\":17,\n    \"key_world\":\"灵符\",\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \n    \"comment1\": \"page_no, rows_per_page选填,如果不输入, page_no默认值是1, rows_per_page默认值是10\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和key_world, 不输入是默认为查询所有\"\n}",
+							"raw": "{\n    \"cate_id\":45,\n    \"key_world\":\"灵符\",\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \n    \"comment1\": \"page_no, rows_per_page选填,如果不输入, page_no默认值是1, rows_per_page默认值是10\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和key_world, 不输入是默认为查询所有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1659,7 +1659,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"DHRGu3UBUEDNcUc8aIWj\",\n\n    \"comment1\": \"管理员或运营商权限\",\n    \"comment2\": \"根据商品id获取商品所有信息\",\n    \"comment3\": \"返回值中colors对应的是一件商品的不同档次(code)以及其价格(price)\"\n}",
+							"raw": "{\n    \"id_of_es\": \"D3RJu3UBUEDNcUc8oYVv\",\n\n    \"comment1\": \"管理员或运营商权限\",\n    \"comment2\": \"根据商品id获取商品所有信息\",\n    \"comment3\": \"返回值中colors对应的是一件商品的不同档次(code)以及其价格(price)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1981,7 +1981,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/437",
+									"value": "test/525",
 									"type": "string"
 								},
 								{
@@ -2432,7 +2432,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 336,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
+							"raw": "{\n    \"uid\": 11,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2528,7 +2528,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 515,\n            \"yi_cate_id\": 3,\n            \"comment\": \"大师添加项目3\",\n            \"price\": 33\n        },{\n             \"uid\": 515,\n            \"yi_cate_id\": 4,\n            \"comment\": \"大师添加项目4\",\n            \"price\": 44\n        }\n    ],\n\n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\": \"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n    \"comment5\": \"uid, yi_cate_id, price是必填项目\"\n}",
+							"raw": "{\n    \"items\": [\n        {\n            \"uid\": 11,\n            \"yi_cate_id\": 3,\n            \"comment\": \"大师添加项目3\",\n            \"price\": 33\n        },{\n            \"uid\": 11,\n            \"yi_cate_id\": 4,\n            \"comment\": \"大师添加项目4\",\n            \"price\": 44\n        }\n    ],\n\n    \"comment1\": \"注意:上面的comment是要传入的字段, 并不是注释\",\n    \"comment2\": \"必须是大师本人或者是管理员\",\n    \"comment3\": \"如果是大师本人请保持uid与Jwt一致\",\n    \"comment5\": \"uid, yi_cate_id, price是必填项目\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2605,7 +2605,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/451",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -2624,7 +2624,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 25,\n    \"comment\": \"必须是本人对营业范围进行操作,即id对应的uid是JWT中的数据\"\n}",
+							"raw": "{\n    \"id\": 159,\n    \"comment\": \"必须是本人对营业范围进行操作,即id对应的uid是JWT中的数据\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3551,7 +3551,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 48,\n    \"broker_id\": 2,\n    \"page_no\": 1,\n    \"rows_per_page\": 4,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
+							"raw": "{\n    \"cate_id\": 16,\n    \"broker_id\": 1,\n    \"page_no\": 1,\n    \"rows_per_page\": 4,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3647,7 +3647,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"DHRGu3UBUEDNcUc8aIWj\",\n    \n    \"comment1\": \"Jwt必须要有\",\n    \"comment2\": \"普通用户权限\"\n}",
+							"raw": "{\n    \"id_of_es\": \"D3RJu3UBUEDNcUc8oYVv\",\n    \n    \"comment1\": \"Jwt必须要有\",\n    \"comment2\": \"普通用户权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4540,7 +4540,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/21",
+									"value": "test/349",
 									"type": "string"
 								},
 								{
@@ -4559,7 +4559,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":11,\n    \n    \"comment1\":\"正式会员使用,不需要输入broker_id, 后台会根据当前用户登录的uid进行获取   \"\n}",
+							"raw": "{\n    \"master_id\":336,\n    \n    \"comment1\":\"正式会员使用,不需要输入broker_id, 后台会根据当前用户登录的uid进行获取   \"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4847,7 +4847,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-12-25 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":1,\n    \n    \"comment1\":\"返回信息中t:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中c:数量, 对应的是某一年或某一月注册的用户的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\"\n}",
+							"raw": "{\n    \"start_date\":\"2020-08-01 00:00:00\",\n    \"end_date\":\"2020-12-25 00:00:00\",\n    \"calc_by\":\"year\",\n    \"broker_id\":1,\n    \n    \"comment1\":\"返回信息中time:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中count:数量, 对应的是某一年或某一月注册的用户的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\",\n    \"comment4\":\"calc_by:按什么统计, 如果按年的话是year, 如果是按月统计则是month\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4895,7 +4895,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_date\":\"2020-1-28 00:00:00\",\n    \"end_date\":\"2020-12-30 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":0,\n    \n    \"comment1\":\"返回信息中t:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中c:数量, 对应的是某一年或某一月注册的大师的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\"\n}",
+							"raw": "{\n    \"start_date\":\"2020-1-28 00:00:00\",\n    \"end_date\":\"2020-12-30 00:00:00\",\n    \"calc_by\":\"month\",\n    \"broker_id\":0,\n    \n    \"comment1\":\"返回信息中time:时间, 如果选择是按月统计则为月份,如果选择的是按年统计则为年\",\n    \"comment2\":\"返回信息中count:数量, 对应的是某一年或某一月注册的大师的数量\",\n    \"comment3\":\"运营商使用此路由broker_id是0, 系统管理员使用此路由需要给出broker_id用于确定指定的运营商\",\n    \"comment4\":\"calc_by:按什么统计, 如果按年的话是year, 如果是按月统计则是month\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
