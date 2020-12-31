@@ -12,7 +12,7 @@
     owner_id范围是21-30  -----user_code(test_broker1~test_broker10), 并且开启所有模块  
 
 ## 运营商管理员:  
-    UID范围是31-60  ----user_code(test_broker-admin1~test_broker-admin30)  
+    UID范围是31-60  ----user_code(test_broker_admin1~test_broker_admin30)  
 	其中每个运营商下面有三个运营商管理员, 例如:
 	    owner_id为21的运营商,broker_id=1,其运营商管理员对应的UID分别为31, 41, 51 	
 	    owner_id为22的运营商,broker_id=2,其运营商管理员对应的UID分别为32, 42, 52
