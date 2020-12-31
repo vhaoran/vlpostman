@@ -6,23 +6,23 @@
     UID范围为1-10 ------user_code(admin1~admin10)  
 
 ## 大师:  
-    uid范围为11-20  ------user_code(test_master1~test_master10), 每个大师开通两项业务,cate_id分别是1和2  
+    uid范围为11-20  ------user_code(master1~master10), 每个大师开通两项业务,cate_id分别是1和2  
 
 ## 运营商:  
-    owner_id范围是21-30  -----user_code(test_broker1~test_broker10), 并且开启所有模块  
+    owner_id范围是21-30  -----user_code(broker1~broker10), 并且开启所有模块  
 
 ## 运营商管理员:  
-    UID范围是31-60  ----user_code(test_broker_admin1~test_broker_admin30)  
+    UID范围是31-60  ----user_code(BAdmin1~BAdmin30)  
 	其中每个运营商下面有三个运营商管理员, 例如:
 	    owner_id为21的运营商,broker_id=1,其运营商管理员对应的UID分别为31, 41, 51 	
 	    owner_id为22的运营商,broker_id=2,其运营商管理员对应的UID分别为32, 42, 52
 
 ## 运营商正式会员:  
-    UID范围是61-80 ----user_code(test_user1~test_user20)    
+    UID范围是61-80 ----user_code(user1~user20)    
     其中为每个运营商添加两个非管理员的正式用户, 例如:  
     owner_id=21的运营商,broker_id=1,其有两个非管理员的正式会员  
-            正式会员1:user_code=test_user1, uid=61 , broker_id=1  
-            正式会员2:user_code=test_user2, uid=62 , broker_id=1  
+            正式会员1:user_code=user1, uid=61 , broker_id=1  
+            正式会员2:user_code=user2, uid=62 , broker_id=1  
 ## 运营商大师:  
     为每一个运营商添加三个大师,大师的UID分别是11, 12, 13, 并为大师的项目添加价格,cate_id=1时 offset=100,cate_id=2时offset=200  
 
@@ -41,13 +41,13 @@
         2:d_of_es="D3RJu3UBUEDNcUc8oYVv"---cate_id=45 
 
 # 测试数据示例:  
-       运营商: owner_id=21, user_code=test_broker1, id(broker_id)=1  
-       运营商管理员:uid=31, user_code=test_broker-admin1, broker_id=1  
-                   uid=41, user_code=test_broker-admin11, broker_id=1  
-                   uid=51, user_code=test_broker-admin21, broker_id=1  
+       运营商: owner_id=21, user_code=broker1, id(broker_id)=1  
+       运营商管理员:uid=31, user_code=BAdmin1, broker_id=1  
+                   uid=41, user_code=BAdmin11, broker_id=1  
+                   uid=51, user_code=BAdmin21, broker_id=1  
        正式会员(已经被代理的非运营商管理员用户):  
-                    uid=61, user_code=test_user1,broker_id=1,  
-                    uid=62, user_code=test_user2,broker_id=1,  
+                    uid=61, user_code=user1,broker_id=1,  
+                    uid=62, user_code=user2,broker_id=1,  
        运营商大师:   
             大师1: broker_id=1,master_id=11,      
             大师2: broker_id=1,master_id=12,  
@@ -63,6 +63,6 @@
         系统管理员:   
             user_code=admin1, uid=1  
         大师:   
-            user_code=test_master1, uid=11  
+            user_code=master1, uid=11  
          
 
