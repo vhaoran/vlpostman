@@ -12,7 +12,7 @@
     owner_id范围是21-30  -----user_code(broker1~broker10), 并且开启所有模块  
 
 ## 运营商管理员:  
-    UID范围是31-60  ----user_code(BAdmin1~BAdmin30)  
+    UID范围是31-60  ----user_code(badmin1~badmin30)  
 	其中每个运营商下面有三个运营商管理员, 例如:
 	    owner_id为21的运营商,broker_id=1,其运营商管理员对应的UID分别为31, 41, 51 	
 	    owner_id为22的运营商,broker_id=2,其运营商管理员对应的UID分别为32, 42, 52
@@ -42,9 +42,9 @@
 
 # 测试数据示例:  
        运营商: owner_id=21, user_code=broker1, id(broker_id)=1  
-       运营商管理员:uid=31, user_code=BAdmin1, broker_id=1  
-                   uid=41, user_code=BAdmin11, broker_id=1  
-                   uid=51, user_code=BAdmin21, broker_id=1  
+       运营商管理员:uid=31, user_code=badmin1, broker_id=1  
+                   uid=41, user_code=badmin11, broker_id=1  
+                   uid=51, user_code=badmin21, broker_id=1  
        正式会员(已经被代理的非运营商管理员用户):  
                     uid=61, user_code=user1,broker_id=1,  
                     uid=62, user_code=user2,broker_id=1,  
