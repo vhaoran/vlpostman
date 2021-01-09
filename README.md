@@ -29,7 +29,7 @@
    ...
 ## 正式会员  
    id      账号               密码       昵称          运营商id  
-   61     user1             123456    broker_user1     1
-   62     user2             123456    broker_user2     2
-   63     user3             123456    broker_user3     3
+   61     user1             123456    broker_user1     1  
+   62     user2             123456    broker_user2     2  
+   63     user3             123456    broker_user3     3  
     ...
