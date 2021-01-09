@@ -14,7 +14,7 @@
    12    master2             123456    master2    
    13    master3             123456    master3    
     ...  
-##运营商  
+## 运营商  
    id      账号               密码       昵称       运营商id  
    21     broker1           123456    broker1       1  
    22     broker2           123456    broker2       2  
@@ -28,7 +28,7 @@
    34      badmin4           123456    badmin4         2  
    ...
 ## 正式会员  
-   id      账号              密码       昵称           运营商id  
+   id      账号               密码       昵称          运营商id  
    61     user1             123456    broker_user1     1
    62     user2             123456    broker_user2     2
    63     user3             123456    broker_user3     3
