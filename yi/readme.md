@@ -33,12 +33,11 @@
     为每个运营商添加三个平台闪断贴收费标准 分别是1, 2, 3
 
 ## 运营商商品类别:  
-    为每个运营商选择已有的所有商品类别16, 17, 22, 30, 40, 41, 42, 43, 44, 45, 48, 50
+    为每个运营商选择已有的所有商品类别17, 30, 40, 41, 42, 43, 45
   
 ## 运营商商品:  
-    为每个运营商添加2件商品,分别是:
-        1:id_of_es="DHRGu3UBUEDNcUc8aIWj"---cate_id=48 
-        2:d_of_es="D3RJu3UBUEDNcUc8oYVv"---cate_id=45 
+    为每个运营商添加1件商品,分别是:
+        1:d_of_es="D3RJu3UBUEDNcUc8oYVv"---cate_id=45 
 
 # 测试数据示例:  
        运营商: owner_id=21, user_code=broker1, id(broker_id)=1  
