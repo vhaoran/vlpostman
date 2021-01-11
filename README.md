@@ -50,6 +50,6 @@
    62   |  user2      |  123456   |  broker_user1  |   1    
    63   |  user3      |  123456   |  broker_user2  |   2    
    64   |  user4      |  123456   |  broker_user2  |   2    
-   .   |    .        |     .     |       .        |    .         
+    .   |   .         |     .     |       .        |   .       
    80   |  user20     |  123456   |  broker_user10 |  10     
     
