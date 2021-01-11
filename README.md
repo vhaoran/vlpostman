@@ -32,24 +32,24 @@
    30  |   broker10 |   123456   | broker10 |    10      |100010
 
 ## 运营商管理员  每个运营商有三个
-   id   |    账号      |    密码   |   昵称     |   运营商id        
-   :-: | :-: | :-: | :-: | :-:  
-   31   |   badmin1   |   123456 |   badmin1  |        1      
-   41   |   badmin11  |   123456 |   badmin11 |        1    
-   51   |   badmin21  |   123456 |   badmin21 |        1     
-   32   |   badmin2   |   123456 |   badmin2  |        2    
-   42   |   badmin12  |   123456 |   badmin12 |        2    
-   52   |   badmin22  |   123456 |   badmin22 |        2    
-   .    |      .      |      .   |    .       |        .            
-   60   |   badmin60  |   123456 |   badmin30 |       10    
+   id   |    账号      |    密码   |   昵称     |   运营商id    |邀请码      
+   :-: | :-: | :-: | :-: | :-:  | :-:  
+   31   |   badmin1   |   123456 |   badmin1  |        1     |100001    
+   41   |   badmin11  |   123456 |   badmin11 |        1     |100001
+   51   |   badmin21  |   123456 |   badmin21 |        1     |100001  
+   32   |   badmin2   |   123456 |   badmin2  |        2     |100002
+   42   |   badmin12  |   123456 |   badmin12 |        2     |100002
+   52   |   badmin22  |   123456 |   badmin22 |        2     |100002
+   .    |      .      |      .   |    .       |        .     | .       
+   60   |   badmin60  |   123456 |   badmin30 |       10     |100010  
      
 ## 正式会员    每个运营商有两个
-   id   |   账号       |   密码    |   昵称      |    运营商id        
-   :-: | :-: | :-: | :-: | :-:  
-   61   |  user1      |  123456   |  broker_user1  |   1      
-   62   |  user2      |  123456   |  broker_user1  |   1    
-   63   |  user3      |  123456   |  broker_user2  |   2    
-   64   |  user4      |  123456   |  broker_user2  |   2    
-   .   |    .        |     .     |       .        |    .      
-   80   |  user20     |  123456   |  broker_user10 |  10     
+   id   |   账号       |   密码    |   昵称      |    运营商id   |邀请码     
+   :-: | :-: | :-: | :-: | :-: | :-: 
+   61   |  user1      |  123456   |  broker_user1  |   1      | 100001
+   62   |  user2      |  123456   |  broker_user1  |   1      | 100001  
+   63   |  user3      |  123456   |  broker_user2  |   2      | 100002
+   64   |  user4      |  123456   |  broker_user2  |   2      | 100002
+   .   |    .        |     .     |       .        |    .      |  .  
+   80   |  user20     |  123456   |  broker_user10 |  10      | 100010
     
