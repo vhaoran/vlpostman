@@ -18,7 +18,7 @@
    11  |  master1   |  123456  |    master1  
    12  |  master2   |  123456  |    master2        
    13  |  master3   |  123456  |    master3        
-    .  |     .      |     .    |       .                         
+    .  |     .      |     .    |           .                           
    20  |  master10  |  123456  |    master10        
    
 ## 运营商  
@@ -28,7 +28,7 @@
    21  |   broker1  |   123456   | broker1  |     1  
    22  |   broker2  |   123456   | broker2  |     2      
    23  |   broker3  |   123456   | broker3  |     3      
-    .  |      .     |      .     |   .      |     .             
+    .  |      .     |      .     |   .      |     .               
    30  |   broker10 |   123456   | broker10 |    10     
 
 ## 运营商管理员  每个运营商有三个
