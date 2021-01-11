@@ -18,7 +18,7 @@
    11  |  master1   |  123456  |    master1  
    12  |  master2   |  123456  |    master2    
    13  |  master3   |  123456  |    master3    
-    .  |    .       |   .      |       .    
+    .  |      .     |   .      |       .    
    20  |  master10  |  123456  |    master10    
    
 ## 运营商  
