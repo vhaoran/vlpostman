@@ -3,12 +3,14 @@
 # 测试账号:
 
 ## 系统管理员  
-   id       账号               密码      昵称   
-   1      admin1             123456   admin1  
-   3      admin2             123456   admin2  
-   2      admin3             123456   admin3  
-    ...   
-   10     admin10            123456   admin10  
+
+   id   |    账号         |      密码   |   昵称  
+   :-: | :-: | :-:  |:-:   
+   1   |   admin1   |          123456 |  admin1  
+   3   |   admin2   |          123456 |  admin2  
+   2   |   admin3   |          123456 |  admin3  
+    ...|   ...      |            ...  |    ...     
+   10  |  admin10   |          123456 |  admin10  
 
 ## 大师  
    id    账号                 密码       昵称  
