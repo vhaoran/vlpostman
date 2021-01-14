@@ -214,7 +214,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"amt\":50,\n \"b_type\":\"bbs-vie\",\n \"id\":\"5fd71fb4b400f6e7145b888b\",\n \"comment_1\":\"业务类型b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
+							"raw": "{\n \"amt\":50,\n \"b_type\":\"yi-order\",\n \"id\":\"5ffd1e0c8f45bca5fe720a08\",\n \"comment_1\":\"业务类型b_type: yi-order/bbs-vie/bbs-prize/mall/\",\n \"comment_2\":\"id:订单的id\",\n \"comment_3\":\"用于订单的付款，支付闪断、悬赏、大理由订单，商城订单通过余额付款\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/OrderPay",
@@ -498,7 +498,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"items\":[\n{\n\"product_id\":\"WallXXQBWYJcLnnxyvRo\",\n\"name\":\"fu_zhu\",\n\"color_code\":\"a\",\n\"price\":32,\n\"qty\":40,\n\"amt\":50\n}\n],\n\"contact\":\"whr\",\n\"c_1\":\"aa\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
+							"raw": "{\n\"items\":[\n{\n\"product_id\":\"EXRMu3UBUEDNcUc8kYUK\",\n\"name\":\"fu_zhu\",\n\"color_code\":\"a\",\n\"price\":32,\n\"qty\":40,\n\"amt\":50\n}\n],\n\"contact\":\"whr\",\n\"c_1\":\"aa\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/ProductOrderAdd",
@@ -1034,7 +1034,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f8e632667fbdbbd5e023077\",\n\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"id\":\"5ffd65d41c8e549974cc8cf3\",\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/YiOrderGet",
@@ -1242,7 +1242,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"where\":{\"stat\":-1},\n\"sort\":{\"create_data_int\":1},\n\n\"c_1\":\"\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
+							"raw": "{\n    \"page_no\":6,\n    \n     \"sort\":{\"create_data_int\":1},\n\n\"c_1\":\"\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizePage2",
@@ -1648,7 +1648,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n\"where\":{\n  \"stat\": {\"$in\":[1,2,0]},\n  \"uid\":21\n},\n\n\"c_1\":\"aa\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\",\n}"
+							"raw": "{\n\n\"where\":{\n  \n  \"uid\":61,\n  \"stat\":{\"$gt\":0}\n},\n\n\"c_1\":\"aa\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSViePage",
@@ -1672,12 +1672,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/300"
+								"value": "test/1"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"where\":{\"stat\":-1},\n\"c_1\":\"aa\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
+							"raw": "{\n\"where\":{\"uid\":634},\n\n\"c_1\":\"aa\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSViePage2",
@@ -1990,6 +1990,41 @@
 			"name": "B对帐单及汇总查询",
 			"item": [
 				{
+					"name": "aaa订单结算跟踪----只用作测试，只有管理员能运行",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"b_type\":\"\",\n\"order_id\":\"5fbdf499f229972282dc0c66\",\n\"c_1\":\"b_type: yi-order/mall/bbs-vie/bbs-prize,可以为空，结果可能会有多个\",\n\"c_2\":\"order_id:\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/OrderDebug",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"OrderDebug"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "代理 对帐单-get",
 					"request": {
 						"method": "POST",
@@ -2143,12 +2178,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/11"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"rows_per_page\":10\n\n}"
+							"raw": "{\n\"rows_per_page\":10,\n\"where\":{\"uid\":11},\n\"sort\":{\"created_at\":0}\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessMasterPage",
@@ -3063,12 +3098,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/21"
+								"value": "test/2"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5feac32f6614f86b74567f4c\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"id\":\"5ffd49818362d68cade11645\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderAudit",
@@ -3173,7 +3208,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\"where\":{\"_id\":\"5ff40bb441c9b9cb852e7cd5\"},\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"rows_per_page\":100,\n\"page_no\":1,\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderPage",
@@ -3208,7 +3243,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\"where\":{\"master_id\":{\"$gte\":100}},\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n}"
+							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderHisPage",
