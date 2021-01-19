@@ -104,7 +104,7 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/1"
+								"value": "test/133333"
 							}
 						],
 						"body": {
@@ -127,6 +127,20 @@
 				},
 				{
 					"name": "w个人对帐单分页查询",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"{",
+									"",
+									"",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [
@@ -241,7 +255,7 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/61"
+								"value": "test/11111111"
 							}
 						],
 						"body": {
@@ -889,7 +903,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"where\":{\"stat\":1},\n\"c_1\":\"stat: 0:待付款 1：已付款 3 已处理  4 已退款\",\n\"c_2\":\"amt:金额 pay_type: 0:余额付款 1：支付宝 2：微信 \",\n\"c_3\":\"contact: 联系人, addr 地址 Deliver: 发货人 deliveryTime: 发货时间\",\n\"c_4\":\"bill_no: 发货单号\",\n\"c_5\":\"item:{ColorCode:颜色代码 price:价格 qty:数量 amt: 金额  }\"\n}"
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"c_1\":\"stat: 0:待付款 1：已付款 3 已处理  4 已退款\",\n\"c_2\":\"amt:金额 pay_type: 0:余额付款 1：支付宝 2：微信 \",\n\"c_3\":\"contact: 联系人, addr 地址 Deliver: 发货人 deliveryTime: 发货时间\",\n\"c_4\":\"bill_no: 发货单号\",\n\"c_5\":\"item:{ColorCode:颜色代码 price:价格 qty:数量 amt: 金额  }\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/YiOrderPage",
@@ -1208,7 +1222,7 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/300"
+								"value": "test/11"
 							}
 						],
 						"body": {
@@ -1271,7 +1285,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"where\":{\"$or\":[{\n    \"master_reply.master_id\":{\"$gte\":0},\n    \"rewards.master_id\":336\n},{\n    \"stat\":5\n   }]\n},\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"where\":{\"$or\":[{\n    \"master_reply.master_id\":336,\n    \"rewards.master_id\":336\n},{\n    \"stat\":5\n   }]\n},\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeHisPage",
@@ -1648,7 +1662,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n\"where\":{\n  \n  \"uid\":61,\n  \"stat\":{\"$gt\":0}\n},\n\n\"c_1\":\"aa\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
+							"raw": "{\n\"where\":{\"_id\": \"60013d5965e994891a9cf539\"},\n\n\n\"c_1\":\"aa\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSViePage",
@@ -1828,7 +1842,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"score\":50,\n\"level_id\":1,\n\"title\":\"---------------什么时间买 车\",\n\"brief\":\"我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\"content\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"score\":50,\n\"level_id\":1,\n\"title\":\"---------------什么时间买 车\",\n\"brief\":\"--------------我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\"content\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSVieAdd",
@@ -2008,7 +2022,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"b_type\":\"\",\n\"order_id\":\"5fbdf499f229972282dc0c66\",\n\"c_1\":\"b_type: yi-order/mall/bbs-vie/bbs-prize,可以为空，结果可能会有多个\",\n\"c_2\":\"order_id:\"\n}"
+							"raw": "{\n\"b_type\":\"\",\n\"order_id\":\"5ffd49018362d68cade11643\",\n\"c_1\":\"b_type: yi-order/mall/bbs-vie/bbs-prize,可以为空，结果可能会有多个\",\n\"c_2\":\"order_id:\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/OrderDebug",
@@ -2813,7 +2827,7 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/336"
+								"value": "test/20"
 							}
 						],
 						"body": {
@@ -3155,7 +3169,7 @@
 					"response": []
 				},
 				{
-					"name": "投訢单get-适用于新动态为0数据",
+					"name": "投訢单get-适用于新处理中数据",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3190,7 +3204,7 @@
 					"response": []
 				},
 				{
-					"name": "投訢单page-适用于状态为0数据",
+					"name": "投訢单page-适用于处理中数据",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -3243,7 +3257,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n}"
+							"raw": "{\n\"rows_per_page\":10,\n\"page_no\":1,\n\"where\":{\"draw_back\":true},\n\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderHisPage",
@@ -3289,6 +3303,81 @@
 								"yi",
 								"trade",
 								"RefundOrderHisGet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "其它",
+			"item": [
+				{
+					"name": "vip用户---获取所有的待付款的订单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/62"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"c_4\":\"本功能无其它参数\"\n\n\n\n\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/OrdersPaying",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"OrdersPaying"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vip用户---获取所有处理中（相当于已付款）订单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/300",
+								"disabled": true
+							},
+							{
+								"key": "Jwt",
+								"type": "text",
+								"value": "test/61"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \n\"c_1\":\"不需要任何参数\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/yi/trade/OrdersPaid",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"trade",
+								"OrdersPaid"
 							]
 						}
 					},
