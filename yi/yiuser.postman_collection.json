@@ -160,7 +160,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/441",
+									"value": "test/623",
 									"type": "string"
 								},
 								{
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"test-broker-145\",\n    \"icon\":\"p1\",\n    \"service_code\": \"000145\",\n    \"brief\": \"运营商管理员申请成为运营商\",\n\n    \"comment1\": \"游客和正式会员均可以使用此路由\",\n    \"comment2\": \"service_code:邀请码, name:代理名称 都不能重复\",\n    \"comment3\": \"运营商的服务码必须是六位的数字组成的字符串\",\n    \"comment4\": \"未绑定手机号的游客账户不可以申请成为运营商\",\n    \"comment5\": \"参数 icon:图标, brief:简介\",\n    \"comment6\": \"返回值: enable_mall:商城状态, enable_master:大师状态, enable_prize:悬赏贴状态, enable_vie:闪断贴状态\"\n}",
+							"raw": "{\n    \"name\": \"荥阳地区总代理\",\n    \"icon\":\"p1\",\n    \"service_code\": \"333314\",\n    \"brief\": \"运营商管理员申请成为运营商\",\n\n    \"comment1\": \"游客和正式会员均可以使用此路由\",\n    \"comment2\": \"service_code:邀请码, name:代理名称 都不能重复\",\n    \"comment3\": \"运营商的服务码必须是六位的数字组成的字符串\",\n    \"comment4\": \"未绑定手机号的游客账户不可以申请成为运营商\",\n    \"comment5\": \"参数 icon:图标, brief:简介\",\n    \"comment6\": \"返回值: enable_mall:商城状态, enable_master:大师状态, enable_prize:悬赏贴状态, enable_vie:闪断贴状态\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -227,7 +227,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 5,\n    \"where\":{\n        \"stat\":0\n    },\n\n    \"comment1\":\"系统管理员权限\",\n    \"comment2\":\"Jwt必须要有,是系统管理员的UID\",\n    \"comment3\":\"sort是可选字段,指定存在的字段,0位降序,1为升序\"\n    \n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 100,\n  \n\n    \"comment1\":\"系统管理员权限\",\n    \"comment2\":\"Jwt必须要有,是系统管理员的UID\",\n    \"comment3\":\"sort是可选字段,指定存在的字段,0位降序,1为升序\"\n    \n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -323,7 +323,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"sort\":{\n        \"owner_id\":1\n    },\n    \"page_no\":1,\n    \"rows_per_page\":100,\n\n    \"comment1\":\"系统管理员权限\",\n    \"comment2\":\"sort后的字段后跟一个数字,0为降序排列,1位升序排列 选填\"\n}",
+							"raw": "{\n    \"sort\":{\n        \"created_at\":0\n    },\n    \"page_no\":1,\n    \"rows_per_page\":100,\n\n    \"comment1\":\"系统管理员权限\",\n    \"comment2\":\"sort后的字段后跟一个数字,0为降序排列,1位升序排列 选填\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -345,14 +345,14 @@
 					"response": []
 				},
 				{
-					"name": "w按代理id分页查询用户信息------B",
+					"name": "w按代理id分页查询用户信息------B+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/22",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -371,7 +371,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\":10,\n\n    \"comment1\":\"运营商管理员权限\"\n}",
+							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\":100,\n   \n\n    \"comment1\":\"运营商管理和系统管理员权限\",\n    \"comment2\":\"如果是运营商,则显示该运营商的正式会员\",\n    \"comment3\":\"如果是系统管理员,显示所有的用户(正式会员和普通用户)\",\n    \"comment4\":\"返回信息中的'id'即是用户的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -496,7 +496,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/21",
 									"type": "string"
 								},
 								{
@@ -644,7 +644,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237089112\",\n    \"nick\": \"注册新用户以测试启用停用代理\",\n    \"pwd\": \"123456\",\n\n    \"comment1\":\"注册新用户,需要输入正确格式的手机号:service_code\",\n    \"comemnt2\":\"pwd:password 密码, nick:昵称\"\n}",
+							"raw": "{\n    \"user_code\": \"15237089141\",\n    \"nick\": \"注册新用户以测试启用停用代理\",\n    \"pwd\": \"123456\",\n\n    \"comment1\":\"注册新用户,需要输入正确格式的手机号:service_code\",\n    \"comemnt2\":\"pwd:password 密码, nick:昵称\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -675,7 +675,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"user_code\": \"15237089112\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
+							"raw": "{\n    \"user_code\": \"15237099122\",\n    \"pwd\": \"123456\",\n    \"chart_key\": \"123\",\n    \"chart_value\": \"456\",\n    \"comment1\": \"执行成功的返回结果为用户信息\",\n    \"comment2\": \"返回数据中user_info的id即时以后的uid\",\n    \"comment3\": \"返回数据中的modues是根据该用户是都绑定运营商动态显示的\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -732,7 +732,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/1",
+									"value": "test/13",
 									"type": "string"
 								},
 								{
@@ -1419,7 +1419,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 45,\n\n    \"comment1\": \"获取输入id对应的商品分类\"\n}",
+							"raw": "{\n    \"id\": 40,\n\n    \"comment1\": \"获取输入id对应的商品分类\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1515,7 +1515,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 56,\n    \"M\": {\n        \"name\": \"五台山大师开过光\",\n        \"icon\": \"3\",\n        \"sort_no\": \"3\"\n    },\n\n    \"comment1\": \"M中的内容可以根据分类的项选填\",\n    \"comment2\": \"以上字段是商品分类中所有可以修改的字段\"\n}",
+							"raw": "{\n    \"id\": 40,\n    \"M\": {\n          \"name\":\"商品分类a\",\n          \"icon\":\"pic1\",\n          \"sort_no\":3\n    },\n\n    \"comment1\": \"M中的内容可以根据分类的项选填\",\n    \"comment2\": \"以上字段是商品分类中所有可以修改的字段\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1611,7 +1611,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \n    \"comment1\": \"page_no, rows_per_page选填,如果不输入, page_no默认值是1, rows_per_page默认值是10\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和key_world, 不输入是默认为查询所有\"\n}",
+							"raw": "{\n    \"cate_id\":43,\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \n    \"comment1\": \"page_no, rows_per_page选填,如果不输入, page_no默认值是1, rows_per_page默认值是10\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和key_world, 不输入是默认为查询所有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1659,7 +1659,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"qhOezHYBbzBZdsS4pOaG\",\n\n    \"comment1\": \"管理员或运营商权限\",\n    \"comment2\": \"根据商品id获取商品所有信息\",\n    \"comment3\": \"返回值中colors对应的是一件商品的不同档次(code)以及其价格(price)\"\n}",
+							"raw": "{\n    \"id_of_es\": \"WallXXQBWYJcLnnxyvRo\",\n\n    \"comment1\": \"管理员或运营商权限\",\n    \"comment2\": \"根据商品id获取商品所有信息\",\n    \"comment3\": \"返回值中colors对应的是一件商品的不同档次(code)以及其价格(price)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1707,7 +1707,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 45,\n    \"name\": \"灵符\",\n    \"remark\": \"妈祖灵符\",\n    \"key_word\": \"灵验 妈祖 观音\",\n    \"enabled\": true,\n    \"images\": [\n        {\n            \"path\": \"pic1\",\n            \"sort_no\": 1\n        }\n    ],\n    \"colors\": [\n        {\n            \"code\": \"灰色\",\n            \"price\": -99\n        },\n        {\n            \"code\": \"黄色\",\n            \"price\": 199\n        },\n        {\n            \"code\": \"金色\",\n            \"price\": 1999\n        }\n    ],\n    \"image_main\": \"pic-main\",\n\n    \"comment1\": \"首次添加商品属性可以选填\",\n    \"comment2\": \"colors是颜色代码,分别代表不同颜色的不同价格\",\n    \"comment3\": \"cate_id必须是已经存在的分类id, cate_name的值后台会查询并添加\",\n    \"comment4\": \"返回值中的visit_count是该商品的访问次数\",\n    \"comment5\": \"新增商品信息时需要保证商品价格大于0\"\n}",
+							"raw": "{\n    \"cate_id\": 30,\n    \"name\": \"火影公仔\",\n    \"remark\": \"火影公仔\",\n    \"key_word\": \"公仔 火影 忍者\",\n    \"enabled\": true,\n    \"images\": [\n            {\n                \"path\": \"https://cn.bing.com/images/search?view=detailV2&ccid=4dn3dcwG&id=F3C4CDA471CC69619F26F48F2FC1D64847131276&thid=OIP.4dn3dcwGS5IcexC3GmYrFgHaE6&mediaurl=http%3a%2f%2fpic33.nipic.com%2f20130914%2f11273989_133457155000_2.jpg&exph=680&expw=1024&q=%e4%bd%9b%e7%8f%a0%e5%9b%be%e7%89%87&simid=607995914533864730&ck=0C91D01D9767BA1D86F186B82146EBE8&selectedIndex=14&qpvt=%e4%bd%9b%e7%8f%a0%e5%9b%be%e7%89%87&FORM=IRPRST\",\n                \"sort_no\": 1\n            },\n            {\n                \"path\": \"https://cn.bing.com/images/search?view=detailV2&ccid=bkfUe683&id=318DD021A5A50FED16C9EB0C718CEBC04AA7BEAA&thid=OIP.bkfUe683PKhwDm15QTC3cwHaE7&mediaurl=https%3A%2F%2Fpic101.nipic.com%2Ffile%2F20160602%2F21984720_144711439000_2.jpg&exph=681&expw=1024&q=%e4%bd%9b%e7%8f%a0%e5%9b%be%e7%89%87&simid=608035101864691025&ck=4ACBF6967EF223BE48BC513D6B7F4592&selectedindex=14&qpvt=%e4%bd%9b%e7%8f%a0%e5%9b%be%e7%89%87&form=IRPRST&vt=0&sim=11\",\n                \"sort_no\": 2\n            },\n            {\n                \"path\": \"https://cn.bing.com/images/search?view=detailV2&ccid=P5cs%2BkJp&id=DA77EA031ACA85D5B13008B70BF75737059824D7&thid=OIP.P5cs-kJpPWUGlO_DaiLIhAHaEK&mediaurl=https%3A%2F%2Fpic31.nipic.com%2F20130724%2F12154374_174804524185_2.jpg&exph=575&expw=1024&q=%e4%bd%9b%e7%8f%a0%e5%9b%be%e7%89%87&simid=608006381332400895&ck=53297DDD8BFD856AAB6C61069E901F58&selectedindex=16&qpvt=%e4%bd%9b%e7%8f%a0%e5%9b%be%e7%89%87&form=IRPRST&vt=0&sim=11\",\n                \"sort_no\": 3\n            }\n        ],\n    \"colors\": [\n        {\n            \"code\": \"灰色\",\n            \"price\": 99\n        },\n        {\n            \"code\": \"黄色\",\n            \"price\": 199\n        },\n        {\n            \"code\": \"金色\",\n            \"price\": 1999\n        }\n    ],\n    \"image_main\": \"https://cn.bing.com/images/search?view=detailV2&ccid=DOAiL3az&id=9C820054870DD21CBD92C221820B21B4124BDC69&thid=OIP.DOAiL3azX3KSTyYST8iJvQHaEn&mediaurl=https%3a%2f%2fgss0.baidu.com%2f-fo3dSag_xI4khGko9WTAnF6hhy%2fzhidao%2fpic%2fitem%2fb90e7bec54e736d129cfc94890504fc2d4626995.jpg&exph=1437&expw=2306&q=%e7%81%ab%e5%bd%b1%e5%bf%8d%e8%80%85&simid=608017844596442383&ck=2FD0D1E95AF04251DE69C2CD8A16629D&selectedIndex=0&FORM=IRPRST&idpp=overlayview&ajaxhist=0\",\n\n    \"comment1\": \"首次添加商品属性可以选填\",\n    \"comment2\": \"colors是颜色代码,分别代表不同颜色的不同价格\",\n    \"comment3\": \"cate_id必须是已经存在的分类id, cate_name的值后台会查询并添加\",\n    \"comment4\": \"返回值中的visit_count是该商品的访问次数\",\n    \"comment5\": \"新增商品信息时需要保证商品价格大于0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1755,7 +1755,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"qhOezHYBbzBZdsS4pOaG\",\n    \"M\": {\n        \"colors\":[\n           {\n                \"code\": \"a\",\n                \"price\": -99\n            }\n        ]\n      \n    },\n    \n    \"comment1\": \"修改商品属性可以选填, 但是必须存在,大于0即可\",\n    \"comment2\": \"固定属性不可以修改,例如cate_id, cate_name\",\n    \"comment3\": \"修改商品信息必须保证商品价格大于0\"\n}",
+							"raw": "{\n    \"id_of_es\": \"Qcr423YBvy5Eq7PdKZ8A\",\n    \"M\": {\n        \"images\": [\n            {\n                \"path\": \"https://pic2.zhimg.com/80/v2-d86276f817e169e4e0178b0127e0ea06_1440w.jpg?source=1940ef5c\",\n                \"sort_no\": 0\n            },\n            {\n                \"path\": \"https://pic2.zhimg.com/80/v2-410a7aca29c2d133e2da9e83e3d425c1_1440w.jpg?source=1940ef5c\",\n                \"sort_no\": 0\n            },\n            {\n                \"path\": \"https://pic2.zhimg.com/80/v2-faba8be66d3fca80323065db89a08f59_1440w.jpg?source=1940ef5c\",\n                \"sort_no\": 0\n            }\n        ],\n        \"image_main\":\"https://pic2.zhimg.com/80/v2-c302471b17a4a9e4f9e1c469fe42a828_1440w.jpg?source=1940ef5c\"\n    },\n    \n    \"comment1\": \"修改商品属性可以选填, 但是必须存在,大于0即可\",\n    \"comment2\": \"固定属性不可以修改,例如cate_id, cate_name\",\n    \"comment3\": \"修改商品信息必须保证商品价格大于0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1803,7 +1803,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id_of_es\": \"GXQ1iXYBUEDNcUc8aYWP\",\n    \"enabled\":1,\n    \n    \"comment1\": \"系统管理员权限\",\n    \"comment2\": \"enabled 1是启用, 0是停用\",\n    \"comment3\": \"系统管理员根据传入的商品id和enabled值对商品进行启用或者停用\"\n}",
+							"raw": "{\n    \"id_of_es\": \"E3ROu3UBUEDNcUc8fIXU\",\n    \"enabled\":0,\n    \n    \"comment1\": \"系统管理员权限\",\n    \"comment2\": \"enabled 1是启用, 0是停用\",\n    \"comment3\": \"系统管理员根据传入的商品id和enabled值对商品进行启用或者停用\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1904,7 +1904,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 511,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的全部信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数, rate:评分\"\n}",
+							"raw": "{\n    \"master_id\": 12,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的全部信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数, rate:评分\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1952,7 +1952,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\": 11,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
+							"raw": "{\n    \"master_id\": 12,\n\n    \"comment1\": \"运营商和管理员权限\",\n    \"comment2\": \"根据指定的master_id(大师对应的uid), 获取该大师的信息\",\n    \"comment3\": \"返回信息 bad_rate:差评, mid_rate:中评, best_rate:好评, rebate:返点比例, order_total:总订单数\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2240,7 +2240,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 548,\n\n    \"comment1\": \"此处的uid也是master_id\"\n}",
+							"raw": "{\n    \"uid\": 14,\n\n    \"comment1\": \"此处的uid也是master_id\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2288,7 +2288,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"master_id\":11,\n    \"image_path\": \"master11-4\",\n    \"sort_no\": 3,\n\n    \"comment1\":\"管理员和大师本人都可以使用此路由\",\n    \"comment2\":\"大师使用此路由时, 必须是对本人添加照片(master_id=Jwt)\"\n}",
+							"raw": "{\n    \"master_id\":12,\n    \"image_path\": \"http://p.0755yicai.com/7d85d377-6968-4e50-8b5f-498a58757aed?e=1919315619&token=gEpp05gnISRQeLZ6d5GCnAryXSFDnMfl_G5iG5p5:yVAzv4geE4LTcgOct2UnzBy-z54=\",\n    \"sort_no\": 1,\n\n    \"comment1\":\"管理员和大师本人都可以使用此路由\",\n    \"comment2\":\"大师使用此路由时, 必须是对本人添加照片(master_id=Jwt)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2365,7 +2365,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/21",
+									"value": "test/11",
 									"type": "string"
 								},
 								{
@@ -2384,7 +2384,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 59,\n\n    \"comment1\": \"系统管理员和大师权限\",\n    \"comment2\": \"此处的id是图片的id\",\n    \"comment3\": \"大师能对本人的图片进行删除,而系统管理员可以对所有的大师图片进行删除\"\n}",
+							"raw": "{\n    \"id\": 144,\n\n    \"comment1\": \"系统管理员和大师权限\",\n    \"comment2\": \"此处的id是图片的id\",\n    \"comment3\": \"大师能对本人的图片进行删除,而系统管理员可以对所有的大师图片进行删除\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2432,7 +2432,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 548,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
+							"raw": "{\n    \"uid\": 13,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3455,7 +3455,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list_cate_id\":[16,17],\n\n    \"comment1\":\"此处的数组是商品类别的cate_id\",\n    \"comment2\":\"运营商管理员权限\"\n}",
+							"raw": "{\n    \"list_cate_id\":[40],\n\n    \"comment1\":\"此处的数组是商品类别的cate_id\",\n    \"comment2\":\"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3503,7 +3503,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"DXRHu3UBUEDNcUc8XoWl\",\n            \"price_offset\": 66\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
+							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"EHRKu3UBUEDNcUc8mIWn\",\n            \"price_offset\": 111\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3551,7 +3551,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 16,\n    \"broker_id\": 1,\n    \"page_no\": 1,\n    \"rows_per_page\": 4,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
+							"raw": "{\n    \"cate_id\": 17,\n    \"broker_id\": 61,\n    \"page_no\": 1,\n    \"rows_per_page\": 4,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
