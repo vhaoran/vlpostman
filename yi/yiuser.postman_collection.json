@@ -371,7 +371,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\": 1,\n    \"rows_per_page\":100,\n   \n\n    \"comment1\":\"运营商管理和系统管理员权限\",\n    \"comment2\":\"如果是运营商,则显示该运营商的正式会员\",\n    \"comment3\":\"如果是系统管理员,显示所有的用户(正式会员和普通用户)\",\n    \"comment4\":\"返回信息中的'id'即是用户的uid\"\n}",
+							"raw": "{\n    \"page_no\": 7,\n    \"rows_per_page\":100,\n   \n\n    \"comment1\":\"运营商管理和系统管理员权限\",\n    \"comment2\":\"如果是运营商,则显示该运营商的正式会员\",\n    \"comment3\":\"如果是系统管理员,显示所有的用户(正式会员和普通用户)\",\n    \"comment4\":\"返回信息中的'id'即是用户的uid\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1611,7 +1611,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\":43,\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \n    \"comment1\": \"page_no, rows_per_page选填,如果不输入, page_no默认值是1, rows_per_page默认值是10\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和key_world, 不输入是默认为查询所有\"\n}",
+							"raw": "{\n    \"key_word\": \"海贼王\",\n    \"page_no\": 1,\n    \"rows_per_page\": 30,\n    \"comment1\": \"page_no, rows_per_page选填,如果不输入, page_no默认值是1, rows_per_page默认值是10\",\n    \"comment2\": \"管理员或者运营商权限\",\n    \"comment3\": \"可以不输入查询条件,即cate_id和key_word, 不输入是默认为查询所有\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5092,7 +5092,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\":465,\n    \"comment\":\"此操作只有管理员能够进行,而且已经存在的管理员不能被重复添加\",\n    \"comment2\":\"大师,管理员和运营商三者身份互斥\"\n}",
+							"raw": "{\n    \"uid\": 0,\n    \"user_code\": \"15237099160\",\n    \"nick\": \"测试直接添加系统管理员\",\n    \"pwd\": \"123456\",\n    \"comment1\": \"此操作只有管理员能够进行,而且已经存在的管理员不能被重复添加\",\n    \"comment2\": \"大师,管理员和运营商三者身份互斥\",\n    \"comment3\": \"可以通过uid添加系统管理员,也可以输入账号,昵称,密码注册用户后直接添加为系统管理员\",\n    \"comemnt4\": \"当uid==0时,通过输入账号,密码,和昵称直接注册用户并且添加为运营商\",\n    \"comment5\": \"当uid不等于0,就是通过uid直接添加系统管理员\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
