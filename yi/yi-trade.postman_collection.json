@@ -541,7 +541,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\"where\":{\"stat\":{\"$gte\":0}},\n\"c_1\":\"stat:状态 0:待付款1：已付款 2：待收货 3：已收货 4:已作废\",\n\"c_2\":\"PayType：支付类型 0:余额付款 1：支付宝 2：微信\",\n\"c_3\":\"Contact 联系人\",\n\"c_4\":\"addr:地址  Province省   City城市  Area县区  Detail详细地址,包括街道等 ZipCode 邮编\",\n\"c_5\":\"Deliver 发货人 DeliveryTime发货时间 BillNo 发货单号\" ,\n\"c_6\":\"\"\n}"
+							"raw": "{\n\"page_no\":1,\n\"rows_per_page\":10,\n\n\"c_1\":\"stat:状态 0:待付款1：已付款 2：待收货 3：已收货 4:已作废\",\n\"c_2\":\"PayType：支付类型 0:余额付款 1：支付宝 2：微信\",\n\"c_3\":\"Contact 联系人\",\n\"c_4\":\"addr:地址  Province省   City城市  Area县区  Detail详细地址,包括街道等 ZipCode 邮编\",\n\"c_5\":\"Deliver 发货人 DeliveryTime发货时间 BillNo 发货单号\" ,\n\"c_6\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/ProductOrderPage",
@@ -1256,7 +1256,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page_no\":6,\n    \n     \"sort\":{\"create_data_int\":1},\n\n\"c_1\":\"\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
+							"raw": "{\n    \"page_no\":4,\n       \n     \"sort\":{\"create_date_int\":1},\n     \"where\":{\"stat\":{\"$gte\":1}},\n\n\"c_1\":\"\",\n\"c_2\":\"\",\n\"c_3\":\"\",\n\"c_4\":\"\",\n\"c_t\":\"\",\n\"c_6\":\"\",\n\"c_7\":\"\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizePage2",
@@ -1413,12 +1413,12 @@
 							{
 								"key": "Jwt",
 								"type": "text",
-								"value": "test/21"
+								"value": "test/61"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"level_id\":2,\n\"title\":\"什么时间买 车\",\n\"brief\":\"我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\"content\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\"level_id\":2,\n\"title\":\"什么时间买 车\",\n\"brief\":\"我想逄一下，我什么时间买 车，现在我没有钱\",\n\"content_type\":0,\n\"content\": {\n    \"title\":\"小过\",\n   \"items\":[\"官鬼寅木\",\"官鬼寅木\",\"官鬼寅木\",\"官鬼寅木\"]\n\n    },\n\"content_liuyao\": {\n        \"year\":2020,\n        \"month\":10,\n        \"day\":13,\n        \"hour\":20,\n        \"yao_code\":\"123121\"\n    },\n\n\"content_sizhu\":{\n        \"is_solar\":true,\n        \"name\":\"江泽民\",\n        \"is_male\":true,\n        \"year\":1980,\n        \"month\":1,\n        \"day\":16,\n        \"hour\":4,\n        \"minutes\":50\n    },    \n\n\n\n\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BBSPrizeAdd",
@@ -2092,7 +2092,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"row_per_page\":10,\n\"page_no\":1,\n\"where\":{\n    \"$and\":[\n    {\"created_at\":{\"$gte\":\"2020-12-25 00:00:00\"}},    \n    {\"created_at\":{\"$lte\":\"2020-12-26 00:00:00\"}}\n    ]\n},\n\n\n\"c_1\":\"amt_start:期初余额\"\n}"
+							"raw": "{\n\"row_per_page\":10,\n\"page_no\":1,\n\"where\":{\n    \"broker_id\":{\"$gte\":1}\n},\n\n\n\"c_1\":\"amt_start:期初余额\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessBrokerPage",
@@ -2127,7 +2127,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5f5b1e0849c09d3ee3e45220\",\n\"comment_1\":\"aa\"\n}"
+							"raw": "{\n\n\"where\":{\"month\":11},\n\"comment_1\":\"aa\"\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BusinessBrokerMonthPage",
@@ -2622,7 +2622,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"ok\":false,\n\"lst_id\":[\"5ff2f69f709c57933535450c\",\"5fbdf43cf229972282dc0c64\"],\n\"reject_reason\":\"no happy\",\n\"c_0\":\"ok : 通过：true 取消：false\",\n\"c_01\":\"lst_id:需要审批的单据的id\",\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+							"raw": "{\n\"ok\":false,\n\"lst_id\":[\"5ff2f69f709c57933535450c\",\"5fbdf43cf229972282dc0c64\"],\n\"reject_reason\":\"aaaa\",\n\n\"c_55\":\"驳回时需要加入原因(reject_reason)\",\n\n\"c_0\":\"ok : 通过：true 取消：false\",\n\"c_01\":\"lst_id:需要审批的单据的id\",\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BrokerDrawMoneyAudit",
@@ -2797,7 +2797,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\n\"rows_per_page\":20,\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
+							"raw": "{\n\n\"rows_per_page\":20,\n\"where\":{\"card.card_code\": \"1234423244445668\"},\n\n\"c_1\":\"broker_id: 运营商id\",\n\"c_2\":\"broker_name: 运营商名称\",\n\"c_3\":\"uid:申请人\",\n\"c_4\":\"amt: 申请提现金额\",\n\"c_41\":\"tax : 税金\",\n\"c_42\":\"\",\n\"c_6\":\"card_code:卡号\",\n\"c_7\":\"branch_bank_addr:开户行地址\",\n\"c_8\":\"branch_band_id:开户行id\",\n\"c_10\":\"auditor_id 审批人\",\n\"c_11\":\"audit_date::审核通过时间\",\n\"c_12\":\"stat:贴子状态, 0   //行审批  1: 取消或驳回 4:审批通过--\"\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/BrokerDrawMoneyPage",
@@ -2867,7 +2867,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"ok\":false,\n\"lst_id\":[\"5ff2f88a2a453995c6edda1d\",\"5fb4caad4067695383928af2\"],\n\"reject_reason\":\"aaaa\",\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
+							"raw": "{\n\"ok\":false,\n\"lst_id\":[\"5ff2f88a2a453995c6edda1d\",\"5fb4caad4067695383928af2\"],\n\"reject_reason\":\"aaaa\",\n\n\"c_55\":\"驳回时需要加入原因(reject_reason)\",\n\n\"c_0\":\"ok:通过：true 取消：false\",\n\"c_01\":\"lst_id:多个id\",\n\n\"c_1\":\"amt: 提现金额\",\n\n\"c_2\":\"master_id:大师id/uid\",\n\"c_3\":\"tax:税金\",\n\"c_4\":\"auditor_id:审批人id\",\n\"c_5\":\"audit_date:审核通过时间\",\n\"c_6\":\"stat:贴子状态,-1：已取消  0：待处理 4：已处理\"\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/MasterDrawMoneyAudit",
@@ -3117,7 +3117,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5ffd49818362d68cade11645\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"id\":\"5ffd49818362d68cade11645\",\n\"ok\":true,\n\"reject_reason\":\"aaaa\",\n\n\"c_55\":\"驳回时需要加入原因(reject_reason)\",\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\",\n\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderAudit",
@@ -3152,7 +3152,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"id\":\"5feac32f6614f86b74567f4c\",\n\"ok\":true,\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
+							"raw": "{\n\"id\":\"5feac32f6614f86b74567f4c\",\n\"ok\":true,\n\"reject_reason\":\"aaaa\",\n\n\"c_55\":\"驳回时需要加入原因(reject_reason)\",\n\n\"c_1\":\"master_id\",\n\"c_2\":\"draw_back:是否退款\",\n\"c_3\":\"b_type: 单据类型，为以下内容之一：mall/yi-order\",\n\"c_4\":\"order_id:订单id\"\n\n\n\n\n}"
 						},
 						"url": {
 							"raw": "{{host}}/yi/trade/RefundOrderBAudit",

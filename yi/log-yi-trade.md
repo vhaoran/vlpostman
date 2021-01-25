@@ -20,6 +20,9 @@
     yi/trade/OrdersPaying
   已付款（处理中）订单：
    yi/trade/OrdersPaid
+---------2021-01-23---------
+ 用户投诉单，审批驳回时，需要加入原因；
+ RefundOrderAudit/RefundOrderBAudit
 
   
 
