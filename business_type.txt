@@ -1,0 +1,28 @@
+
+
+	switch btype {
+	case BT_RECHARGE:
+		s = "充值"
+	case BT_YI_ORDER:
+		s = "大师订单"
+	case BT_YI_ORDER_R:
+		s = "大师订单-退款"
+
+	case BT_BBS_VIE:
+		s = "悬赏贴"
+	case BT_BBS_PRIZE:
+		s = "闪断贴"
+	case BT_ACC_ADJUST:
+		s = "帐务调整"
+	case BT_MALL:
+		s = "商城订单"
+	case BT_MALL_R:
+		s = "商城订单-退款"
+	case BT_DRAW_MONEY_Master:
+		s = "大师提现"
+	case BT_DRAW_MONEY_Broker:
+		s = "运营商提现"
+
+
+
+
