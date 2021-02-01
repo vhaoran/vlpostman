@@ -2432,7 +2432,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": 13,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
+							"raw": "{\n    \"uid\": 11,\n\n    \"comment1\": \"运营商,系统管理员和大师本人权限\",\n    \"comment2\": \"普通用户不可以通过此路由获取大师项目价格\",\n    \"comment3\": \"根据大师的UID来获取大师的项目列表(不适用于普通用户)\",\n    \"comment4\": \"大师本人获取项目列表时需要保证uid与是当前账号的uid(不可写为0)\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3455,7 +3455,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"broker_id\":1,\n\n    \"comment1\":\"运营商和系统管理员权限\",\n    \"comment2\":\"运营商本人使用时broker_id=0, 系统管理员需要给出指定运营商的broker_id\"\n}",
+							"raw": "{\n    \"broker_id\":86,\n\n    \"comment1\":\"运营商和系统管理员权限\",\n    \"comment2\":\"运营商本人使用时broker_id=0, 系统管理员需要给出指定运营商的broker_id\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3551,7 +3551,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"EHRKu3UBUEDNcUc8mIWn\",\n            \"price_offset\": 111\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
+							"raw": "{\n    \"list\": [\n        {\n            \"product_id\": \"DyoP83UB4Gj8VxFo4IVK\",\n            \"price_offset\": 111\n        }\n    ],\n    \"comment1\": \"只需要每件商品只需要传入product_id和price_offset两个参数即可\",\n    \"comment2\": \"运营商管理员权限\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3676,7 +3676,7 @@
 							"apikey": [
 								{
 									"key": "value",
-									"value": "test/21",
+									"value": "test/1",
 									"type": "string"
 								},
 								{
@@ -3695,7 +3695,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 41,\n    \"broker_id\":0,\n    \"page_no\":1,\n    \"rows_per_page\":10,\n\n    \"comment1\":\"运营商和系统管理员权限\",\n    \"comment2\":\"运营商本人使用时broker_id=0, 系统管理员需要给出指定运营商的broker_id\"\n\n}",
+							"raw": "{\n    \"cate_id\": 40,\n    \"broker_id\":1,\n    \"page_no\":1,\n    \"rows_per_page\":10,\n\n    \"comment1\":\"运营商和系统管理员权限\",\n    \"comment2\":\"运营商本人使用时broker_id=0, 系统管理员需要给出指定运营商的broker_id\"\n\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4677,7 +4677,7 @@
 					"response": []
 				},
 				{
-					"name": "w运营商大师信息分页查询------U+B+S",
+					"name": "运营商大师未选择项目列表------B+S",
 					"request": {
 						"auth": {
 							"type": "apikey",
@@ -4685,6 +4685,54 @@
 								{
 									"key": "value",
 									"value": "test/21",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"master_id\": 18,\n    \"broker_id\": 0,\n\n    \"comment1\": \"运营商和系统管理员权限\",\n    \"comment2\": \"运营商本人使用时broker_id=0, 系统管理员需要给出指定运营商的broker_id\",\n    \"comment3\": \"如果运营商未添加该大师,则显示该大师所有的项目\",\n    \"comment4\": \"如果运营商已经添加该大师,则显示该大师未被此运营商添加的大师项目\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BMUIList",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BMUIList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "w运营商大师信息分页查询------U+B+S",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/61",
 									"type": "string"
 								},
 								{
@@ -4719,6 +4767,54 @@
 								"yi",
 								"user",
 								"BMasterPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "运营商未选择大师信息分页查询------B+S",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "test/1",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Jwt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"broker_id\": 1,\n    \"page_no\": 1,\n    \"rows_per_page\": 10,\n    \n    \"comment1\": \"运营商和系统管理员权限\",\n    \"comment2\": \"运营商本人使用时broker_id=0, 系统管理员需要给出指定运营商的broker_id\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/yi/user/BUnselMasterPage",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"yi",
+								"user",
+								"BUnselMasterPage"
 							]
 						}
 					},
@@ -5103,54 +5199,6 @@
 								"yi",
 								"user",
 								"SwitchToBroker"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "运营商商品分页查询------B+S Copy",
-					"request": {
-						"auth": {
-							"type": "apikey",
-							"apikey": [
-								{
-									"key": "value",
-									"value": "test/21",
-									"type": "string"
-								},
-								{
-									"key": "in",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "key",
-									"value": "Jwt",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"cate_id\": 17,\n    \"broker_id\": 61,\n    \"page_no\": 1,\n    \"rows_per_page\": 4,\n    \"comment\": \"key_word可以选择输入或不输,不输入是查询所有\",\n    \"comment2\": \"cate_id必须传入,broker_id管理员必须传入,其他用户必须是0\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{host}}/yi/user/BrokerProductPage",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"yi",
-								"user",
-								"BrokerProductPage"
 							]
 						}
 					},
